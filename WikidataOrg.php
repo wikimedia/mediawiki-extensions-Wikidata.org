@@ -58,7 +58,10 @@ call_user_func( function() {
 		'descriptionmsg' => 'wikidata-org-desc'
 	);
 
+	// i18n
+	$wgMessagesDirs['Wikidata.org'] = __DIR__ . '/i18n';
+
 	// Resource Loader Modules:
-	$wgResourceModules = array_merge( $wgResourceModules, include( __DIR__ . "/resources/Resources.php" ) );
+	$wgResourceModules = array_merge( $wgResourceModules, include( __DIR__ . '/resources/Resources.php' ) );
 
 } );
