@@ -2,7 +2,7 @@
 
 /**
  * Component with Wikidata specific modifications
- * and additions for Wikibase.
+ * and additions for Wikibase
  *
  *  ## ##### ##### ## ## ##### ## ##### ## ##
  *  ## ##### ##### ## ## ##### ## ##### ## ##
@@ -25,7 +25,7 @@
  * Entry point for for the Wikidata.org extension.
  *
  * @see README.md
- * @see https://www.wikidata.org/
+ * @see https://www.mediawiki.org/wiki/Extension:Wikidata.org
  * @license GNU GPL v2+
  */
 
@@ -45,7 +45,7 @@ if ( !defined( 'WB_VERSION' ) ) {
 }
 
 call_user_func( function() {
-	global $wgExtensionCredits, $wgResourceModules;
+	global $wgExtensionCredits, $wgHooks, $wgResourceModules;
 
 	$wgExtensionCredits['wikibase'][] = array((
 		'path' => __DIR__,
@@ -58,7 +58,13 @@ call_user_func( function() {
 		'descriptionmsg' => 'wikidata-org-desc'
 	);
 
+	// i18n
+	$wgMessagesDirs['Wikidata.org'] = __DIR__ . '/i18n';
+
+	// Hooks
+	$wgHooks['BeforePageDisplay'][] = 'WikidataOrg\WikidataOrgHooks::onBeforePageDisplay';
+
 	// Resource Loader Modules:
-	$wgResourceModules = array_merge( $wgResourceModules, include( __DIR__ . "/resources/Resources.php" ) );
+	$wgResourceModules = array_merge( $wgResourceModules, include( __DIR__ . '/resources/Resources.php' ) );
 
 } );
