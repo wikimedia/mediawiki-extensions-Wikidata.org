@@ -41,7 +41,7 @@ if ( defined( 'WIKIDATA_ORG_VERSION' ) ) {
 define( 'WIKIDATA_ORG_VERSION', '0.1 alpha' );
 
 if ( !defined( 'WB_VERSION' ) ) {
-	throw new Exception( 'Wikidata.org requires Wikibase to be installed.' );
+	throw new Exception( 'The Wikidata.org extension requires Wikibase to be installed.' );
 }
 
 call_user_func( function() {
@@ -51,9 +51,7 @@ call_user_func( function() {
 		'path' => __DIR__,
 		'name' => 'Wikidata.org',
 		'version' => WIKIDATA_ORG_VERSION,
-		'author' => array(
-			'The Wikidata team', // TODO: link?
-		),
+		'author' => 'Bene*',
 		'url' => 'https://www.mediawiki.org/wiki/Extension:Wikidata.org',
 		'descriptionmsg' => 'wikidata-org-desc'
 	);
