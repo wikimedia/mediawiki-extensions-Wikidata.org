@@ -17,10 +17,10 @@ use Wikibase\NamespaceUtils;
 final class WikidataOrgHooks {
 
 	/**
-	 * Handler for the BeforePageDisplay hook, adds wikidata-org.badges module
-	 * for all entity pages.
+	 * Handler for the BeforePageDisplay hook, adds the
+	 * wikidata-org.badges module to all entity pages.
 	 *
-	 * @since 0.4
+	 * @since 0.1
 	 *
 	 * @param OutputPage $out
 	 * @param Skin $skin
@@ -28,7 +28,7 @@ final class WikidataOrgHooks {
 	 * @return bool
 	 */
 	public static function onBeforePageDisplay( OutputPage &$out, Skin &$skin ) {
-		if ( !NamespaceUtils::isEntityNamespace( $out->getTitle()->getNamespace() ) ) {
+		if ( NamespaceUtils::isEntityNamespace( $out->getTitle()->getNamespace() ) ) {
 			$out->addModules( 'wikidata-org.badges' );
 		}
 		return true;
