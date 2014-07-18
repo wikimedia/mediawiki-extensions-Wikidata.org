@@ -60,7 +60,7 @@ call_user_func( function() {
 	$wgMessagesDirs['Wikidata.org'] = __DIR__ . '/i18n';
 
 	// Hooks
-	$wgHooks['BeforePageDisplay'][] = 'WikidataOrg\WikidataOrgHooks::onBeforePageDisplay';
+	$wgHooks['BeforePageDisplay'][] = 'WikidataOrg\Hooks::onBeforePageDisplay';
 
 	// Resource Loader Modules:
 	$wgResourceModules = array_merge( $wgResourceModules, include( __DIR__ . '/resources/Resources.php' ) );

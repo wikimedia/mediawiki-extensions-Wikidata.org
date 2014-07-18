@@ -14,7 +14,7 @@ use Wikibase\NamespaceUtils;
  * @license GNU GPL v2+
  * @author Bene* <benestar.wikimedia@gmail.com>
  */
-final class WikidataOrgHooks {
+final class Hooks {
 
 	/**
 	 * Handler for the BeforePageDisplay hook, adds the
