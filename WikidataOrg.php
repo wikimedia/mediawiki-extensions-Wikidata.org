@@ -45,12 +45,12 @@ if ( file_exists( __DIR__ . '/vendor/autoload.php' ) ) {
 	include_once( __DIR__ . '/vendor/autoload.php' );
 }
 
-if ( !defined( 'WB_VERSION' ) ) {
-	throw new Exception( 'The Wikidata.org extension requires Wikibase to be installed.' );
-}
-
-call_user_func( function() {
+$wgExtensionFunctions[] = function() {
 	global $wgExtensionCredits, $wgHooks, $wgResourceModules;
+
+	if ( !defined( 'WB_VERSION' ) ) {
+		throw new Exception( 'The Wikidata.org extension requires Wikibase to be installed.' );
+	}
 
 	$wgExtensionCredits['wikibase'][] = array(
 		'path' => __DIR__,
@@ -70,4 +70,4 @@ call_user_func( function() {
 	// Resource Loader Modules:
 	$wgResourceModules = array_merge( $wgResourceModules, include( __DIR__ . '/resources/Resources.php' ) );
 
-} );
+};
