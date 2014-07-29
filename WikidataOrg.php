@@ -46,7 +46,7 @@ if ( file_exists( __DIR__ . '/vendor/autoload.php' ) ) {
 }
 
 $wgExtensionFunctions[] = function() {
-	global $wgExtensionCredits, $wgHooks, $wgResourceModules;
+	global $wgExtensionCredits, $wgMessagesDirs, $wgHooks, $wgResourceModules;
 
 	if ( !defined( 'WB_VERSION' ) ) {
 		throw new Exception( 'The Wikidata.org extension requires Wikibase to be installed.' );
@@ -56,7 +56,7 @@ $wgExtensionFunctions[] = function() {
 		'path' => __DIR__,
 		'name' => 'Wikidata.org',
 		'version' => WIKIDATA_ORG_VERSION,
-		'author' => 'Bene*',
+		'author' => '[[mw:User:Bene*|Bene*]]',
 		'url' => 'https://github.com/wmde/wikidata.org',
 		'descriptionmsg' => 'wikidata-org-desc'
 	);
@@ -67,7 +67,7 @@ $wgExtensionFunctions[] = function() {
 	// Hooks
 	$wgHooks['BeforePageDisplay'][] = 'WikidataOrg\Hooks::onBeforePageDisplay';
 
-	// Resource Loader Modules:
+	// Resource Loader modules
 	$wgResourceModules = array_merge( $wgResourceModules, include( __DIR__ . '/resources/Resources.php' ) );
 
 };
