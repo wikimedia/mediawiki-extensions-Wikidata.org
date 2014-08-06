@@ -25,7 +25,7 @@
  * Entry point for for the Wikidata.org extension.
  *
  * @see README.md
- * @see https://github.com/wmde/wikidata.org
+ * @see https://github.com/wmde/Wikidata.org
  * @license GNU GPL v2+
  */
 
@@ -57,7 +57,7 @@ $GLOBALS['wgExtensionFunctions'][] = function() {
 		'name' => 'Wikidata.org',
 		'version' => WIKIDATA_ORG_VERSION,
 		'author' => '[[mw:User:Bene*|Bene*]]',
-		'url' => 'https://github.com/wmde/wikidata.org',
+		'url' => 'https://github.com/wmde/Wikidata.org',
 		'descriptionmsg' => 'wikidata-org-desc'
 	);
 

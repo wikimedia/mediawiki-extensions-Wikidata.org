@@ -12,7 +12,7 @@ use Wikibase\NamespaceUtils;
  * @since 0.1
  *
  * @license GNU GPL v2+
- * @author Bene* <benestar.wikimedia@gmail.com>
+ * @author Bene* < benestar.wikimedia@gmail.com >
  */
 final class Hooks {
 

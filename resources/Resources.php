@@ -6,7 +6,7 @@
  * @since 0.1
  *
  * @licence GNU GPL v2+
- * @author Bene* <benestar.wikimedia@gmail.com>
+ * @author Bene* < benestar.wikimedia@gmail.com >
  */
 
 return call_user_func( function() {
