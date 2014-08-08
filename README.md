@@ -1,4 +1,4 @@
 Wikidata.org
 ============
 
-Component with Wikidata specific modifications and additions for Wikibase.
+Configuration for and customizations to Wikibase that are specific to wikidata.org
