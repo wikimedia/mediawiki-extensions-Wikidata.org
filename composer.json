@@ -1,13 +1,13 @@
 {
-	"name": "wikibase/wikidata.org",
-	"description": "configurations and customizations to Wikibase that are specific to wikidata.org",
+	"name": "wikibase/Wikidata.org",
+	"description": "Configuration for and customizations to Wikibase that are specific to wikidata.org",
 	"type": "mediawiki-extension",
 	"version": "0.1-alpha",
 	"keywords": [
 		"Wikidata",
 		"Wikibase"
 	],
-	"homepage": "https://github.com/wmde/wikidata.org",
+	"homepage": "https://github.com/wmde/Wikidata.org",
 	"license": "GNU GPL v2+",
 	"authors": [
 		{

@@ -4,5 +4,5 @@
 			"Bene*"
 		]
 	},
-	"wikidata-org-desc": "Component with Wikidata specific modifications and additions for Wikibase"
+	"wikidata-org-desc": "Configuration for and customizations to Wikibase that are specific to wikidata.org"
 }
