@@ -56,7 +56,7 @@ $GLOBALS['wgExtensionFunctions'][] = function() {
 		'path' => __DIR__,
 		'name' => 'Wikidata.org',
 		'version' => WIKIDATA_ORG_VERSION,
-		'author' => '[[mw:User:Bene*|Bene*]]',
+		'author' => '[https://www.mediawiki.org/wiki/User:Bene* Bene*]',
 		'url' => 'https://github.com/wmde/Wikidata.org',
 		'descriptionmsg' => 'wikidata-org-desc'
 	);
