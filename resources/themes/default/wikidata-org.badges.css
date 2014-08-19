@@ -11,7 +11,7 @@
  * compatibility (browsers able to understand gradient syntax support also SVG).
  * http://pauginer.tumblr.com/post/36614680636/invisible-gradient-technique */
 
-.wb-badge-goodarticle {
+.wb-badge-featuredarticle {
 	background-image: url(../../images/wb-badges-gold.png);
 	/* @embed */
 	background-image: -webkit-linear-gradient(transparent, transparent), url(../../images/wb-badges-gold.svg);
@@ -19,7 +19,7 @@
 	background-image: linear-gradient(transparent, transparent), url(../../images/wb-badges-gold.svg);
 }
 
-.wb-badge-featuredarticle {
+.wb-badge-goodarticle {
 	background-image: url(../../images/wb-badges-silver.png);
 	/* @embed */
 	background-image: -webkit-linear-gradient(transparent, transparent), url(../../images/wb-badges-silver.svg);
