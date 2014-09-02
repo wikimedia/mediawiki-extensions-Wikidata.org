@@ -29,7 +29,7 @@ final class Hooks {
 	 */
 	public static function onBeforePageDisplay( OutputPage &$out, Skin &$skin ) {
 		if ( NamespaceUtils::isEntityNamespace( $out->getTitle()->getNamespace() ) ) {
-			$out->addModules( 'ext.wikidata-org.badges' );
+			$out->addModuleStyles( 'ext.wikidata-org.badges' );
 		}
 		return true;
 	}
