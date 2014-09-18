@@ -58,8 +58,11 @@ $GLOBALS['wgExtensionFunctions'][] = function() {
 		'version' => WIKIDATA_ORG_VERSION,
 		'author' => '[https://www.mediawiki.org/wiki/User:Bene* Bene*]',
 		'url' => 'https://github.com/wmde/Wikidata.org',
-		'description' => 'Configuration for and customizations to Wikibase that are specific to wikidata.org'
+		'descriptionmsg' => 'wikidata-org-desc'
 	);
+
+	// i18n
+	$wgMessagesDirs['Wikidata.org'] = __DIR__ . '/i18n';
 
 	// Hooks
 	$wgHooks['BeforePageDisplay'][] = 'WikidataOrg\Hooks::onBeforePageDisplay';
