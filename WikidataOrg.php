@@ -58,7 +58,8 @@ $GLOBALS['wgExtensionFunctions'][] = function() {
 		'version' => WIKIDATA_ORG_VERSION,
 		'author' => '[https://www.mediawiki.org/wiki/User:Bene* Bene*]',
 		'url' => 'https://github.com/wmde/Wikidata.org',
-		'descriptionmsg' => 'wikidata-org-desc'
+		'descriptionmsg' => 'wikidata-org-desc',
+		'license-name' => 'GPL-2.0+'
 	);
 
 	// i18n
