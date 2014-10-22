@@ -4,7 +4,7 @@ namespace WikidataOrg;
 
 use OutputPage;
 use Skin;
-use Wikibase\NamespaceUtils;
+use Wikibase\Repo\WikibaseRepo;
 
 /**
  * File defining the hook handlers for the Wikidata.org extension.
@@ -28,7 +28,9 @@ final class Hooks {
 	 * @return bool
 	 */
 	public static function onBeforePageDisplay( OutputPage &$out, Skin &$skin ) {
-		if ( NamespaceUtils::isEntityNamespace( $out->getTitle()->getNamespace() ) ) {
+		$entityNamespaceLookup = WikibaseRepo::getDefaultInstance()->getEntityNamespaceLookup();
+
+		if ( $entityNamespaceLookup->isEntityNamespace( $out->getTitle()->getNamespace() ) ) {
 			$out->addModuleStyles( 'ext.wikidata-org.badges' );
 		}
 		return true;
