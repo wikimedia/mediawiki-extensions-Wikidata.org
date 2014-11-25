@@ -21,6 +21,7 @@
 	background-image: linear-gradient(transparent, transparent), url(../../images/wb-badges-gold.svg);
 }
 
+.wb-badge.wb-badge-recommendedarticle,
 .wb-badge.wb-badge-goodarticle {
 	background-image: url(../../images/wb-badges-silver.png);
 	/* @embed */
