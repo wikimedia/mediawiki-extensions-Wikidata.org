@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Bene*"
+			"Bene*",
+			"Lucie-Aimée Kaffee"
 		]
 	},
-	"wikidata-org-desc": "{{desc|name=Wikidata.org|url=https://github.com/wmde/Wikidata.org}}"
+	"wikidata-org-desc": "{{desc|name=Wikidata.org|url=https://github.com/wmde/Wikidata.org}}",
+	"wikimedia-developers-url": "The URL of the data access page on Wikidata."
 }
