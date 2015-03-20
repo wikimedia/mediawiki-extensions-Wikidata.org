@@ -2,8 +2,11 @@
 
 namespace WikidataOrg;
 
+use Html;
 use OutputPage;
+use QuickTemplate;
 use Skin;
+use SkinTemplate;
 use Wikibase\Repo\WikibaseRepo;
 
 /**
@@ -11,8 +14,9 @@ use Wikibase\Repo\WikibaseRepo;
  *
  * @since 0.1
  *
- * @license GNU GPL v2+
+ * @licence GNU GPL v2+
  * @author Bene* < benestar.wikimedia@gmail.com >
+ * @author Lucie-Aimée Kaffee < lucie.kaffee@wikimedia.org >
  */
 final class Hooks {
 
@@ -33,6 +37,25 @@ final class Hooks {
 		if ( $entityNamespaceLookup->isEntityNamespace( $out->getTitle()->getNamespace() ) ) {
 			$out->addModuleStyles( 'ext.wikidata-org.badges' );
 		}
+		return true;
+	}
+
+	/**
+	* Add a "Data access" link to the footer
+	*
+	* @param SkinTemplate $skin
+	* @param QuickTemplate $template
+	* @return bool
+	*/
+	public static function onSkinTemplateOutputPageBeforeExec( SkinTemplate &$skin, QuickTemplate &$template ) {
+		$destination = Skin::makeInternalOrExternalUrl( "Special:MyLanguage/Wikidata:Data_access" );
+		$link = Html::element(
+			'a',
+			array( 'href' => $destination ),
+			$skin->msg( 'data-access' )->text()
+		);
+		$template->set( 'data-access', $link );
+		$template->data['footerlinks']['places'][] = 'data-access';
 		return true;
 	}
 }

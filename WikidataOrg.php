@@ -66,6 +66,7 @@ $GLOBALS['wgExtensionFunctions'][] = function() {
 
 	// Hooks
 	$wgHooks['BeforePageDisplay'][] = 'WikidataOrg\Hooks::onBeforePageDisplay';
+	$wgHooks['SkinTemplateOutputPageBeforeExec'][] = 'WikidataOrg\Hooks::onSkinTemplateOutputPageBeforeExec';
 
 	// Resource Loader modules
 	$wgResourceModules = array_merge( $wgResourceModules, include( __DIR__ . '/resources/Resources.php' ) );

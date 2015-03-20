@@ -6,5 +6,5 @@
 		]
 	},
 	"wikidata-org-desc": "{{desc|name=Wikidata.org|url=https://github.com/wmde/Wikidata.org}}",
-	"wikimedia-developers-url": "The URL of the data access page on Wikidata."
+	"data-access": "Title for the link to the data access page."
 }

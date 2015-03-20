@@ -6,5 +6,5 @@
 		]
 	},
 	"wikidata-org-desc": "Configuration for and customizations to Wikibase that are specific to wikidata.org",
-	"wikimedia-developers-url": "Special:MyLanguage/Wiki:Data_access"
+	"data-access": "Data access"
 }
