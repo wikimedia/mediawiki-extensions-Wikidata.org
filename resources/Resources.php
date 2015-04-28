@@ -18,6 +18,7 @@ return call_user_func( function() {
 
 	$modules = array(
 		'ext.wikidata-org.badges' => $moduleTemplate + array(
+			'position' => 'top',
 			'styles' => array(
 				'themes/default/wikidata-org.badges.css',
 			)
