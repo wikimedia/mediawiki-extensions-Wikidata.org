@@ -12,8 +12,8 @@
  * http://pauginer.tumblr.com/post/36614680636/invisible-gradient-technique */
 
 .wb-badge.wb-badge-featuredarticle,
-.wb-badge.wb-badge-featuredportal,
 .wb-badge.wb-badge-featuredlist,
+.wb-badge.wb-badge-featuredportal,
 .wb-badge.wb-badge-featuredtext {
 	background-image: url(../../images/wb-badges-gold.png);
 	/* @embed */
@@ -31,20 +31,20 @@
 	background-image: linear-gradient(transparent, transparent), url(../../images/wb-badges-silver.svg);
 }
 
-.wb-badge.wb-badge-incomplete {
-	background-image: url(../../images/wb-badges-incomplete.png);
-	/* @embed */
-	background-image: -webkit-linear-gradient(transparent, transparent), url(../../images/wb-badges-incomplete.svg);
-	/* @embed */
-	background-image: linear-gradient(transparent, transparent), url(../../images/wb-badges-incomplete.svg);
-}
-
 .wb-badge.wb-badge-notproofread {
 	background-image: url(../../images/wb-badges-notproofread.png);
 	/* @embed */
 	background-image: -webkit-linear-gradient(transparent, transparent), url(../../images/wb-badges-notproofread.svg);
 	/* @embed */
 	background-image: linear-gradient(transparent, transparent), url(../../images/wb-badges-notproofread.svg);
+}
+
+.wb-badge.wb-badge-problematic {
+	background-image: url(../../images/wb-badges-problematic.png);
+	/* @embed */
+	background-image: -webkit-linear-gradient(transparent, transparent), url(../../images/wb-badges-problematic.svg);
+	/* @embed */
+	background-image: linear-gradient(transparent, transparent), url(../../images/wb-badges-problematic.svg);
 }
 
 .wb-badge.wb-badge-proofread {
