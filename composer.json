@@ -23,6 +23,16 @@
 	"require": {
 		"php": ">=5.3.0"
 	},
+	"require-dev": {
+		"jakub-onderka/php-parallel-lint": "0.9.2",
+		"mediawiki/mediawiki-codesniffer": "0.5.1"
+	},
+	"scripts": {
+		"test": [
+			"parallel-lint . --exclude vendor",
+			"phpcs -p -s"
+		]
+	},
 	"autoload": {
 		"classmap": [
 			"WikidataOrg.hooks.php"

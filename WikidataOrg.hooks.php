@@ -47,7 +47,10 @@ final class Hooks {
 	* @param QuickTemplate $template
 	* @return bool
 	*/
-	public static function onSkinTemplateOutputPageBeforeExec( SkinTemplate &$skin, QuickTemplate &$template ) {
+	public static function onSkinTemplateOutputPageBeforeExec(
+		SkinTemplate &$skin,
+		QuickTemplate &$template
+	) {
 		$destination = Skin::makeInternalOrExternalUrl( "Special:MyLanguage/Wikidata:Data_access" );
 		$link = Html::element(
 			'a',
@@ -58,4 +61,5 @@ final class Hooks {
 		$template->data['footerlinks']['places'][] = 'data-access';
 		return true;
 	}
+
 }
