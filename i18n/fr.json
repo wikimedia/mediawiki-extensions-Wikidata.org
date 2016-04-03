@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Lucie-Aimée Kaffee"
+			"Lucie-Aimée Kaffee",
+			"Wladek92"
 		]
 	},
+	"wikidata-org-desc": "Configuration et personnalisation de Wikibase qui sont spécifiques à wikidata.org",
 	"data-access": "Accès aux données"
 }

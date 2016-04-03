@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Lucie-Aimée Kaffee"
+			"Lucie-Aimée Kaffee",
+			"Metalhead64"
 		]
 	},
+	"wikidata-org-desc": "Konfiguration und Anpassungen an Wikibase, die speziell für wikidata.org sind",
 	"data-access": "Datenzugriff"
 }
