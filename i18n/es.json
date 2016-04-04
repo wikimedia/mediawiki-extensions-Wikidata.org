@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Macofe"
+		]
+	},
+	"wikidata-org-desc": "Configuración y personalizaciones de Wikibase que son específicas para wikidata.org",
+	"data-access": "Acceso a datos"
+}
