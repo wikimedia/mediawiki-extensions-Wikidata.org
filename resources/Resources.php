@@ -13,19 +13,19 @@ return call_user_func( function() {
 	$remoteExtPathParts = explode(
 		DIRECTORY_SEPARATOR . 'extensions' . DIRECTORY_SEPARATOR, __DIR__, 2
 	);
-	$moduleTemplate = array(
+	$moduleTemplate = [
 		'localBasePath' => __DIR__,
 		'remoteExtPath' => $remoteExtPathParts[1]
-	);
+	];
 
-	$modules = array(
-		'ext.wikidata-org.badges' => $moduleTemplate + array(
+	$modules = [
+		'ext.wikidata-org.badges' => $moduleTemplate + [
 			'position' => 'bottom',
-			'styles' => array(
+			'styles' => [
 				'themes/default/wikidata-org.badges.css',
-			)
-		)
-	);
+			]
+		]
+	];
 
 	return $modules;
 } );

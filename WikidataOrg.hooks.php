@@ -54,7 +54,7 @@ final class Hooks {
 		$destination = Skin::makeInternalOrExternalUrl( "Special:MyLanguage/Wikidata:Data_access" );
 		$link = Html::element(
 			'a',
-			array( 'href' => $destination ),
+			[ 'href' => $destination ],
 			$skin->msg( 'data-access' )->text()
 		);
 		$template->set( 'data-access', $link );

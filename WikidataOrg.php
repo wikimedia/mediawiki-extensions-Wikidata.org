@@ -54,7 +54,7 @@ $GLOBALS['wgExtensionFunctions'][] = function() {
 		throw new Exception( 'The Wikidata.org extension requires Wikibase to be installed.' );
 	}
 
-	$wgExtensionCredits['wikibase'][] = array(
+	$wgExtensionCredits['wikibase'][] = [
 		'path' => __DIR__,
 		'name' => 'Wikidata.org',
 		'version' => WIKIDATA_ORG_VERSION,
@@ -62,7 +62,7 @@ $GLOBALS['wgExtensionFunctions'][] = function() {
 		'url' => 'https://github.com/wmde/Wikidata.org',
 		'descriptionmsg' => 'wikidata-org-desc',
 		'license-name' => 'GPL-2.0+'
-	);
+	];
 
 	// Hooks
 	$wgHooks['BeforePageDisplay'][] = 'WikidataOrg\Hooks::onBeforePageDisplay';
