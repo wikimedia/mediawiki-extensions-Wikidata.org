@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Chrumps"
+			"Chrumps",
+			"Woytecr"
 		]
 	},
+	"wikidata-org-desc": "Konfiguracja i dostosowanie Wikibase na potrzeby wikidata.org",
 	"data-access": "Dostęp do danych"
 }
