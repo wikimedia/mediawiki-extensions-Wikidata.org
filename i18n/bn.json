@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Aftabuzzaman"
+			"Aftabuzzaman",
+			"আজিজ"
 		]
 	},
+	"wikidata-org-desc": "উইকিভিতের জন্য কনফিগারেশন ও অনুকূলকরণ  wikidata.org-এর জন্য নির্দিষ্ট",
 	"data-access": "উপাত্তে প্রবেশাধিকার"
 }
