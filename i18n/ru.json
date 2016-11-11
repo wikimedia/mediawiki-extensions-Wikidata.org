@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Laboramus"
+			"Laboramus",
+			"Okras"
 		]
 	},
+	"wikidata-org-desc": "Конфигурации и настройки Wikibase, являющиеся специфическими для wikidata.org",
 	"data-access": "Доступ к данным"
 }
