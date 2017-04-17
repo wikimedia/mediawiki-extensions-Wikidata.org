@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Lucie-Aimée Kaffee"
+			"Lucie-Aimée Kaffee",
+			"Toniher"
 		]
 	},
+	"wikidata-org-desc": "Configuració i personalitzacions de Wikibase que són específiques de wikidata.org",
 	"data-access": "Accés a les dades"
 }
