@@ -15,53 +15,53 @@
 .wb-badge.wb-badge-featuredlist,
 .wb-badge.wb-badge-featuredportal,
 .wb-badge.wb-badge-featuredtext {
-	background-image: url(../../images/wb-badges-gold.png);
+	background-image: url( ../../images/wb-badges-gold.png );
 	/* @embed */
-	background-image: -webkit-linear-gradient(transparent, transparent), url(../../images/wb-badges-gold.svg);
+	background-image: -webkit-linear-gradient( transparent, transparent ), url( ../../images/wb-badges-gold.svg );
 	/* @embed */
-	background-image: linear-gradient(transparent, transparent), url(../../images/wb-badges-gold.svg);
+	background-image: linear-gradient( transparent, transparent ), url( ../../images/wb-badges-gold.svg );
 }
 
 .wb-badge.wb-badge-recommendedarticle,
 .wb-badge.wb-badge-goodarticle,
 .wb-badge.wb-badge-digitaldocument {
-	background-image: url(../../images/wb-badges-silver.png);
+	background-image: url( ../../images/wb-badges-silver.png );
 	/* @embed */
-	background-image: -webkit-linear-gradient(transparent, transparent), url(../../images/wb-badges-silver.svg);
+	background-image: -webkit-linear-gradient( transparent, transparent ), url( ../../images/wb-badges-silver.svg );
 	/* @embed */
-	background-image: linear-gradient(transparent, transparent), url(../../images/wb-badges-silver.svg);
+	background-image: linear-gradient( transparent, transparent ), url( ../../images/wb-badges-silver.svg );
 }
 
 .wb-badge.wb-badge-notproofread {
-	background-image: url(../../images/wb-badges-notproofread.png);
+	background-image: url( ../../images/wb-badges-notproofread.png );
 	/* @embed */
-	background-image: -webkit-linear-gradient(transparent, transparent), url(../../images/wb-badges-notproofread.svg);
+	background-image: -webkit-linear-gradient( transparent, transparent ), url( ../../images/wb-badges-notproofread.svg );
 	/* @embed */
-	background-image: linear-gradient(transparent, transparent), url(../../images/wb-badges-notproofread.svg);
+	background-image: linear-gradient( transparent, transparent ), url( ../../images/wb-badges-notproofread.svg );
 }
 
 .wb-badge.wb-badge-problematic {
-	background-image: url(../../images/wb-badges-problematic.png);
+	background-image: url( ../../images/wb-badges-problematic.png );
 	/* @embed */
-	background-image: -webkit-linear-gradient(transparent, transparent), url(../../images/wb-badges-problematic.svg);
+	background-image: -webkit-linear-gradient( transparent, transparent ), url( ../../images/wb-badges-problematic.svg );
 	/* @embed */
-	background-image: linear-gradient(transparent, transparent), url(../../images/wb-badges-problematic.svg);
+	background-image: linear-gradient( transparent, transparent ), url( ../../images/wb-badges-problematic.svg );
 }
 
 .wb-badge.wb-badge-proofread {
-	background-image: url(../../images/wb-badges-proofread.png);
+	background-image: url( ../../images/wb-badges-proofread.png );
 	/* @embed */
-	background-image: -webkit-linear-gradient(transparent, transparent), url(../../images/wb-badges-proofread.svg);
+	background-image: -webkit-linear-gradient( transparent, transparent ), url( ../../images/wb-badges-proofread.svg );
 	/* @embed */
-	background-image: linear-gradient(transparent, transparent), url(../../images/wb-badges-proofread.svg);
+	background-image: linear-gradient( transparent, transparent ), url( ../../images/wb-badges-proofread.svg );
 }
 
 .wb-badge.wb-badge-validated {
-	background-image: url(../../images/wb-badges-validated.png);
+	background-image: url( ../../images/wb-badges-validated.png );
 	/* @embed */
-	background-image: -webkit-linear-gradient(transparent, transparent), url(../../images/wb-badges-validated.svg);
+	background-image: -webkit-linear-gradient( transparent, transparent ), url( ../../images/wb-badges-validated.svg );
 	/* @embed */
-	background-image: linear-gradient(transparent, transparent), url(../../images/wb-badges-validated.svg);
+	background-image: linear-gradient( transparent, transparent ), url( ../../images/wb-badges-validated.svg );
 }
 
 /* @todo also support other css classes like .wb-badge-stub etc. */
