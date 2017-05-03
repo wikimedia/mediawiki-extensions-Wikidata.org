@@ -1,6 +1,6 @@
 ﻿These are the release notes for the [Wikidata.org extension](README.md).
 
-## Version 0.1 (dev)
+## Version 1.0.0
 
 Initial release with these features:
 
