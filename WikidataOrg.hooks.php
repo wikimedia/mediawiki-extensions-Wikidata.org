@@ -34,7 +34,8 @@ final class Hooks {
 	public static function onBeforePageDisplay( OutputPage &$out, Skin &$skin ) {
 		$entityNamespaceLookup = WikibaseRepo::getDefaultInstance()->getEntityNamespaceLookup();
 
-		if ( $entityNamespaceLookup->isEntityNamespace( $out->getTitle()->getNamespace() ) ) {
+		$ns = $out->getTitle()->getNamespace();
+		if ( $entityNamespaceLookup->isEntityNamespace( $ns ) || $ns === NS_SPECIAL ) {
 			$out->addModuleStyles( 'ext.wikidata-org.badges' );
 		}
 		return true;
