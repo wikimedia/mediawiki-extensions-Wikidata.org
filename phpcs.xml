@@ -2,4 +2,5 @@
 <ruleset>
 	<rule ref="vendor/wikibase/wikibase-codesniffer/Wikibase"/>
 	<file>.</file>
+	<exclude-pattern>Wikidata.org.php</exclude-pattern>
 </ruleset>
