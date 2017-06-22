@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Vitorvicentevalente"
+			"Vitorvicentevalente",
+			"Hamilton Abreu"
 		]
 	},
+	"wikidata-org-desc": "Configuração para, e personalizações do, Wikibase que são específicas ao wikidata.org",
 	"data-access": "Acesso a dados"
 }
