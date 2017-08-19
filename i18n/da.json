@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Lucie-Aimée Kaffee"
+			"Lucie-Aimée Kaffee",
+			"Joedalton"
 		]
 	},
+	"wikidata-org-desc": "Konfiguration for og tilpasninger til Wikibase som er specifikke for wikidata.org",
 	"data-access": "Dataadgang"
 }
