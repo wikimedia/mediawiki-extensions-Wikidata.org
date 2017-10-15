@@ -14,7 +14,7 @@ use Wikibase\Repo\WikibaseRepo;
  *
  * @since 0.1
  *
- * @licence GNU GPL v2+
+ * @license GNU GPL v2+
  * @author Bene* < benestar.wikimedia@gmail.com >
  * @author Lucie-Aimée Kaffee < lucie.kaffee@wikimedia.org >
  */
@@ -28,8 +28,6 @@ final class Hooks {
 	 *
 	 * @param OutputPage $out
 	 * @param Skin $skin
-	 *
-	 * @return bool
 	 */
 	public static function onBeforePageDisplay( OutputPage &$out, Skin &$skin ) {
 		$entityNamespaceLookup = WikibaseRepo::getDefaultInstance()->getEntityNamespaceLookup();
@@ -38,7 +36,6 @@ final class Hooks {
 		if ( $entityNamespaceLookup->isEntityNamespace( $ns ) || $ns === NS_SPECIAL ) {
 			$out->addModuleStyles( 'ext.wikidata-org.badges' );
 		}
-		return true;
 	}
 
 	/**
@@ -46,7 +43,6 @@ final class Hooks {
 	*
 	* @param SkinTemplate $skin
 	* @param QuickTemplate $template
-	* @return bool
 	*/
 	public static function onSkinTemplateOutputPageBeforeExec(
 		SkinTemplate &$skin,
@@ -60,7 +56,6 @@ final class Hooks {
 		);
 		$template->set( 'data-access', $link );
 		$template->data['footerlinks']['places'][] = 'data-access';
-		return true;
 	}
 
 }

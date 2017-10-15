@@ -73,5 +73,4 @@ $GLOBALS['wgExtensionFunctions'][] = function() {
 		$wgResourceModules,
 		include __DIR__ . '/resources/Resources.php'
 	);
-
 };
