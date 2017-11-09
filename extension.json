@@ -1,0 +1,32 @@
+{
+	"name": "Wikidata.org",
+	"version": "1.0.0",
+	"author": "[https://www.mediawiki.org/wiki/User:Bene* Bene*]",
+	"url": "https://github.com/wmde/Wikidata.org",
+	"descriptionmsg": "wikidata-org-desc",
+	"license-name": "GPL-2.0+",
+	"type": "wikibase",
+	"MessagesDirs": {
+		"Wikidata.org": [
+			"i18n"
+		]
+	},
+	"ResourceModules": {
+		"ext.wikidata-org.badges": {
+			"position": "bottom",
+			"styles": [
+				"themes/default/wikidata-org.badges.css"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "Wikidata.org/resources"
+	},
+	"Hooks": {
+		"BeforePageDisplay": "WikidataOrg\\Hooks::onBeforePageDisplay",
+		"SkinTemplateOutputPageBeforeExec": "WikidataOrg\\Hooks::onSkinTemplateOutputPageBeforeExec"
+	},
+	"load_composer_autoloader": true,
+	"manifest_version": 2
+}
