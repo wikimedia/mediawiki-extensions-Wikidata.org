@@ -11,6 +11,9 @@
 			"i18n"
 		]
 	},
+	"AutoloadClasses": {
+		"WikidataOrg\\Hooks": "WikidataOrg.hooks.php"
+	},
 	"ResourceModules": {
 		"ext.wikidata-org.badges": {
 			"position": "bottom",

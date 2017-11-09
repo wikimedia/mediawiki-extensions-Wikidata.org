@@ -39,10 +39,5 @@
 			"phpcbf",
 			"minus-x fix ."
 		]
-	},
-	"autoload": {
-		"classmap": [
-			"WikidataOrg.hooks.php"
-		]
 	}
 }
