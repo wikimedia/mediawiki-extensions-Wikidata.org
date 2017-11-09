@@ -30,6 +30,5 @@
 		"BeforePageDisplay": "WikidataOrg\\Hooks::onBeforePageDisplay",
 		"SkinTemplateOutputPageBeforeExec": "WikidataOrg\\Hooks::onSkinTemplateOutputPageBeforeExec"
 	},
-	"load_composer_autoloader": true,
 	"manifest_version": 2
 }
