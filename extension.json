@@ -6,13 +6,16 @@
 	"descriptionmsg": "wikidata-org-desc",
 	"license-name": "GPL-2.0+",
 	"type": "wikibase",
+	"requires": {
+		"MediaWiki": ">= 1.31.0"
+	},
+	"AutoloadNamespaces": {
+		"WikidataOrg\\": "./"
+	},
 	"MessagesDirs": {
 		"Wikidata.org": [
 			"i18n"
 		]
-	},
-	"AutoloadClasses": {
-		"WikidataOrg\\Hooks": "WikidataOrg.hooks.php"
 	},
 	"ResourceModules": {
 		"ext.wikidata-org.badges": {
