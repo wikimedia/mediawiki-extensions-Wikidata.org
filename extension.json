@@ -19,7 +19,6 @@
 	},
 	"ResourceModules": {
 		"ext.wikidata-org.badges": {
-			"position": "bottom",
 			"styles": [
 				"themes/default/wikidata-org.badges.css"
 			]
