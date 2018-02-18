@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Liuxinyu970226"
+			"Liuxinyu970226",
+			"Kly"
 		]
 	},
+	"wikidata-org-desc": "針對 wikidata.org 的設置與自定義的 Wikibase",
 	"data-access": "資料存取"
 }
