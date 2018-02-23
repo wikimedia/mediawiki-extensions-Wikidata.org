@@ -15,7 +15,7 @@ use Wikibase\Repo\WikibaseRepo;
  *
  * @since 0.1
  *
- * @license GNU GPL v2+
+ * @license GPL-2.0-or-later
  * @author Bene* < benestar.wikimedia@gmail.com >
  * @author Lucie-Aimée Kaffee < lucie.kaffee@wikimedia.org >
  */
@@ -30,7 +30,7 @@ final class Hooks {
 	 * @param OutputPage $out
 	 * @param Skin $skin
 	 */
-	public static function onBeforePageDisplay( OutputPage &$out, Skin &$skin ) {
+	public static function onBeforePageDisplay( OutputPage $out, Skin $skin ) {
 		if ( !class_exists( WikibaseRepo::class ) ) {
 			throw new Exception( 'The Wikidata.org extension requires Wikibase to be installed' );
 		}
@@ -43,14 +43,14 @@ final class Hooks {
 	}
 
 	/**
-	* Add a "Data access" link to the footer
-	*
-	* @param SkinTemplate $skin
-	* @param QuickTemplate $template
-	*/
+	 * Add a "Data access" link to the footer
+	 *
+	 * @param SkinTemplate $skin
+	 * @param QuickTemplate $template
+	 */
 	public static function onSkinTemplateOutputPageBeforeExec(
-		SkinTemplate &$skin,
-		QuickTemplate &$template
+		SkinTemplate $skin,
+		QuickTemplate $template
 	) {
 		$destination = Skin::makeInternalOrExternalUrl( "Special:MyLanguage/Wikidata:Data_access" );
 		$link = Html::element(

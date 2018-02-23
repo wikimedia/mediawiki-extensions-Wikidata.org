@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<ruleset>
+	<rule ref="./vendor/mediawiki/mediawiki-codesniffer/MediaWiki">
+		<exclude name="MediaWiki.Commenting.FunctionComment.MissingParamComment" />
+	</rule>
+
+	<file>.</file>
+	<exclude-pattern>Wikidata\.org\.php</exclude-pattern>
+</ruleset>
