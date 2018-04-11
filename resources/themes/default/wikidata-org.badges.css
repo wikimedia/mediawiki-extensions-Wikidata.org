@@ -22,6 +22,7 @@
 
 .wb-badge.wb-badge-recommendedarticle,
 .wb-badge.wb-badge-goodarticle,
+.wb-badge.wb-badge-goodlist,
 .wb-badge.wb-badge-digitaldocument {
 	background-image: url( ../../images/wb-badges-silver.png );
 	/* @embed */
