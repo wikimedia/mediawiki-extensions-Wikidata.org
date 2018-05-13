@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Helmoony"
+			"Helmoony",
+			"ديفيد"
 		]
 	},
+	"wikidata-org-desc": "تكوين وتخصيصات لقاعدة ويكي خاصة بـwikidata.org",
 	"data-access": "الوصول إلى البيانات"
 }
