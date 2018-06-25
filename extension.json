@@ -10,7 +10,7 @@
 		"MediaWiki": ">= 1.31.0"
 	},
 	"AutoloadNamespaces": {
-		"WikidataOrg\\": ""
+		"WikidataOrg\\": "src/"
 	},
 	"MessagesDirs": {
 		"Wikidata.org": [
