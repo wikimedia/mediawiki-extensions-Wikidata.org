@@ -1,5 +1,5 @@
 {
-	"name": "wikibase/Wikidata.org",
+	"name": "wikibase/wikidata.org",
 	"description": "Configuration for and customizations to Wikibase that are specific to wikidata.org",
 	"type": "mediawiki-extension",
 	"version": "1.0.0",
