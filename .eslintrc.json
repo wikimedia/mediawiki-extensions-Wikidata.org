@@ -1,8 +1,7 @@
 {
 	"root": true,
-	"extends": "wikimedia",
-	"env": {
-		"browser": true,
-		"jquery": true
-	}
+	"extends": [
+		"wikimedia/client",
+		"wikimedia/jquery"
+	]
 }
