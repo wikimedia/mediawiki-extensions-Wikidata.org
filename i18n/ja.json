@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Lucie-Aimée Kaffee"
+			"Lucie-Aimée Kaffee",
+			"Afaz"
 		]
 	},
+	"wikidata-org-desc": "wikidata.org向けのWikibaseの設定とカスタマイズ",
 	"data-access": "データへのアクセス"
 }
