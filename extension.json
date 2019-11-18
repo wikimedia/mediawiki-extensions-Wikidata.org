@@ -9,7 +9,9 @@
 	"requires": {
 		"MediaWiki": ">= 1.31.0"
 	},
-	"load_composer_autoloader": true,
+	"AutoloadNamespaces": {
+		"WikidataOrg\\": "src/"
+	},
 	"MessagesDirs": {
 		"Wikidata.org": [
 			"i18n"
