@@ -28,7 +28,13 @@
 	},
 	"Hooks": {
 		"BeforePageDisplay": "WikidataOrg\\Hooks::onBeforePageDisplay",
+		"ApiMaxLagInfo": "WikidataOrg\\Hooks::onApiMaxLagInfo",
 		"SkinTemplateOutputPageBeforeExec": "WikidataOrg\\Hooks::onSkinTemplateOutputPageBeforeExec"
+	},
+	"config": {
+		"WikidataOrgQueryServiceMaxLagFactor": {
+		  "value": 3600
+		}
 	},
 	"manifest_version": 2
 }
