@@ -4,11 +4,13 @@ namespace WikidataOrg;
 
 use Exception;
 use Html;
+use MediaWiki\MediaWikiServices;
 use OutputPage;
 use QuickTemplate;
 use Skin;
 use SkinTemplate;
 use Wikibase\Repo\WikibaseRepo;
+use WikidataOrg\QueryServiceLag\CacheQueryServiceLagStore;
 
 /**
  * File defining the hook handlers for the Wikidata.org extension.
@@ -60,6 +62,45 @@ final class Hooks {
 		);
 		$template->set( 'data-access', $link );
 		$template->data['footerlinks']['places'][] = 'data-access';
+	}
+
+	/**
+	 * Handler for the ApiMaxLagInfo to add queryservice lag stats
+	 *
+	 * @see https://www.mediawiki.org/wiki/Manual:Hooks/ApiMaxLagInfo
+	 *
+	 * @param array &$lagInfo
+	 */
+	public static function onApiMaxLagInfo( array &$lagInfo ) {
+		$mw = MediaWikiServices::getInstance();
+		$config = $mw->getMainConfig();
+
+		$factor = (int)$config->get( 'WikidataOrgQueryServiceMaxLagFactor' );
+		if ( $factor <= 0 ) {
+			return;
+		}
+
+		$store = new CacheQueryServiceLagStore(
+			$mw->getMainWANObjectCache(),
+			0,
+			''
+		);
+
+		$lag = $store->getLag();
+
+		if ( $lag ) {
+			$maxDispatchLag = $lag / (float)$factor;
+			if ( $maxDispatchLag > $lagInfo['lag'] ) {
+				$lagInfo = [
+					// Host set to 'all' to indicate all of the public cluster.
+					// A future change might want to pass a real host down to this level via the cache
+					'host' => 'all',
+					'lag' => $lag,
+					'type' => 'wikibase-queryservice',
+					'queryserviceLag' => $lag,
+				];
+			}
+		}
 	}
 
 }
