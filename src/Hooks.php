@@ -82,7 +82,7 @@ final class Hooks {
 
 		$store = new CacheQueryServiceLagStore(
 			$mw->getMainWANObjectCache(),
-			0,
+			1,
 			''
 		);
 
