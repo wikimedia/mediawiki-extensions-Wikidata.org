@@ -95,7 +95,7 @@ final class Hooks {
 					// Host set to 'all' to indicate all of the public cluster.
 					// A future change might want to pass a real host down to this level via the cache
 					'host' => 'all',
-					'lag' => $lag,
+					'lag' => $maxDispatchLag,
 					'type' => 'wikibase-queryservice',
 					'queryserviceLag' => $lag,
 				];
