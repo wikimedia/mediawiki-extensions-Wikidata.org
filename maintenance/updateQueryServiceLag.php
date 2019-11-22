@@ -6,6 +6,8 @@ use Maintenance;
 use MediaWiki\Logger\LoggerFactory;
 use MediaWiki\MediaWikiServices;
 use WikidataOrg\QueryServiceLag\CacheQueryServiceLagStore;
+use WikidataOrg\QueryServiceLag\MostLaggedPooledServerProvider;
+use WikidataOrg\QueryServiceLag\WikimediaLoadBalancerQueryServicePoolStatusProvider;
 use WikidataOrg\QueryServiceLag\WikimediaPrometheusQueryServiceLagProvider;
 
 $basePath = getenv( 'MW_INSTALL_PATH' ) !== false ?
@@ -54,19 +56,19 @@ class UpdateQueryServiceLag extends Maintenance {
 		);
 		$this->addOption(
 			'lb',
-			'One or more LoadBalancers to query. e.g. "lvs1015:9090" (ignored, accepted for forward compatibility)',
-			false,
+			'One or more LoadBalancers to query. e.g. "lvs1015:9090"',
+			true,
 			true,
 			false,
 			true
 		);
 		$this->addOption(
 			'lb-pool',
-			'One LoadBalancer pool to check. e.g. "wdqs_80" (ignored, accepted for forward compatibility)',
-			false,
+			'One LoadBalancer pool to check. e.g. "wdqs_80"',
+			true,
 			true,
 			false,
-			true
+			false
 		);
 
 		$this->addOption(
@@ -86,35 +88,53 @@ class UpdateQueryServiceLag extends Maintenance {
 			$prometheusUrls[] = 'http://' . $host . '/ops/api/v1/query?query=blazegraph_lastupdated';
 		}
 		$ttl = (int)$this->getOption( 'ttl', self::TTL_DEFAULT );
+		$lbUrls = [];
+		foreach ( $this->getOption( 'lb' ) as $host ) {
+			$lbUrls[] = 'http://' . $host;
+		}
+		$lbPool = $this->getOption( 'lb-pool' );
 
 		$mw = MediaWikiServices::getInstance();
+		// For now just use the Wikibase log channel
+		$logger = LoggerFactory::getInstance( 'Wikibase' );
 
-		$provider = new WikimediaPrometheusQueryServiceLagProvider(
-			$mw->getHttpRequestFactory(),
-			// For now just use the Wikibase log channel
-			LoggerFactory::getInstance( 'Wikibase' ),
-			$prometheusUrls,
-			$clusterNames
+		$pooledLaggedProvider = new MostLaggedPooledServerProvider(
+			new WikimediaLoadBalancerQueryServicePoolStatusProvider(
+				$mw->getHttpRequestFactory(),
+				$logger,
+				$lbUrls,
+				$lbPool
+			),
+			new WikimediaPrometheusQueryServiceLagProvider(
+				$mw->getHttpRequestFactory(),
+				$logger,
+				$prometheusUrls,
+				$clusterNames
+			),
+			$logger
 		);
 
-		$lag = $provider->getLag();
+		$mostLaggedPooledServer = $pooledLaggedProvider->getMostLaggedPooledServer();
 
-		if ( $lag === null ) {
+		if ( $mostLaggedPooledServer === null ) {
 			$this->fatalError(
-				'Failed to get lag from prometheus'
+				'Failed to get lagged pooled server from prometheus and loadbalancers'
 			);
 		}
 
-		if ( $this->getOption( 'dry-run' ) ) {
-			$this->output( "Got lag of: " . $lag . ".\n" );
-		} else {
+		$lag = $mostLaggedPooledServer['lag'];
+		$server = $mostLaggedPooledServer['instance'];
+
+		$this->output( "Got lag of: " . $lag . " for instance: " . $server . ".\n" );
+
+		if ( !$this->getOption( 'dry-run' ) ) {
 			$store = new CacheQueryServiceLagStore(
 				$mw->getMainWANObjectCache(),
 				$ttl
 			);
-			$store->updateLag( $lag );
+			$store->updateLag( $server, $lag );
+			$this->output( "Stored in cache with TTL of: " . $ttl . ".\n" );
 		}
-		$this->output( "Done.\n" );
 	}
 }
 

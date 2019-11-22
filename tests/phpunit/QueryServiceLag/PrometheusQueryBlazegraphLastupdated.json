@@ -6,20 +6,11 @@
 			"metric": {
 				"__name__": "blazegraph_lastupdated",
 				"cluster": "wdqs",
-				"instance": "wdqs1004:9193",
-				"job": "blazegraph",
-				"site": "eqiad"
-			},
-			"value": [ "@time@", "@time@" ]
-		}, {
-			"metric": {
-				"__name__": "blazegraph_lastupdated",
-				"cluster": "wdqs",
 				"instance": "wdqs1005:9193",
 				"job": "blazegraph",
 				"site": "eqiad"
 			},
-			"value": [ "@time@", "@time@" ]
+			"value": ["4", "3"]
 		}, {
 			"metric": {
 				"__name__": "blazegraph_lastupdated",
@@ -28,7 +19,7 @@
 				"job": "blazegraph",
 				"site": "eqiad"
 			},
-			"value": [ "@time@", "@time@" ]
+			"value": ["6", "5"]
 		}, {
 			"metric": {
 				"__name__": "blazegraph_lastupdated",
@@ -37,25 +28,7 @@
 				"job": "blazegraph",
 				"site": "eqiad"
 			},
-			"value": [ "@time@", "@time@" ]
-		}, {
-			"metric": {
-				"__name__": "blazegraph_lastupdated",
-				"cluster": "wdqs-internal",
-				"instance": "wdqs1007:9193",
-				"job": "blazegraph",
-				"site": "eqiad"
-			},
-			"value": [ "@time@", "@time@" ]
-		}, {
-			"metric": {
-				"__name__": "blazegraph_lastupdated",
-				"cluster": "wdqs-internal",
-				"instance": "wdqs1008:9193",
-				"job": "blazegraph",
-				"site": "eqiad"
-			},
-			"value": [ "@time@", "@time@" ]
+			"value": ["8", "6"]
 		}, {
 			"metric": {
 				"__name__": "blazegraph_lastupdated",
@@ -64,7 +37,7 @@
 				"job": "blazegraph",
 				"site": "eqiad"
 			},
-			"value": [ "@time@", "@time@" ]
+			"value": ["12", "10"]
 		}, {
 			"metric": {
 				"__name__": "blazegraph_lastupdated",
@@ -73,17 +46,7 @@
 				"job": "blazegraph",
 				"site": "eqiad"
 			},
-			"value": [ "@time@", "@time@" ]
-		}, {
-			"metric": {
-				"__name__": "blazegraph_lastupdated",
-				"cluster": "wdqs",
-				"instance": "wdqs1099:9193",
-				"job": "blazegraph",
-				"site": "eqiad"
-			},
-			"value": [ "@time@", "NaN" ]
-		}
-		]
+			"value": ["13", "10"]
+		}]
 	}
 }

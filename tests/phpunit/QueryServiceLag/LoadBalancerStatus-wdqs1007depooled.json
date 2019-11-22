@@ -1,0 +1,20 @@
+{
+  "wdqs1007.eqiad.wmnet": {
+	"pooled": false,
+	"enabled": false,
+	"up": true,
+	"weight": 10
+  },
+  "wdqs1006.eqiad.wmnet": {
+	"pooled": true,
+	"enabled": true,
+	"up": true,
+	"weight": 10
+  },
+  "wdqs1004.eqiad.wmnet": {
+	"pooled": true,
+	"enabled": true,
+	"up": true,
+	"weight": 10
+  }
+}

@@ -14,7 +14,7 @@ use Psr\Log\LoggerInterface;
  * @author Marius Hoch
  * @author Alaa Sarhan
  */
-final class WikimediaPrometheusQueryServiceLagProvider implements QueryServiceLagProvider {
+class WikimediaPrometheusQueryServiceLagProvider {
 
 	/**
 	 * @var HttpRequestFactory
@@ -55,18 +55,11 @@ final class WikimediaPrometheusQueryServiceLagProvider implements QueryServiceLa
 	}
 
 	/**
-	 * @return int|null Lag in seconds or null if the lag couldn't be determined.
+	 * @return array[] Keys: Instance names such as wdqs1007
+	 *                 Values: mixed[] with keys instance(string), cluster(string), lag(int)
 	 */
-	public function getLag(): ?int {
-		$lags = $this->getLags();
-
-		// Take the median lag +1
-		sort( $lags );
-		return $lags[(int)floor( count( $lags ) / 2 + 1 )] ?? null;
-	}
-
-	private function getLags(): array {
-		$result = [];
+	public function getLags(): array {
+		$results = [];
 		foreach ( $this->prometheusUrls as $prometheusUrl ) {
 			// XXX: Custom timeout?
 			$request = $this->httpRequestFactory->create(
@@ -91,12 +84,9 @@ final class WikimediaPrometheusQueryServiceLagProvider implements QueryServiceLa
 			$value = json_decode( $request->getContent(), true );
 			foreach ( $value['data']['result'] ?? [] as $resultByInstance ) {
 
-				if ( !$this->isRelevantCluster( $resultByInstance ) ) {
-					continue;
-				}
-				$components = $this->getResultComponents( $resultByInstance );
+				$prettyResult = $this->getResultComponents( $resultByInstance );
 
-				if ( !$components ) {
+				if ( !$prettyResult ) {
 					$this->logger->warning(
 						'{method}: unexpected result from Prometheus API {apiUrl}',
 						[
@@ -108,35 +98,38 @@ final class WikimediaPrometheusQueryServiceLagProvider implements QueryServiceLa
 					continue;
 				}
 
-				$result[] = time() - $components['lastUpdated'];
+				if ( !$this->isRelevantCluster( $prettyResult['cluster'] ) ) {
+					continue;
+				}
+
+				$results[$prettyResult['instance']] = $prettyResult;
 			}
 		}
 
-		return $result;
+		return $results;
 	}
 
-	private function isRelevantCluster( array $result ): bool {
-		// This is intended to remove wdqs-test from the results
-		$cluster = $result['metric']['cluster'] ?? null;
+	private function isRelevantCluster( string $cluster ): bool {
 		return in_array( $cluster, $this->relevantClusters, true );
 	}
 
 	private function getResultComponents( array $result ): ?array {
 		$cluster = $result['metric']['cluster'] ?? null;
-		$lastUpdated = $result['value'][1] ?? null;
+		$instance = $result['metric']['instance']
+			? explode( ':', $result['metric']['instance'] )[0]
+			: null;
+		// https://prometheus.io/docs/prometheus/latest/querying/api/#expression-query-result-formats
+		$lastUpdatedTimestamp = $result['value'][0] ?? null;
+		$lastUpdatedValue = $result['value'][1] ?? null;
 
-		/**
-		 * Prometheus can sometimes return non numeric values in cases where a machine is in
-		 * some offline state. "NaN" for example.
-		 * So only count services that actually return numeric values.
-		 */
-		if ( !$cluster || !$lastUpdated || !is_numeric( $lastUpdated ) ) {
+		if ( !$cluster || !$instance || !$lastUpdatedTimestamp || !$lastUpdatedValue ) {
 			return null;
 		}
 
 		return [
 			'cluster' => $cluster,
-			'lastUpdated' => $lastUpdated,
+			'instance' => $instance,
+			'lag' => $lastUpdatedTimestamp - $lastUpdatedValue,
 		];
 	}
 }

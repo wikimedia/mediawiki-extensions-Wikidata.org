@@ -13,7 +13,7 @@ module.exports = function ( grunt ) {
 			},
 			all: [
 				'**/*.js{,on}',
-				'!{vendor,node_modules}/**'
+				'!{vendor,node_modules,tests/phpunit/QueryServiceLag}/**'
 			]
 		},
 		banana: conf.MessagesDirs,

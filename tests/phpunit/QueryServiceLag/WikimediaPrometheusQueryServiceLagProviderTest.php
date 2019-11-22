@@ -19,10 +19,10 @@ use WikidataOrg\QueryServiceLag\WikimediaPrometheusQueryServiceLagProvider;
 class WikimediaPrometheusQueryServiceLagProviderTest extends \PHPUnit\Framework\TestCase {
 
 	/**
-	 * @dataProvider getLagProvider
+	 * @dataProvider getLagsProvider
 	 */
-	public function testGetLag(
-		$expectedLag,
+	public function testGetLags(
+		$expectedLags,
 		HttpRequestFactory $httpRequestFactory,
 		array $prometheusUrls,
 		array $relevantClusters
@@ -34,17 +34,8 @@ class WikimediaPrometheusQueryServiceLagProviderTest extends \PHPUnit\Framework\
 			$relevantClusters
 		);
 
-		$actualLag = $lagProvider->getLag();
-		if ( is_int( $expectedLag ) && is_int( $actualLag ) ) {
-			// Due to the time it takes to run this after the creation of the fake responses,
-			// allow for some difference
-			$this->assertTrue(
-				abs( $expectedLag - $actualLag ) < 3,
-				"abs( $expectedLag - $actualLag ) < 3"
-			);
-		} else {
-			$this->assertSame( $expectedLag, $actualLag );
-		}
+		$lags = $lagProvider->getLags();
+		$this->assertEquals( $expectedLags, $lags );
 	}
 
 	private function newMWHttpRequestMock( $getContentCallback ) {
@@ -66,67 +57,59 @@ class WikimediaPrometheusQueryServiceLagProviderTest extends \PHPUnit\Framework\
 		return $requestFactory;
 	}
 
-	public function getLagProvider() {
+	public function getLagsProvider() {
 		$json = file_get_contents( __DIR__ . '/PrometheusQueryBlazegraphLastupdated.json' );
-		$laggedJson = file_get_contents( __DIR__ . '/PrometheusQueryBlazegraphLastupdated-lag.json' );
-
-		$timeDummyReplace = $this->getTimeDummyReplaceClosure();
+		$jsonCodfw = file_get_contents( __DIR__ . '/PrometheusQueryBlazegraphLastupdated-codfw.json' );
 
 		$failingRequest = $this->createMock( MWHttpRequest::class );
 		$failingRequest->method( 'execute' )
 			->willReturn( Status::newFatal( 'foo' ) );
-		$noLagRequest = $this->newMWHttpRequestMock( static function () use ( $timeDummyReplace, $json ) {
-			return $timeDummyReplace( $json );
+
+		$normalRequest = $this->newMWHttpRequestMock( static function () use ( $json ) {
+			return $json;
 		} );
-		$laggedRequest = $this->newMWHttpRequestMock( static function () use ( $timeDummyReplace, $laggedJson ) {
-			return $timeDummyReplace( $laggedJson );
+
+		$normalRequestCodfw = $this->newMWHttpRequestMock( static function () use ( $jsonCodfw ) {
+			return $jsonCodfw;
 		} );
-		$heavilyLaggedRequest = $this->newMWHttpRequestMock(
-			static function () use ( $timeDummyReplace, $laggedJson ) {
-				return $timeDummyReplace( $laggedJson, 2 );
-			}
-		);
 
 		return [
 			'empty prometheus URL array' => [
-				null,
+				[],
 				$this->createMock( HttpRequestFactory::class ),
 				[],
 				[ 'foo' ]
 			],
 			'failing request' => [
-				null,
+				[],
 				$this->newHttpRequestFactoryMock( [ $failingRequest ] ),
 				[ 'http://prometheus.svc.eqiad.wmnet/ops/api/v1/query?query=blazegraph_lastupdated' ],
 				[ 'wdqs' ]
 			],
-			'good request, no lag' => [
-				0,
-				$this->newHttpRequestFactoryMock( [ $noLagRequest ] ),
-				[ 'http://prometheus.svc.eqiad.wmnet/ops/api/v1/query?query=blazegraph_lastupdated' ],
-				[ 'wdqs' ]
-			],
-			'good request, some lag' => [
-				90,
-				$this->newHttpRequestFactoryMock( [ $laggedRequest ] ),
-				[ 'http://prometheus.svc.eqiad.wmnet/ops/api/v1/query?query=blazegraph_lastupdated' ],
-				[ 'wdqs', 'wdqs-internal' ]
-			],
-			'good request, bad lag' => [
-				500,
-				$this->newHttpRequestFactoryMock( [ $laggedRequest ] ),
-				[ 'http://prometheus.svc.eqiad.wmnet/ops/api/v1/query?query=blazegraph_lastupdated' ],
-				[ 'wdqs', 'wdqs-internal', 'test' ]
-			],
-			'good request, nothing in group' => [
-				null,
-				$this->newHttpRequestFactoryMock( [ $laggedRequest ] ),
-				[ 'http://prometheus.svc.eqiad.wmnet/ops/api/v1/query?query=blazegraph_lastupdated' ],
-				[ 'blah' ]
-			],
-			'multiple requests' => [
-				132,
-				$this->newHttpRequestFactoryMock( [ $laggedRequest, $heavilyLaggedRequest ] ),
+			'multiple successful requests' => [
+				[
+					'wdqs1006' => [
+						'cluster' => 'wdqs',
+						'instance' => 'wdqs1006',
+						'lag' => 1,
+					],
+					'wdqs1005' => [
+						'cluster' => 'wdqs',
+						'instance' => 'wdqs1005',
+						'lag' => 1,
+					],
+					'wdqs1003' => [
+						'cluster' => 'wdqs-internal',
+						'instance' => 'wdqs1003',
+						'lag' => 2,
+					],
+					'wdqs2004' => [
+						'cluster' => 'wdqs',
+						'instance' => 'wdqs2004',
+						'lag' => 11,
+					],
+				],
+				$this->newHttpRequestFactoryMock( [ $normalRequest, $normalRequestCodfw ] ),
 				[
 					'http://prometheus.svc.eqiad.wmnet/ops/api/v1/query?query=blazegraph_lastupdated',
 					'http://prometheus.svc.codfw.wmnet/ops/api/v1/query?query=blazegraph_lastupdated',
@@ -136,7 +119,7 @@ class WikimediaPrometheusQueryServiceLagProviderTest extends \PHPUnit\Framework\
 		];
 	}
 
-	public function getLagInvalidJSONProvider() {
+	public function getLagsInvalidJSONProvider() {
 		$emptyMock = $this->newMWHttpRequestMock( static function () {
 			return json_encode( [] );
 		} );
@@ -160,9 +143,9 @@ class WikimediaPrometheusQueryServiceLagProviderTest extends \PHPUnit\Framework\
 	}
 
 	/**
-	 * @dataProvider getLagInvalidJSONProvider
+	 * @dataProvider getLagsInvalidJSONProvider
 	 */
-	public function testGetLag_invalidJson(
+	public function testGetLags_invalidJson(
 		HttpRequestFactory $httpRequestFactory,
 		array $prometheusUrls,
 		array $relevantClusters
@@ -174,73 +157,9 @@ class WikimediaPrometheusQueryServiceLagProviderTest extends \PHPUnit\Framework\
 			$relevantClusters
 		);
 
-		$actualLag = $lagProvider->getLag();
+		$actualLag = $lagProvider->getLags();
 
-		$this->assertNull( $actualLag );
-	}
-
-	public function getLoggedErrorsJSONProvider() {
-		$json = file_get_contents( __DIR__ . '/PrometheusQueryBlazegraphLastupdated.json' );
-
-		$timeDummyReplace = $this->getTimeDummyReplaceClosure();
-		$noLagRequest = $this->newMWHttpRequestMock( static function () use ( $timeDummyReplace, $json ) {
-			return $timeDummyReplace( $json );
-		} );
-
-		return [
-			'expect no error logged if NaN in ignored cluster' => [
-				[],
-				$this->newHttpRequestFactoryMock( [ $noLagRequest ] ),
-				[ 'http://prometheus.svc.eqiad.wmnet/ops/api/v1/query?query=blazegraph_lastupdated' ],
-				[ 'wdqs-internal' ],
-			],
-			'expect error logged if NaN in relevant cluster' => [
-				[
-					[
-						'warning',
-						'{method}: unexpected result from Prometheus API {apiUrl}',
-					],
-				],
-				$this->newHttpRequestFactoryMock( [ $noLagRequest ] ),
-				[ 'http://prometheus.svc.eqiad.wmnet/ops/api/v1/query?query=blazegraph_lastupdated' ],
-				[ 'wdqs' ],
-			],
-		];
-	}
-
-	/**
-	 * @dataProvider getLoggedErrorsJSONProvider
-	 */
-	public function testGetLag_loggedErrors(
-		array $expectedErrors,
-		HttpRequestFactory $httpRequestFactory,
-		array $prometheusUrls,
-		array $relevantClusters
-	) {
-		$testLogger = new \TestLogger( true );
-		$lagProvider = new WikimediaPrometheusQueryServiceLagProvider(
-			$httpRequestFactory,
-			$testLogger,
-			$prometheusUrls,
-			$relevantClusters
-		);
-
-		$lagProvider->getLag();
-
-		$this->assertSame( $expectedErrors, $testLogger->getBuffer() );
-	}
-
-	private function getTimeDummyReplaceClosure(): \Closure {
-		// Replace all @time-n@ in a given string with the value of (time() - n)
-		return static function ( $str, $multiplier = 1 ) {
-			return preg_replace_callback(
-				'/@time(-(\d+.?\d?))?@/',
-				static function ( $match ) use ( $multiplier ) {
-					return time() - ( isset( $match[2] ) ? $match[2] * $multiplier : 0 );
-				},
-				$str
-			);
-		};
+		$this->assertSame( [], $actualLag );
 	}
 
 }

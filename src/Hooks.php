@@ -83,24 +83,26 @@ final class Hooks {
 
 		$store = new CacheQueryServiceLagStore(
 			$mw->getMainWANObjectCache(),
-			1,
-			''
+			// Need to pass TTL that is not used.. (>0)
+			1
 		);
 
-		$lag = $store->getLag();
+		$storedLag = $store->getLag();
 
-		if ( $lag ) {
-			$maxDispatchLag = $lag / (float)$factor;
-			if ( $maxDispatchLag > $lagInfo['lag'] ) {
-				$lagInfo = [
-					// Host set to 'all' to indicate all of the public cluster.
-					// A future change might want to pass a real host down to this level via the cache
-					'host' => 'all',
-					'lag' => $maxDispatchLag,
-					'type' => 'wikibase-queryservice',
-					'queryserviceLag' => $lag,
-				];
-			}
+		if ( !$storedLag ) {
+			return;
+		}
+
+		list( $server, $lag ) = $storedLag;
+
+		$fakeDispatchLag = $lag / (float)$factor;
+		if ( $fakeDispatchLag > $lagInfo['lag'] ) {
+			$lagInfo = [
+				'host' => $server,
+				'lag' => $fakeDispatchLag,
+				'type' => 'wikibase-queryservice',
+				'queryserviceLag' => $lag,
+			];
 		}
 	}
 

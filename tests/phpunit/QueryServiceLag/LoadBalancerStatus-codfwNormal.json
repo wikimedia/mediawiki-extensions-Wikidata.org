@@ -1,0 +1,8 @@
+{
+  "wdqs2002.eqiad.wmnet": {
+	"pooled": true,
+	"enabled": true,
+	"up": true,
+	"weight": 10
+  }
+}
