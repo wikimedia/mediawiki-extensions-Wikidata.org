@@ -14,9 +14,6 @@ class CacheQueryServiceLagStoreTest extends \PHPUnit\Framework\TestCase {
 	/** @var WANObjectCache */
 	private $hashCache;
 
-	/** @var string */
-	private $cacheKeyVariation;
-
 	/** @var int */
 	private $ttl;
 
@@ -25,7 +22,6 @@ class CacheQueryServiceLagStoreTest extends \PHPUnit\Framework\TestCase {
 	 */
 	protected function setUp(): void {
 		$this->hashCache = new WANObjectCache( [ 'cache' => new HashBagOStuff() ] );
-		$this->cacheKeyVariation = '';
 		$this->ttl = 10;
 	}
 
@@ -48,7 +44,7 @@ class CacheQueryServiceLagStoreTest extends \PHPUnit\Framework\TestCase {
 
 		$subject = $this->makeSubject();
 
-		$subject->updateLag( 10 );
+		$subject->updateLag( 'someServer', 10 );
 
 		$mockedTime = time() + $this->ttl + 1;
 		$this->hashCache->setMockTime( $mockedTime );
@@ -60,12 +56,12 @@ class CacheQueryServiceLagStoreTest extends \PHPUnit\Framework\TestCase {
 		$subject = $this->makeSubject();
 		$lag = 10;
 
-		$subject->updateLag( $lag );
+		$subject->updateLag( 'someServer2', $lag );
 
 		$mockedTime = time() + $this->ttl - 1;
 		$this->hashCache->setMockTime( $mockedTime );
 
-		$this->assertEquals( $lag, $subject->getLag() );
+		$this->assertEquals( [ 'someServer2', $lag ], $subject->getLag() );
 	}
 
 	public function testSubject_whenUpdatingLag_updatesLagAndTTL() {
@@ -78,7 +74,7 @@ class CacheQueryServiceLagStoreTest extends \PHPUnit\Framework\TestCase {
 		$this->hashCache->setMockTime( $oldMockedTime );
 
 		$oldLag = 42;
-		$subject->updateLag( $oldLag );
+		$subject->updateLag( 'someServer3', $oldLag );
 
 		// oldLag is now expiring at now + 20
 		// move mocked current time to right before oldLag
@@ -87,7 +83,7 @@ class CacheQueryServiceLagStoreTest extends \PHPUnit\Framework\TestCase {
 		$this->hashCache->setMockTime( $newMockedTime );
 
 		$newLag = 23;
-		$subject->updateLag( $newLag );
+		$subject->updateLag( 'someServer4', $newLag );
 
 		// newLag now will expire at now + 29
 		// move mocked current time to right before newLag
@@ -95,14 +91,13 @@ class CacheQueryServiceLagStoreTest extends \PHPUnit\Framework\TestCase {
 		$newMockedTime = $now + 28;
 		$this->hashCache->setMockTime( $newMockedTime );
 
-		$this->assertEquals( $newLag, $subject->getLag() );
+		$this->assertEquals( [ 'someServer4', $newLag ], $subject->getLag() );
 	}
 
 	private function makeSubject() {
 		return new CacheQueryServiceLagStore(
 			$this->hashCache,
-			$this->ttl,
-			$this->cacheKeyVariation
+			$this->ttl
 		);
 	}
 }

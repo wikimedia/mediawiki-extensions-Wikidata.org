@@ -1,0 +1,27 @@
+{
+	"status": "success",
+	"data": {
+		"resultType": "vector",
+		"result": [{
+			"metric": {
+				"__name__": "blazegraph_lastupdated",
+				"cluster": "wdqs",
+				"instance": "wdqs2004:9193",
+				"job": "blazegraph",
+				"site": "codfw"
+			},
+			"value": ["99", "88"]
+		},
+		  {
+			"metric": {
+			  "__name__": "blazegraph_lastupdated",
+			  "cluster": "blablabla-nothingtoseehere",
+			  "instance": "wdqs2077:9193",
+			  "job": "blazegraph",
+			  "site": "codfw"
+			},
+			"value": ["99", "88"]
+		  }
+		]
+	}
+}

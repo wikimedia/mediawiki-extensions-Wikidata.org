@@ -7,7 +7,7 @@ use WANObjectCache;
 /**
  * Manages retrieving and updating query service lag data in cache
  */
-class CacheQueryServiceLagStore implements QueryServiceLagProvider, CacheQueryServiceLagUpdater {
+class CacheQueryServiceLagStore {
 
 	private const CACHE_CLASS = 'CacheQueryServiceLagStore';
 	private const CACHE_KEY_LAG = 'lag';
@@ -15,21 +15,16 @@ class CacheQueryServiceLagStore implements QueryServiceLagProvider, CacheQuerySe
 	/** @var WANObjectCache */
 	private $cache;
 
-	/** @var string */
-	private $cacheKeyVariation;
-
 	/** @var int */
 	private $ttl;
 
 	/**
 	 * @param WANObjectCache $cache
 	 * @param int $ttl positive time-to-live in seconds for cached lag
-	 * @param string $cacheKeyVariation
 	 */
 	public function __construct(
 		WANObjectCache $cache,
-		$ttl,
-		$cacheKeyVariation = ''
+		$ttl
 	) {
 		if ( !is_int( $ttl ) || $ttl <= 0 ) {
 			throw new \InvalidArgumentException( '$ttl cannot be less or equal to 0' );
@@ -37,32 +32,49 @@ class CacheQueryServiceLagStore implements QueryServiceLagProvider, CacheQuerySe
 
 		$this->cache = $cache;
 		$this->ttl = $ttl;
-		$this->cacheKeyVariation = $cacheKeyVariation;
 	}
 
 	/**
-	 * Retrives lag from underlying cache medium
+	 * Retrieves lag from underlying cache medium
 	 *
-	 * @return int|null
+	 * @return array|null
 	 */
 	public function getLag() {
-		$lag = $this->cache->get( $this->makeCacheKey( self::CACHE_KEY_LAG ) );
-		return $lag === false ? null : $lag;
+		$lagData = $this->cache->get( $this->makeCacheKey( self::CACHE_KEY_LAG ) );
+
+		// No cached value
+		if ( $lagData === false ) {
+			return null;
+		}
+
+		// Back compat for before server was also stored in cache
+		if ( strstr( $lagData, ' ' ) === false ) {
+			return [ 'unknown', $lagData ];
+		}
+
+		// Current storage is server and lag value separated by a space
+		$values = explode( ' ', $lagData );
+		$values[1] = (int)$values[1];
+		return $values;
 	}
 
 	/**
 	 * Updates stored lag in cache.
 	 *
+	 * @param string $server
 	 * @param int $lag
 	 */
-	public function updateLag( $lag ) {
+	public function updateLag( $server, $lag ) {
+		if ( !is_string( $server ) ) {
+			throw new \InvalidArgumentException( '$server must be string.' );
+		}
 		if ( is_int( $lag ) && $lag < 0 ) {
 			throw new \InvalidArgumentException( '$lag must be null or a non-negative integer.' );
 		}
 
 		$this->cache->set(
 			$this->makeCacheKey( self::CACHE_KEY_LAG ),
-			$lag,
+			$server . ' ' . $lag,
 			$this->ttl
 		);
 	}
@@ -72,7 +84,7 @@ class CacheQueryServiceLagStore implements QueryServiceLagProvider, CacheQuerySe
 	 * @return string
 	 */
 	private function makeCacheKey( $type ) {
-		return $this->cache->makeKey( self::CACHE_CLASS, $type, $this->cacheKeyVariation );
+		return $this->cache->makeKey( self::CACHE_CLASS, $type );
 	}
 
 }
