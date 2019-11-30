@@ -59,6 +59,8 @@ class UpdateQueryServiceLag extends Maintenance {
 			false,
 			true
 		);
+
+		$this->requireExtension( 'Wikidata.org' );
 	}
 
 	public function execute() {
