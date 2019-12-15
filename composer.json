@@ -21,7 +21,9 @@
 		"irc": "irc://irc.freenode.net/wikidata"
 	},
 	"autoload": {
-		"psr-4": {"WikidataOrg\\": "src/"}
+		"psr-4": {
+			"WikidataOrg\\": "src/"
+		}
 	},
 	"require": {
 		"php": ">=5.5.9"
