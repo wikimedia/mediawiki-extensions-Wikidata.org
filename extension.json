@@ -35,7 +35,7 @@
 	},
 	"config": {
 		"WikidataOrgQueryServiceMaxLagFactor": {
-		  "value": 3600
+			"value": 3600
 		}
 	},
 	"manifest_version": 2
