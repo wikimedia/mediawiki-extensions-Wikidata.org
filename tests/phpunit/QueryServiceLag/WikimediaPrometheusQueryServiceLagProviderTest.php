@@ -106,7 +106,7 @@ class WikimediaPrometheusQueryServiceLagProviderTest extends \PHPUnit\Framework\
 		return [
 			'empty prometheus URL array' => [
 				null,
-				$this->getMock( HttpRequestFactory::class ),
+				$this->createMock( HttpRequestFactory::class ),
 				[],
 				[ 'foo' ]
 			],
