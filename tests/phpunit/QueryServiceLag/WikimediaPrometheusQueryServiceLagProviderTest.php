@@ -192,7 +192,7 @@ class WikimediaPrometheusQueryServiceLagProviderTest extends \PHPUnit\Framework\
 
 		$actualLag = $lagProvider->getLag();
 
-		$this->assertSame( null, $actualLag );
+		$this->assertNull( $actualLag );
 	}
 
 }
