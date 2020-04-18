@@ -141,7 +141,7 @@ class WikimediaPrometheusQueryServiceLagProviderTest extends \PHPUnit\Framework\
 				[ 'blah' ]
 			],
 			'multiple requests' => [
-				180,
+				132,
 				$this->newHttpRequestFactoryMock( [ $laggedRequest, $heavilyLaggedRequest ] ),
 				[
 					'http://prometheus.svc.eqiad.wmnet/ops/api/v1/query?query=blazegraph_lastupdated',
