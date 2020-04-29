@@ -58,9 +58,9 @@ class WikimediaPrometheusQueryServiceLagProvider implements QueryServiceLagProvi
 	public function getLag() {
 		$lags = $this->getLags();
 
-		// Take the median lag
+		// Take the median lag +1
 		sort( $lags );
-		return $lags[(int)floor( count( $lags ) / 2 )] ?? null;
+		return $lags[(int)floor( count( $lags ) / 2 + 1 )] ?? null;
 	}
 
 	/**
