@@ -4,7 +4,6 @@ namespace WikidataOrg\Tests\QueryServiceLag;
 
 use MediaWiki\Http\HttpRequestFactory;
 use MWHttpRequest;
-use PHPUnit4And6Compat;
 use Psr\Log\NullLogger;
 use Status;
 use WikidataOrg\QueryServiceLag\WikimediaPrometheusQueryServiceLagProvider;
@@ -18,7 +17,6 @@ use WikidataOrg\QueryServiceLag\WikimediaPrometheusQueryServiceLagProvider;
  * @author Marius Hoch
  */
 class WikimediaPrometheusQueryServiceLagProviderTest extends \PHPUnit\Framework\TestCase {
-	use PHPUnit4And6Compat;
 
 	/**
 	 * @dataProvider getLagProvider
