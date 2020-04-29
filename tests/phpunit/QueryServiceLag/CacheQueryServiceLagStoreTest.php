@@ -3,7 +3,6 @@
 namespace WikidataOrg\Tests\QueryServiceLag;
 
 use HashBagOStuff;
-use PHPUnit4And6Compat;
 use WANObjectCache;
 use WikidataOrg\QueryServiceLag\CacheQueryServiceLagStore;
 
@@ -11,7 +10,6 @@ use WikidataOrg\QueryServiceLag\CacheQueryServiceLagStore;
  * @covers \WikidataOrg\QueryServiceLag\CacheQueryServiceLagStore
  */
 class CacheQueryServiceLagStoreTest extends \PHPUnit\Framework\TestCase {
-	use PHPUnit4And6Compat;
 
 	/** @var WANObjectCache */
 	private $hashCache;
@@ -34,7 +32,7 @@ class CacheQueryServiceLagStoreTest extends \PHPUnit\Framework\TestCase {
 	public function testSuject_onInvalidTTL_throws() {
 		$this->ttl = -1;
 
-		$this->setExpectedException( \InvalidArgumentException::class );
+		$this->expectException( \InvalidArgumentException::class );
 
 		$this->makeSubject();
 	}
