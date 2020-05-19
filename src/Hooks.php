@@ -6,9 +6,7 @@ use Exception;
 use Html;
 use MediaWiki\MediaWikiServices;
 use OutputPage;
-use QuickTemplate;
 use Skin;
-use SkinTemplate;
 use Wikibase\Repo\WikibaseRepo;
 use WikidataOrg\QueryServiceLag\CacheQueryServiceLagStore;
 
@@ -47,21 +45,23 @@ final class Hooks {
 	/**
 	 * Add a "Data access" link to the footer
 	 *
-	 * @param SkinTemplate $skin
-	 * @param QuickTemplate $template
+	 * @param Skin $skin
+	 * @param string $key
+	 * @param array &$footerItems
 	 */
-	public static function onSkinTemplateOutputPageBeforeExec(
-		SkinTemplate $skin,
-		QuickTemplate $template
+	public static function onSkinAddFooterLinks(
+		Skin $skin,
+		string $key,
+		array &$footerItems
 	) {
-		$destination = Skin::makeInternalOrExternalUrl( "Special:MyLanguage/Wikidata:Data_access" );
-		$link = Html::element(
-			'a',
-			[ 'href' => $destination ],
-			$skin->msg( 'data-access' )->text()
-		);
-		$template->set( 'data-access', $link );
-		$template->data['footerlinks']['places'][] = 'data-access';
+		if ( $key === 'places' ) {
+			$href = Skin::makeInternalOrExternalUrl( 'Special:MyLanguage/Wikidata:Data_access' );
+			$footerItems['data-access'] = Html::element(
+				'a',
+				[ 'href' => $href ],
+				$skin->msg( 'data-access' )->text()
+			);
+		}
 	}
 
 	/**
