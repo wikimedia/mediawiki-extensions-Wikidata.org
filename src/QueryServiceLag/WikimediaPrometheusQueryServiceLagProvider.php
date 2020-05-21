@@ -63,9 +63,6 @@ class WikimediaPrometheusQueryServiceLagProvider implements QueryServiceLagProvi
 		return $lags[(int)floor( count( $lags ) / 2 + 1 )] ?? null;
 	}
 
-	/**
-	 * @return int[]
-	 */
 	private function getLags() {
 		$result = [];
 		foreach ( $this->prometheusUrls as $prometheusUrl ) {
@@ -118,7 +115,12 @@ class WikimediaPrometheusQueryServiceLagProvider implements QueryServiceLagProvi
 		$cluster = $result['metric']['cluster'] ?? null;
 		$lastUpdated = $result['value'][1] ?? null;
 
-		if ( !$cluster || !$lastUpdated ) {
+		/**
+		 * Prometheus can sometimes return non numeric values in cases where a machine is in
+		 * some offline state. "NaN" for example.
+		 * So only count services that actually return numeric values.
+		 */
+		if ( !$cluster || !$lastUpdated || !is_numeric( $lastUpdated ) ) {
 			return null;
 		}
 

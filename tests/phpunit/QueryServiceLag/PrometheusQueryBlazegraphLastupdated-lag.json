@@ -56,6 +56,16 @@
 				"site": "eqiad"
 			},
 			"value": ["@time@", "@time-0@"]
-		}]
+		},{
+			"metric": {
+				"__name__": "blazegraph_lastupdated",
+				"cluster": "wdqs",
+				"instance": "wdqs1099:9193",
+				"job": "blazegraph",
+				"site": "eqiad"
+			},
+			"value": ["@time@", "NaN"]
+		}
+		]
 	}
 }
