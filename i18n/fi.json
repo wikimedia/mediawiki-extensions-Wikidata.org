@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
+			"01miki10",
 			"Pyscowicz"
 		]
 	},
+	"wikidata-org-desc": "Wikibasen konfiguraatio ja muokkaukset, jotka koskevat wikidata.orgia",
 	"data-access": "Datan käyttäminen"
 }
