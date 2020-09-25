@@ -90,6 +90,10 @@ final class WikimediaPrometheusQueryServiceLagProvider implements QueryServiceLa
 
 			$value = json_decode( $request->getContent(), true );
 			foreach ( $value['data']['result'] ?? [] as $resultByInstance ) {
+
+				if ( !$this->isRelevantCluster( $resultByInstance ) ) {
+					continue;
+				}
 				$components = $this->getResultComponents( $resultByInstance );
 
 				if ( !$components ) {
@@ -102,8 +106,6 @@ final class WikimediaPrometheusQueryServiceLagProvider implements QueryServiceLa
 					);
 
 					continue;
-				} elseif ( !in_array( $components['cluster'], $this->relevantClusters ) ) {
-					continue;
 				}
 
 				$result[] = time() - $components['lastUpdated'];
@@ -111,6 +113,12 @@ final class WikimediaPrometheusQueryServiceLagProvider implements QueryServiceLa
 		}
 
 		return $result;
+	}
+
+	private function isRelevantCluster( array $result ): bool {
+		// This is intended to remove wdqs-test from the results
+		$cluster = $result['metric']['cluster'] ?? null;
+		return in_array( $cluster, $this->relevantClusters, true );
 	}
 
 	private function getResultComponents( array $result ): ?array {
