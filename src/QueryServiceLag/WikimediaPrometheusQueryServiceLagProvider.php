@@ -1,5 +1,7 @@
 <?php
 
+declare( strict_types = 1 );
+
 namespace WikidataOrg\QueryServiceLag;
 
 use MediaWiki\Http\HttpRequestFactory;
@@ -12,7 +14,7 @@ use Psr\Log\LoggerInterface;
  * @author Marius Hoch
  * @author Alaa Sarhan
  */
-class WikimediaPrometheusQueryServiceLagProvider implements QueryServiceLagProvider {
+final class WikimediaPrometheusQueryServiceLagProvider implements QueryServiceLagProvider {
 
 	/**
 	 * @var HttpRequestFactory
@@ -43,8 +45,8 @@ class WikimediaPrometheusQueryServiceLagProvider implements QueryServiceLagProvi
 	public function __construct(
 		HttpRequestFactory $httpRequestFactory,
 		LoggerInterface $logger,
-		$prometheusUrls,
-		$relevantClusters
+		array $prometheusUrls,
+		array $relevantClusters
 	) {
 		$this->prometheusUrls = $prometheusUrls;
 		$this->relevantClusters = $relevantClusters;
@@ -55,7 +57,7 @@ class WikimediaPrometheusQueryServiceLagProvider implements QueryServiceLagProvi
 	/**
 	 * @return int|null Lag in seconds or null if the lag couldn't be determined.
 	 */
-	public function getLag() {
+	public function getLag(): ?int {
 		$lags = $this->getLags();
 
 		// Take the median lag +1
@@ -63,7 +65,7 @@ class WikimediaPrometheusQueryServiceLagProvider implements QueryServiceLagProvi
 		return $lags[(int)floor( count( $lags ) / 2 + 1 )] ?? null;
 	}
 
-	private function getLags() {
+	private function getLags(): array {
 		$result = [];
 		foreach ( $this->prometheusUrls as $prometheusUrl ) {
 			// XXX: Custom timeout?
