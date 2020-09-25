@@ -72,16 +72,7 @@ class WikimediaPrometheusQueryServiceLagProviderTest extends \PHPUnit\Framework\
 		$json = file_get_contents( __DIR__ . '/PrometheusQueryBlazegraphLastupdated.json' );
 		$laggedJson = file_get_contents( __DIR__ . '/PrometheusQueryBlazegraphLastupdated-lag.json' );
 
-		// Replace all @time-n@ in a given string with the value of (time() - n)
-		$timeDummyReplace = function ( $str, $multiplier = 1 ) {
-			return preg_replace_callback(
-				'/@time(-(\d+.?\d?))?@/',
-				function ( $match ) use ( $multiplier ) {
-					return time() - ( isset( $match[2] ) ? $match[2] * $multiplier : 0 );
-				},
-				$str
-			);
-		};
+		$timeDummyReplace = $this->getTimeDummyReplaceClosure();
 
 		$failingRequest = $this->getMockBuilder( MWHttpRequest::class )
 						->disableOriginalConstructor()
@@ -191,6 +182,19 @@ class WikimediaPrometheusQueryServiceLagProviderTest extends \PHPUnit\Framework\
 		$actualLag = $lagProvider->getLag();
 
 		$this->assertNull( $actualLag );
+	}
+
+	private function getTimeDummyReplaceClosure(): \Closure {
+		// Replace all @time-n@ in a given string with the value of (time() - n)
+		return function ( $str, $multiplier = 1 ) {
+			return preg_replace_callback(
+				'/@time(-(\d+.?\d?))?@/',
+				function ( $match ) use ( $multiplier ) {
+					return time() - ( isset( $match[2] ) ? $match[2] * $multiplier : 0 );
+				},
+				$str
+			);
+		};
 	}
 
 }
