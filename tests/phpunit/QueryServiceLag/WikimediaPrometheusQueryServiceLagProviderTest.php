@@ -184,6 +184,57 @@ class WikimediaPrometheusQueryServiceLagProviderTest extends \PHPUnit\Framework\
 		$this->assertNull( $actualLag );
 	}
 
+	public function getLoggedErrorsJSONProvider() {
+		$json = file_get_contents( __DIR__ . '/PrometheusQueryBlazegraphLastupdated.json' );
+
+		$timeDummyReplace = $this->getTimeDummyReplaceClosure();
+		$noLagRequest = $this->newMWHttpRequestMock( function () use ( $timeDummyReplace, $json ) {
+			return $timeDummyReplace( $json );
+		} );
+
+		return [
+			'expect no error logged if NaN in ignored cluster' => [
+				[],
+				$this->newHttpRequestFactoryMock( [ $noLagRequest ] ),
+				[ 'http://prometheus.svc.eqiad.wmnet/ops/api/v1/query?query=blazegraph_lastupdated' ],
+				[ 'wdqs-internal' ],
+			],
+			'expect error logged if NaN in relevant cluster' => [
+				[
+					[
+						'warning',
+						'{method}: unexpected result from Prometheus API {apiUrl}',
+					],
+				],
+				$this->newHttpRequestFactoryMock( [ $noLagRequest ] ),
+				[ 'http://prometheus.svc.eqiad.wmnet/ops/api/v1/query?query=blazegraph_lastupdated' ],
+				[ 'wdqs' ],
+			],
+		];
+	}
+
+	/**
+	 * @dataProvider getLoggedErrorsJSONProvider
+	 */
+	public function testGetLag_loggedErrors(
+		array $expectedErrors,
+		HttpRequestFactory $httpRequestFactory,
+		array $prometheusUrls,
+		array $relevantClusters
+	) {
+		$testLogger = new \TestLogger( true );
+		$lagProvider = new WikimediaPrometheusQueryServiceLagProvider(
+			$httpRequestFactory,
+			$testLogger,
+			$prometheusUrls,
+			$relevantClusters
+		);
+
+		$lagProvider->getLag();
+
+		$this->assertSame( $expectedErrors, $testLogger->getBuffer() );
+	}
+
 	private function getTimeDummyReplaceClosure(): \Closure {
 		// Replace all @time-n@ in a given string with the value of (time() - n)
 		return function ( $str, $multiplier = 1 ) {
