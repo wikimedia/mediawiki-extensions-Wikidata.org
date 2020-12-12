@@ -25,9 +25,6 @@
 			"WikidataOrg\\": "src/"
 		}
 	},
-	"require": {
-		"php": ">=5.5.9"
-	},
 	"require-dev": {
 		"mediawiki/mediawiki-codesniffer": "34.0.0",
 		"mediawiki/mediawiki-phan-config": "0.10.4",
