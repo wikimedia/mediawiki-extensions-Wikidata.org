@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Guycn2"
 		]
 	},
+	"wikidata-org-desc": "הגדרות והתאמות להרחבה ויקיבייס שייחודיים לאתר wikidata.org",
 	"data-access": "גישה לנתונים"
 }
