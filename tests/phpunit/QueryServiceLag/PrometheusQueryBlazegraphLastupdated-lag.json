@@ -2,7 +2,7 @@
 	"status": "success",
 	"data": {
 		"resultType": "vector",
-		"result": [{
+		"result": [ {
 			"metric": {
 				"__name__": "blazegraph_lastupdated",
 				"cluster": "wdqs-internal",
@@ -10,7 +10,7 @@
 				"job": "blazegraph",
 				"site": "eqiad"
 			},
-			"value": ["@time@", "@time-500@"]
+			"value": [ "@time@", "@time-500@" ]
 		}, {
 			"metric": {
 				"__name__": "blazegraph_lastupdated",
@@ -19,7 +19,7 @@
 				"job": "blazegraph",
 				"site": "eqiad"
 			},
-			"value": ["@time@", "@time-100000@"]
+			"value": [ "@time@", "@time-100000@" ]
 		}, {
 			"metric": {
 				"__name__": "blazegraph_lastupdated",
@@ -28,7 +28,7 @@
 				"job": "blazegraph",
 				"site": "eqiad"
 			},
-			"value": ["@time@", "@time-66@"]
+			"value": [ "@time@", "@time-66@" ]
 		}, {
 			"metric": {
 				"__name__": "blazegraph_lastupdated",
@@ -37,7 +37,7 @@
 				"job": "blazegraph",
 				"site": "eqiad"
 			},
-			"value": ["@time@", "@time-90@"]
+			"value": [ "@time@", "@time-90@" ]
 		}, {
 			"metric": {
 				"__name__": "blazegraph_lastupdated",
@@ -46,8 +46,8 @@
 				"job": "blazegraph",
 				"site": "eqiad"
 			},
-			"value": ["@time@", "@time-10@"]
-		} ,{
+			"value": [ "@time@", "@time-10@" ]
+		}, {
 			"metric": {
 				"__name__": "blazegraph_lastupdated",
 				"cluster": "wdqs",
@@ -55,8 +55,8 @@
 				"job": "blazegraph",
 				"site": "eqiad"
 			},
-			"value": ["@time@", "@time-0@"]
-		},{
+			"value": [ "@time@", "@time-0@" ]
+		}, {
 			"metric": {
 				"__name__": "blazegraph_lastupdated",
 				"cluster": "wdqs",
@@ -64,7 +64,7 @@
 				"job": "blazegraph",
 				"site": "eqiad"
 			},
-			"value": ["@time@", "NaN"]
+			"value": [ "@time@", "NaN" ]
 		}
 		]
 	}
