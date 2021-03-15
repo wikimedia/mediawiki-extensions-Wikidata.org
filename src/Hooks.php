@@ -34,7 +34,7 @@ final class Hooks {
 		if ( !class_exists( WikibaseRepo::class ) ) {
 			throw new Exception( 'The Wikidata.org extension requires Wikibase to be installed' );
 		}
-		$entityNamespaceLookup = WikibaseRepo::getDefaultInstance()->getEntityNamespaceLookup();
+		$entityNamespaceLookup = WikibaseRepo::getEntityNamespaceLookup();
 
 		$ns = $out->getTitle()->getNamespace();
 		if ( $entityNamespaceLookup->isEntityNamespace( $ns ) || $ns === NS_SPECIAL ) {
