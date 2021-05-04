@@ -80,14 +80,14 @@ class WikimediaPrometheusQueryServiceLagProviderTest extends \PHPUnit\Framework\
 		$failingRequest->expects( $this->any() )
 			->method( 'execute' )
 			->will( $this->returnValue( Status::newFatal( 'foo' ) ) );
-		$noLagRequest = $this->newMWHttpRequestMock( function () use ( $timeDummyReplace, $json ) {
+		$noLagRequest = $this->newMWHttpRequestMock( static function () use ( $timeDummyReplace, $json ) {
 			return $timeDummyReplace( $json );
 		} );
-		$laggedRequest = $this->newMWHttpRequestMock( function () use ( $timeDummyReplace, $laggedJson ) {
+		$laggedRequest = $this->newMWHttpRequestMock( static function () use ( $timeDummyReplace, $laggedJson ) {
 			return $timeDummyReplace( $laggedJson );
 		} );
 		$heavilyLaggedRequest = $this->newMWHttpRequestMock(
-			function () use ( $timeDummyReplace, $laggedJson ) {
+			static function () use ( $timeDummyReplace, $laggedJson ) {
 				return $timeDummyReplace( $laggedJson, 2 );
 			}
 		);
@@ -142,11 +142,11 @@ class WikimediaPrometheusQueryServiceLagProviderTest extends \PHPUnit\Framework\
 	}
 
 	public function getLagInvalidJSONProvider() {
-		$emptyMock = $this->newMWHttpRequestMock( function () {
+		$emptyMock = $this->newMWHttpRequestMock( static function () {
 			return json_encode( [] );
 		} );
 
-		$randomStuff = $this->newMWHttpRequestMock( function () {
+		$randomStuff = $this->newMWHttpRequestMock( static function () {
 			return json_encode( [ 'cookie' => [ 'monster' => [] ] ] );
 		} );
 
@@ -188,7 +188,7 @@ class WikimediaPrometheusQueryServiceLagProviderTest extends \PHPUnit\Framework\
 		$json = file_get_contents( __DIR__ . '/PrometheusQueryBlazegraphLastupdated.json' );
 
 		$timeDummyReplace = $this->getTimeDummyReplaceClosure();
-		$noLagRequest = $this->newMWHttpRequestMock( function () use ( $timeDummyReplace, $json ) {
+		$noLagRequest = $this->newMWHttpRequestMock( static function () use ( $timeDummyReplace, $json ) {
 			return $timeDummyReplace( $json );
 		} );
 
@@ -237,10 +237,10 @@ class WikimediaPrometheusQueryServiceLagProviderTest extends \PHPUnit\Framework\
 
 	private function getTimeDummyReplaceClosure(): \Closure {
 		// Replace all @time-n@ in a given string with the value of (time() - n)
-		return function ( $str, $multiplier = 1 ) {
+		return static function ( $str, $multiplier = 1 ) {
 			return preg_replace_callback(
 				'/@time(-(\d+.?\d?))?@/',
-				function ( $match ) use ( $multiplier ) {
+				static function ( $match ) use ( $multiplier ) {
 					return time() - ( isset( $match[2] ) ? $match[2] * $multiplier : 0 );
 				},
 				$str
