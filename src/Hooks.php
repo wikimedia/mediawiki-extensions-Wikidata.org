@@ -3,6 +3,7 @@
 namespace WikidataOrg;
 
 use Exception;
+use ExtensionRegistry;
 use Html;
 use MediaWiki\MediaWikiServices;
 use OutputPage;
@@ -31,7 +32,7 @@ final class Hooks {
 	 * @param Skin $skin
 	 */
 	public static function onBeforePageDisplay( OutputPage $out, Skin $skin ) {
-		if ( !class_exists( WikibaseRepo::class ) ) {
+		if ( !ExtensionRegistry::getInstance()->isLoaded( 'WikibaseRepository' ) ) {
 			throw new Exception( 'The Wikidata.org extension requires Wikibase to be installed' );
 		}
 		$entityNamespaceLookup = WikibaseRepo::getEntityNamespaceLookup();
