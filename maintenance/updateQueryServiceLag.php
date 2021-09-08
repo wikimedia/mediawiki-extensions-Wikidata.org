@@ -96,7 +96,6 @@ class UpdateQueryServiceLag extends Maintenance {
 				$mw->getMainWANObjectCache(),
 				$ttl
 			);
-			// @phan-suppress-next-line PhanTypeMismatchArgumentNullable T240141
 			$store->updateLag( $lag );
 		}
 		$this->output( "Done.\n" );
