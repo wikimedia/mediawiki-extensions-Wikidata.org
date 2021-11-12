@@ -1,9 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Revi"
+			"Revi",
+			"Underbaaar"
 		]
 	},
-	"wikidata-org-desc": "wikidata.org에서 사용되는 위키베이스 설정과 최적화",
+	"wikidata-org-desc": "Wikidata.org에서 사용되는 위키베이스 설정과 최적화",
 	"data-access": "데이터 접근"
 }
