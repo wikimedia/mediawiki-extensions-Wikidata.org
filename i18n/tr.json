@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Incelemeelemani"
+			"Incelemeelemani",
+			"MuratTheTurkish",
+			"Sezgin İbiş"
 		]
 	},
-	"wikidata-org-desc": "wikidata.org için Wikibase yapılandırma ve özelleştirmesi",
+	"wikidata-org-desc": "wikidata.org'a özgü Wikibase için yapılandırma ve özelleştirmeler",
 	"data-access": "Veri erişimi"
 }
