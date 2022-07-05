@@ -1,8 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Bugoslav"
+			"Bugoslav",
+			"MaGa",
+			"Rzuwig"
 		]
 	},
+	"wikibase-lexeme-lexicographical-data": "Leksikografski podatci",
+	"wikibase-lexeme-randomlexeme": "Slučajni leksem",
 	"data-access": "Pristup podatcima"
 }

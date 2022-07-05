@@ -1,9 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
+			"Abián",
+			"Hasley",
 			"Macofe"
 		]
 	},
 	"wikidata-org-desc": "Configuración y personalizaciones de Wikibase que son específicas para wikidata.org",
+	"wikibase-lexeme-lexicographical-data": "Datos lexicográficos",
+	"wikibase-lexeme-randomlexeme": "Lexema aleatorio",
 	"data-access": "Acceso a datos"
 }

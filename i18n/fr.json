@@ -1,10 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
+			"Ladsgroup",
 			"Lucie-Aimée Kaffee",
 			"Wladek92"
 		]
 	},
 	"wikidata-org-desc": "Configuration et personnalisation de Wikibase qui sont spécifiques à wikidata.org",
+	"wikibase-lexeme-lexicographical-data": "Données lexicographiques",
+	"wikibase-lexeme-randomlexeme": "Lexème au hasard",
 	"data-access": "Accès aux données"
 }

@@ -2,9 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"01miki10",
+			"Jnovikov",
 			"Pyscowicz"
 		]
 	},
 	"wikidata-org-desc": "Wikibasen konfiguraatio ja muokkaukset, jotka koskevat wikidata.orgia",
+	"wikibase-lexeme-randomlexeme": "Satunnainen lekseemi",
 	"data-access": "Datan käyttäminen"
 }

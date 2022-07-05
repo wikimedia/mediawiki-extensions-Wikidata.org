@@ -1,10 +1,16 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Bene*",
 			"Lucie-Aimée Kaffee"
 		]
 	},
 	"wikidata-org-desc": "Configuration for and customizations to Wikibase that are specific to wikidata.org",
+	"wikibase-lexeme-lexicographical-data": "Lexicographical data",
+	"wikibase-lexeme-randomlexeme": "Random Lexeme",
+	"wikibase-lexeme-randomlexeme-url": "Special:Random/Lexeme",
+	"wikibase-queryservice": "Query Service",
+	"wikibase-queryservice-url": "//query.wikidata.org/",
 	"data-access": "Data access"
 }

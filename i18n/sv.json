@@ -1,9 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
+			"Mahir256",
+			"Sabelöga",
 			"WikiPhoenix"
 		]
 	},
 	"wikidata-org-desc": "Konfiguration och anpassningar till Wikibase som är specifika för wikidata.org",
+	"wikibase-lexeme-lexicographical-data": "Lexikografisk data",
+	"wikibase-lexeme-randomlexeme": "Slumplexem",
+	"wikibase-queryservice": "Frågetjänst",
 	"data-access": "Dataåtkomst"
 }

@@ -1,9 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Beta16"
+			"Beta16",
+			"Epìdosis"
 		]
 	},
 	"wikidata-org-desc": "Configurazione e personalizzazioni di Wikibase che sono specifici per wikidata.org",
+	"wikibase-lexeme-lexicographical-data": "Dati lessicografici",
+	"wikibase-lexeme-randomlexeme": "Un lessema a caso",
 	"data-access": "Accesso ai dati"
 }

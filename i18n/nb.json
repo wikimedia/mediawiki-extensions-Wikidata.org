@@ -5,5 +5,8 @@
 		]
 	},
 	"wikidata-org-desc": "Konfigurasjon for og spesialiseringer av Wikibase som er spesifikke til wikidata.org",
+	"wikibase-lexeme-lexicographical-data": "Leksikografiske data",
+	"wikibase-lexeme-randomlexeme": "Tilfeldig leksem",
+	"wikibase-queryservice": "Spørringstjenesten",
 	"data-access": "Datatilgang"
 }

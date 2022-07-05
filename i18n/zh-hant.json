@@ -2,9 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Kly",
-			"Liuxinyu970226"
+			"Liuxinyu970226",
+			"VulpesVulpes825"
 		]
 	},
 	"wikidata-org-desc": "針對 wikidata.org 的設置與自定義的 Wikibase",
+	"wikibase-lexeme-lexicographical-data": "詞典編纂數據",
+	"wikibase-queryservice": "查詢服務",
 	"data-access": "資料存取"
 }

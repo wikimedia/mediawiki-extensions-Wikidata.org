@@ -2,9 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"Afaz",
-			"Lucie-Aimée Kaffee"
+			"Lucie-Aimée Kaffee",
+			"Whym"
 		]
 	},
 	"wikidata-org-desc": "wikidata.org向けのWikibaseの設定とカスタマイズ",
+	"wikibase-lexeme-lexicographical-data": "語彙データ",
+	"wikibase-lexeme-randomlexeme": "おまかせ表示（語彙素）",
+	"wikibase-queryservice": "クエリサービス",
 	"data-access": "データへのアクセス"
 }
