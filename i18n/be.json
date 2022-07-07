@@ -1,9 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Chadyka"
+			"Chadyka",
+			"Tīgelika"
 		]
 	},
 	"wikidata-org-desc": "Канфігурацыя і налады Вікібазы, спецыфічныя для wikidata.org",
+	"wikibase-lexeme-lexicographical-data": "Лексікаграфічныя дадзеныя",
+	"wikibase-lexeme-randomlexeme": "Выпадковая лексема",
+	"wikibase-queryservice": "Служба запытаў",
 	"data-access": "Доступ да звестак"
 }
