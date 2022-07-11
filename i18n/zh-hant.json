@@ -9,6 +9,7 @@
 	},
 	"wikidata-org-desc": "針對 wikidata.org 的設置與自定義的 Wikibase",
 	"wikibase-lexeme-lexicographical-data": "詞典編纂資料",
+	"wikibase-lexeme-randomlexeme": "隨機詞彙",
 	"wikibase-queryservice": "查詢服務",
 	"data-access": "資料存取"
 }
