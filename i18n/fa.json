@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"Jeeputer",
 			"Reza1615"
 		]
 	},
 	"wikidata-org-desc": "تنظیمات شخصی‌سازی ویکی‌بیس که مختص wikidata.org است",
+	"wikibase-queryservice": "سرویس پرسمان",
 	"data-access": "دسترسی داده"
 }
