@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Red Winged Duck"
+			"Red Winged Duck",
+			"Renessaince"
 		]
 	},
 	"wikidata-org-desc": "Канфігурацыя і налады Вікібазы, спэцыфічныя для wikidata.org",
+	"wikibase-lexeme-lexicographical-data": "Лексыкаграфічныя зьвесткі",
 	"data-access": "Доступ да зьвестак"
 }
