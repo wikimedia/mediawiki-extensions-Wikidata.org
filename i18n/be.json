@@ -1,9 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Chadyka"
+			"Chadyka",
+			"Tīgelika"
 		]
 	},
 	"wikidata-org-desc": "Канфігурацыя і налады Вікібазы, спецыфічныя для wikidata.org",
-	"data-access": "Доступ да звестак"
+	"data-access": "Доступ да дадзеных"
 }
