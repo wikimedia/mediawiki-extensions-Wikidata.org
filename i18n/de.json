@@ -3,11 +3,13 @@
 		"authors": [
 			"Lucie-Aimée Kaffee",
 			"Metalhead64",
-			"Nikki"
+			"Nikki",
+			"ThisCarthing"
 		]
 	},
 	"wikidata-org-desc": "Konfiguration und Anpassungen an Wikibase, die speziell für wikidata.org sind",
 	"wikibase-lexeme-lexicographical-data": "Lexikographische Daten",
 	"wikibase-lexeme-randomlexeme": "Zufälliges Lexem",
+	"wikibase-queryservice": "Abfragedienst",
 	"data-access": "Datenzugriff"
 }
