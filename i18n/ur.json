@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"BukhariSaeed"
+			"BukhariSaeed",
+			"Obaid Raza"
 		]
 	},
+	"wikidata-org-desc": "ویکی بیس کے لیے ترتیب اور تخصیصات جو کہ wikidata.org کے لیے مخصوص ہیں۔",
 	"data-access": "ڈیٹا تک رسائی"
 }
