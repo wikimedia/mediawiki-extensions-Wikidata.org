@@ -23,7 +23,7 @@ class CacheQueryServiceLagStoreTest extends \PHPUnit\Framework\TestCase {
 	/**
 	 * @return void
 	 */
-	public function setUp(): void {
+	protected function setUp(): void {
 		$this->hashCache = new WANObjectCache( [ 'cache' => new HashBagOStuff() ] );
 		$this->cacheKeyVariation = '';
 		$this->ttl = 10;

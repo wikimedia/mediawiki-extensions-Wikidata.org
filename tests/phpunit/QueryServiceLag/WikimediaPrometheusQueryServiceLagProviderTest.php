@@ -50,12 +50,10 @@ class WikimediaPrometheusQueryServiceLagProviderTest extends \PHPUnit\Framework\
 	private function newMWHttpRequestMock( $getContentCallback ) {
 		$request = $this->createMock( MWHttpRequest::class );
 
-		$request->expects( $this->any() )
-			->method( 'execute' )
-			->will( $this->returnValue( Status::newGood() ) );
-		$request->expects( $this->any() )
-			->method( 'getContent' )
-			->will( $this->returnCallback( $getContentCallback ) );
+		$request->method( 'execute' )
+			->willReturn( Status::newGood() );
+		$request->method( 'getContent' )
+			->willReturnCallback( $getContentCallback );
 
 		return $request;
 	}
@@ -74,12 +72,9 @@ class WikimediaPrometheusQueryServiceLagProviderTest extends \PHPUnit\Framework\
 
 		$timeDummyReplace = $this->getTimeDummyReplaceClosure();
 
-		$failingRequest = $this->getMockBuilder( MWHttpRequest::class )
-						->disableOriginalConstructor()
-						->getMock();
-		$failingRequest->expects( $this->any() )
-			->method( 'execute' )
-			->will( $this->returnValue( Status::newFatal( 'foo' ) ) );
+		$failingRequest = $this->createMock( MWHttpRequest::class );
+		$failingRequest->method( 'execute' )
+			->willReturn( Status::newFatal( 'foo' ) );
 		$noLagRequest = $this->newMWHttpRequestMock( static function () use ( $timeDummyReplace, $json ) {
 			return $timeDummyReplace( $json );
 		} );
