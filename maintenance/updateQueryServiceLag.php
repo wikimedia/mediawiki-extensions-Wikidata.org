@@ -52,6 +52,22 @@ class UpdateQueryServiceLag extends Maintenance {
 			false,
 			true
 		);
+		$this->addOption(
+			'lb',
+			'One or more LoadBalancers to query. e.g. "lvs1015:9090" (ignored, accepted for forward compatibility)',
+			false,
+			true,
+			false,
+			true
+		);
+		$this->addOption(
+			'lb-pool',
+			'One LoadBalancer pool to check. e.g. "wdqs_80" (ignored, accepted for forward compatibility)',
+			false,
+			true,
+			false,
+			true
+		);
 
 		$this->addOption(
 			'ttl',
