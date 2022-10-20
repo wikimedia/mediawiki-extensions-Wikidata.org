@@ -2,12 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"Chadyka",
-			"Tīgelika"
+			"Tīgelika",
+			"Plaga med"
 		]
 	},
 	"wikidata-org-desc": "Канфігурацыя і налады Вікібазы, спецыфічныя для wikidata.org",
-	"wikibase-lexeme-lexicographical-data": "Лексікаграфічныя дадзеныя",
+	"wikibase-lexeme-lexicographical-data": "Лексікаграфічныя даныя",
 	"wikibase-lexeme-randomlexeme": "Выпадковая лексема",
 	"wikibase-queryservice": "Служба запытаў",
-	"data-access": "Доступ да дадзеных"
+	"data-access": "Доступ да даных"
 }
