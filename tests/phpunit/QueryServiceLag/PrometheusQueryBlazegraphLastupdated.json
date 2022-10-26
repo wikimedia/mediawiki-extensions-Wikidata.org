@@ -10,7 +10,7 @@
 				"job": "blazegraph",
 				"site": "eqiad"
 			},
-			"value": ["4", "3"]
+			"value": [4.0, "3"]
 		}, {
 			"metric": {
 				"__name__": "blazegraph_lastupdated",
@@ -19,7 +19,7 @@
 				"job": "blazegraph",
 				"site": "eqiad"
 			},
-			"value": ["6", "5"]
+			"value": [6.0, "5"]
 		}, {
 			"metric": {
 				"__name__": "blazegraph_lastupdated",
@@ -28,7 +28,7 @@
 				"job": "blazegraph",
 				"site": "eqiad"
 			},
-			"value": ["8", "6"]
+			"value": [8.0, "6"]
 		}, {
 			"metric": {
 				"__name__": "blazegraph_lastupdated",
@@ -37,7 +37,7 @@
 				"job": "blazegraph",
 				"site": "eqiad"
 			},
-			"value": ["12", "10"]
+			"value": [12.0, "10"]
 		}, {
 			"metric": {
 				"__name__": "blazegraph_lastupdated",
@@ -46,7 +46,7 @@
 				"job": "blazegraph",
 				"site": "eqiad"
 			},
-			"value": ["13", "10"]
+			"value": [13.0, "10"]
 		}]
 	}
 }

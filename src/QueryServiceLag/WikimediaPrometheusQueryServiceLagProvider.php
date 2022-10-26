@@ -118,18 +118,25 @@ class WikimediaPrometheusQueryServiceLagProvider {
 		$instance = $result['metric']['instance']
 			? explode( ':', $result['metric']['instance'] )[0]
 			: null;
+
+		if ( !$cluster || !$instance ) {
+			return null;
+		}
+
 		// https://prometheus.io/docs/prometheus/latest/querying/api/#expression-query-result-formats
 		$lastUpdatedTimestamp = $result['value'][0] ?? null;
 		$lastUpdatedValue = $result['value'][1] ?? null;
 
-		if ( !$cluster || !$instance || !$lastUpdatedTimestamp || !$lastUpdatedValue ) {
+		if ( !is_float( $lastUpdatedTimestamp ) ||
+			!is_string( $lastUpdatedValue ) || !ctype_digit( $lastUpdatedValue ) ) {
+			// Incomplete data: Server is almost certainly not in a valid state and thus not pooled (T321710).
 			return null;
 		}
 
 		return [
 			'cluster' => $cluster,
 			'instance' => $instance,
-			'lag' => $lastUpdatedTimestamp - $lastUpdatedValue,
+			'lag' => $lastUpdatedTimestamp - intval( $lastUpdatedValue ),
 		];
 	}
 }

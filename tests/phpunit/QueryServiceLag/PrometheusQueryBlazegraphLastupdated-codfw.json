@@ -10,7 +10,17 @@
 				"job": "blazegraph",
 				"site": "codfw"
 			},
-			"value": ["99", "88"]
+			"value": [99.0, "88"]
+		},
+		{
+			"metric": {
+				"__name__": "blazegraph_lastupdated",
+				"cluster": "wdqs",
+				"instance": "wdqs2404:9193",
+				"job": "blazegraph",
+				"site": "codfw"
+			},
+			"value": [99.0, "to-be-ignored-T321710"]
 		},
 		  {
 			"metric": {
@@ -20,7 +30,7 @@
 			  "job": "blazegraph",
 			  "site": "codfw"
 			},
-			"value": ["99", "88"]
+			"value": [99.0, "88"]
 		  }
 		]
 	}
