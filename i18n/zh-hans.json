@@ -2,11 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"Liuxinyu970226",
-			"VulpesVulpes825"
+			"VulpesVulpes825",
+			"Xzonn"
 		]
 	},
 	"wikidata-org-desc": "针对wikidata.org配置与自定义Wikibase",
 	"wikibase-lexeme-lexicographical-data": "词典编纂数据",
+	"wikibase-lexeme-randomlexeme": "随机词位",
 	"wikibase-queryservice": "查询服务",
 	"data-access": "数据访问"
 }
