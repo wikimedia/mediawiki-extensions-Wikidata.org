@@ -5,5 +5,8 @@
 		]
 	},
 	"wikidata-org-desc": "Configurationes pro e personalisationes de Wikibase que es specific a wikidata.org",
+	"wikibase-lexeme-lexicographical-data": "Datos lexicographic",
+	"wikibase-lexeme-randomlexeme": "Lexema aleatori",
+	"wikibase-queryservice": "Servicio de consulta",
 	"data-access": "Accesso a datos"
 }
