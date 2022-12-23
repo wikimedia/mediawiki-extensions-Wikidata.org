@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Eleassar"
+			"Eleassar",
+			"Nikki"
 		]
 	},
 	"wikibase-lexeme-randomlexeme": "Naključni leksem",
+	"wikibase-queryservice": "Poizvedba",
 	"data-access": "Dostop do podatkov"
 }
