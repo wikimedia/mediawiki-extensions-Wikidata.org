@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Eleassar"
+			"Eleassar",
+			"Nikki"
 		]
 	},
+	"wikidata-org-desc": "Konfiguracija in prilagoditve Wikibase, ki so specifične za wikidata.org",
 	"data-access": "Dostop do podatkov"
 }
