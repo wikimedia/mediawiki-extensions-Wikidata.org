@@ -19,6 +19,7 @@
 	},
 	"ResourceModules": {
 		"ext.wikidata-org.badges": {
+			"targets": [ "desktop", "mobile" ],
 			"styles": [
 				"themes/default/wikidata-org.badges.css"
 			]

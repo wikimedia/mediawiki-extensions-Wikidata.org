@@ -7,6 +7,8 @@
  * @author Bene* < benestar.wikimedia@gmail.com >
  */
 
+/* general badge styles are provided by the wikibase.alltargets module */
+
 /* SVG support using a transparent gradient to guarantee cross-browser
  * compatibility (browsers able to understand gradient syntax support also SVG).
  * http://pauginer.tumblr.com/post/36614680636/invisible-gradient-technique */
