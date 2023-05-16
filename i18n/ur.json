@@ -2,12 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"BukhariSaeed",
-			"Obaid Raza"
+			"Obaid Raza",
+			"Muhammad Shuaib"
 		]
 	},
-	"wikidata-org-desc": "ویکی بیس کے لیے ترتیب اور تخصیصات جو کہ wikidata.org کے لیے مخصوص ہیں۔",
-	"wikibase-lexeme-lexicographical-data": "لغت کی طرز پر ڈیٹا",
-	"wikibase-lexeme-randomlexeme": "بے ترتیب لغت",
-	"wikibase-queryservice": "کیوری خدمت",
+	"wikidata-org-desc": "ویکی بیس کی ترتیبات و تخصیصات جو wikidata.org کے لیے مخصوص ہیں",
+	"wikibase-lexeme-lexicographical-data": "تدوین لغات کا ڈیٹا",
+	"wikibase-lexeme-randomlexeme": "جستہ جستہ لغویہ",
+	"wikibase-queryservice": "کیوری خدمات",
 	"data-access": "ڈیٹا تک رسائی"
 }
