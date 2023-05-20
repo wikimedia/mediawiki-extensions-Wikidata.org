@@ -36,7 +36,7 @@ class MostLaggedPooledServerProviderTest extends \PHPUnit\Framework\TestCase {
 		return $mock;
 	}
 
-	public function provideGetMostLaggedPooledServer() {
+	public static function provideGetMostLaggedPooledServer() {
 		return [
 			'everything empty' => [ [], [], null ],
 			'1 service, 1 pooled, max lag 1' => [
