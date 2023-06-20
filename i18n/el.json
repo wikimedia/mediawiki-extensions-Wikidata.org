@@ -1,9 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Geraki"
+			"Geraki",
+			"DesVaMan"
 		]
 	},
-	"wikidata-org-desc": "Διαμόρφωση και προσαρμογές του Wikibase που είναι ειδικές για το wikidata.org",
-	"data-access": "Πρόσβαση σε δεδομένα"
+	"wikidata-org-desc": "Διαμόρφωση και προσαρμογές στη Wikibase που είναι ειδικά για το wikidata.org",
+	"wikibase-lexeme-lexicographical-data": "Λεξικογραφικά στοιχεία",
+	"wikibase-lexeme-randomlexeme": "Τυχαίο Λεξικό",
+	"wikibase-queryservice": "Υπηρεσία ερωτημάτων",
+	"data-access": "Πρόσβαση δεδομένων"
 }
