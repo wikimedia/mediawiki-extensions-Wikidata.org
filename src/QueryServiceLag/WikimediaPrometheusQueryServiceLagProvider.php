@@ -32,111 +32,79 @@ class WikimediaPrometheusQueryServiceLagProvider {
 	private $prometheusUrls;
 
 	/**
-	 * @var string[]
-	 */
-	private $relevantClusters;
-
-	/**
 	 * @param HttpRequestFactory $httpRequestFactory
 	 * @param LoggerInterface $logger
-	 * @param string[] $prometheusUrls Prometheus full query URLs to fetch lag metric
-	 * @param string[] $relevantClusters
+	 * @param string[] $prometheusUrls Prometheus query endpoint URLs (.../query)
 	 */
 	public function __construct(
 		HttpRequestFactory $httpRequestFactory,
 		LoggerInterface $logger,
-		array $prometheusUrls,
-		array $relevantClusters
+		array $prometheusUrls
 	) {
 		$this->prometheusUrls = $prometheusUrls;
-		$this->relevantClusters = $relevantClusters;
 		$this->httpRequestFactory = $httpRequestFactory;
 		$this->logger = $logger;
 	}
 
 	/**
-	 * @return array[] Keys: Instance names such as wdqs1007
-	 *                 Values: mixed[] with keys instance(string), cluster(string), lag(int)
+	 * @return array|null Array with keys 'lag' and 'host' or null
 	 */
-	public function getLags(): array {
-		$results = [];
+	public function getLag(): ?array {
+		$mostLagged = null;
 		foreach ( $this->prometheusUrls as $prometheusUrl ) {
+			$fullUrl = $prometheusUrl . '?query=' . rawurlencode( $this->getQuery() );
+
 			// XXX: Custom timeout?
-			$request = $this->httpRequestFactory->create(
-				$prometheusUrl,
-				[],
-				__METHOD__
-			);
+			$request = $this->httpRequestFactory->create( $fullUrl, [], __METHOD__ );
 			$requestStatus = $request->execute();
 
 			if ( !$requestStatus->isOK() ) {
 				$this->logger->warning(
-					'{method}: Request to Prometheus API {apiUrl} failed with {error}',
+					__METHOD__ . ': Request to Prometheus API {fullUrl} failed with {error}',
 					[
-						'method' => __METHOD__,
-						'apiUrl' => $prometheusUrl,
-						'error' => $requestStatus->getMessage()->inContentLanguage()->text()
+						'fullUrl' => $fullUrl,
+						'error' => $requestStatus->getMessage()->inContentLanguage()->text(),
 					]
 				);
 				continue;
 			}
 
-			$value = json_decode( $request->getContent(), true );
-			foreach ( $value['data']['result'] ?? [] as $resultByInstance ) {
+			$response = json_decode( $request->getContent(), true );
+			$result = $response['data']['result'][0] ?? [];
 
-				$prettyResult = $this->getResultComponents( $resultByInstance );
+			if (
+				isset( $result['value'][1] ) &&
+				isset( $result['metric']['host'] )
+			) {
+				$maxLag = intval( round( floatval( $result['value'][1] ) ) );
+				$host = $result['metric']['host'];
 
-				if ( !$prettyResult ) {
-					$this->logger->warning(
-						'{method}: unexpected result from Prometheus API {apiUrl}',
-						[
-							'method' => __METHOD__,
-							'apiUrl' => $prometheusUrl,
-						]
-					);
-
-					continue;
+				if ( $mostLagged === null || $mostLagged['lag'] < $maxLag ) {
+					$mostLagged = [
+						'lag' => $maxLag,
+						'host' => $host
+					];
 				}
-
-				if ( !$this->isRelevantCluster( $prettyResult['cluster'] ) ) {
-					continue;
-				}
-
-				$results[$prettyResult['instance']] = $prettyResult;
+			} else {
+				$this->logger->warning(
+					__METHOD__ . ': unexpected result from Prometheus API {fullUrl}: {response}',
+					[
+						'fullUrl' => $fullUrl,
+						'response' => $request->getContent()
+					]
+				);
 			}
+
 		}
 
-		return $results;
+		return $mostLagged;
 	}
 
-	private function isRelevantCluster( string $cluster ): bool {
-		return in_array( $cluster, $this->relevantClusters, true );
+	private function getQuery(): string {
+		return 'topk(1, time() - label_replace(blazegraph_lastupdated, "host", "$1", "instance", "^([^:]+):.*")' .
+			'and on(host) label_replace(rate(' .
+			'org_wikidata_query_rdf_blazegraph_filters_QueryEventSenderFilter_event_sender_filter_StartedQueries{}' .
+			'[5m]) > 1, "host", "$1", "instance", "^([^:]+):.*"))';
 	}
 
-	private function getResultComponents( array $result ): ?array {
-		$cluster = $result['metric']['cluster'] ?? null;
-		$instance = $result['metric']['instance']
-			? explode( ':', $result['metric']['instance'] )[0]
-			: null;
-
-		if ( !$cluster || !$instance ) {
-			return null;
-		}
-
-		// https://prometheus.io/docs/prometheus/latest/querying/api/#expression-query-result-formats
-		$lastUpdatedTimestamp = $result['value'][0] ?? null;
-		$lastUpdatedValue = $result['value'][1] ?? null;
-
-		if ( !is_float( $lastUpdatedTimestamp ) ||
-			!is_string( $lastUpdatedValue ) || !ctype_digit( $lastUpdatedValue ) ) {
-			// Incomplete data: Server is almost certainly not in a valid state and thus not pooled (T321710).
-			return null;
-		}
-
-		return [
-			'cluster' => $cluster,
-			'instance' => $instance,
-			'lag' => $lastUpdatedTimestamp - intval( $lastUpdatedValue ),
-		];
-	}
 }

@@ -1,5 +1,7 @@
 <?php
 
+declare( strict_types = 1 );
+
 namespace WikidataOrg\Tests\QueryServiceLag;
 
 use MediaWiki\Http\HttpRequestFactory;
@@ -22,20 +24,17 @@ class WikimediaPrometheusQueryServiceLagProviderTest extends \PHPUnit\Framework\
 	 * @dataProvider getLagsProvider
 	 */
 	public function testGetLags(
-		$expectedLags,
+		?array $expectedLags,
 		HttpRequestFactory $httpRequestFactory,
-		array $prometheusUrls,
-		array $relevantClusters
+		array $prometheusUrls
 	) {
 		$lagProvider = new WikimediaPrometheusQueryServiceLagProvider(
 			$httpRequestFactory,
 			new NullLogger(),
-			$prometheusUrls,
-			$relevantClusters
+			$prometheusUrls
 		);
 
-		$lags = $lagProvider->getLags();
-		$this->assertEquals( $expectedLags, $lags );
+		$this->assertSame( $expectedLags, $lagProvider->getLag() );
 	}
 
 	private function newMWHttpRequestMock( $getContentCallback ) {
@@ -58,8 +57,38 @@ class WikimediaPrometheusQueryServiceLagProviderTest extends \PHPUnit\Framework\
 	}
 
 	public function getLagsProvider() {
-		$json = file_get_contents( __DIR__ . '/PrometheusQueryBlazegraphLastupdated.json' );
-		$jsonCodfw = file_get_contents( __DIR__ . '/PrometheusQueryBlazegraphLastupdated-codfw.json' );
+		$json = '{
+			"status": "success",
+			"data": {
+				"resultType": "vector",
+				"result": [{
+					"metric": {
+						"cluster": "wdqs-internal",
+						"host": "wdqs1008",
+						"instance": "wdqs1008:9193",
+						"job": "blazegraph",
+						"site": "eqiad"
+					},
+					"value": [1688651698.608, "82.60800004005432"]
+				}]
+			}
+		}';
+		$jsonCodfw = '{
+			"status": "success",
+			"data": {
+				"resultType": "vector",
+				"result": [{
+					"metric": {
+						"cluster": "wdqs",
+						"host": "wdqs2011",
+						"instance": "wdqs2011:9193",
+						"job": "blazegraph",
+						"site": "codfw"
+					},
+					"value": [1688654714.502, "167.50200009346008"]
+				}]
+			}
+		}';
 
 		$failingRequest = $this->createMock( MWHttpRequest::class );
 		$failingRequest->method( 'execute' )
@@ -75,46 +104,25 @@ class WikimediaPrometheusQueryServiceLagProviderTest extends \PHPUnit\Framework\
 
 		return [
 			'empty prometheus URL array' => [
-				[],
+				null,
 				$this->createMock( HttpRequestFactory::class ),
 				[],
-				[ 'foo' ]
 			],
 			'failing request' => [
-				[],
+				null,
 				$this->newHttpRequestFactoryMock( [ $failingRequest ] ),
-				[ 'http://prometheus.svc.eqiad.wmnet/ops/api/v1/query?query=blazegraph_lastupdated' ],
-				[ 'wdqs' ]
+				[ 'http://prometheus.svc.eqiad.wmnet/ops/api/v1/query' ],
 			],
 			'multiple successful requests' => [
 				[
-					'wdqs1006' => [
-						'cluster' => 'wdqs',
-						'instance' => 'wdqs1006',
-						'lag' => 1,
-					],
-					'wdqs1005' => [
-						'cluster' => 'wdqs',
-						'instance' => 'wdqs1005',
-						'lag' => 1,
-					],
-					'wdqs1003' => [
-						'cluster' => 'wdqs-internal',
-						'instance' => 'wdqs1003',
-						'lag' => 2,
-					],
-					'wdqs2004' => [
-						'cluster' => 'wdqs',
-						'instance' => 'wdqs2004',
-						'lag' => 11,
-					],
+					'lag' => 168,
+					'host' => 'wdqs2011',
 				],
 				$this->newHttpRequestFactoryMock( [ $normalRequest, $normalRequestCodfw ] ),
 				[
-					'http://prometheus.svc.eqiad.wmnet/ops/api/v1/query?query=blazegraph_lastupdated',
-					'http://prometheus.svc.codfw.wmnet/ops/api/v1/query?query=blazegraph_lastupdated',
+					'http://prometheus.svc.eqiad.wmnet/ops/api/v1/query',
+					'http://prometheus.svc.codfw.wmnet/ops/api/v1/query',
 				],
-				[ 'wdqs', 'wdqs-internal' ]
 			],
 		];
 	}
@@ -131,13 +139,11 @@ class WikimediaPrometheusQueryServiceLagProviderTest extends \PHPUnit\Framework\
 		return [
 			[
 				$this->newHttpRequestFactoryMock( [ $emptyMock ] ),
-				[ 'http://prometheus.svc.eqiad.wmnet/ops/api/v1/query?query=blazegraph_lastupdated' ],
-				[ 'wdqs' ],
+				[ 'http://prometheus.svc.eqiad.wmnet/ops/api/v1/query' ],
 			],
 			[
 				$this->newHttpRequestFactoryMock( [ $randomStuff ] ),
-				[ 'http://prometheus.svc.eqiad.wmnet/ops/api/v1/query?query=blazegraph_lastupdated' ],
-				[ 'wdqs' ],
+				[ 'http://prometheus.svc.eqiad.wmnet/ops/api/v1/query' ],
 			],
 		];
 	}
@@ -147,19 +153,17 @@ class WikimediaPrometheusQueryServiceLagProviderTest extends \PHPUnit\Framework\
 	 */
 	public function testGetLags_invalidJson(
 		HttpRequestFactory $httpRequestFactory,
-		array $prometheusUrls,
-		array $relevantClusters
+		array $prometheusUrls
 	) {
 		$lagProvider = new WikimediaPrometheusQueryServiceLagProvider(
 			$httpRequestFactory,
 			new NullLogger(),
-			$prometheusUrls,
-			$relevantClusters
+			$prometheusUrls
 		);
 
-		$actualLag = $lagProvider->getLags();
+		$actualLag = $lagProvider->getLag();
 
-		$this->assertSame( [], $actualLag );
+		$this->assertSame( null, $actualLag );
 	}
 
 }
