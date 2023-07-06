@@ -3,6 +3,7 @@
 		"authors": [
 			"Helmoony",
 			"ديفيد",
+			"ديفيد عادل وهبة خليل 2",
 			"علاء"
 		]
 	},
@@ -10,5 +11,7 @@
 	"wikibase-lexeme-lexicographical-data": "بيانات معجمية",
 	"wikibase-lexeme-randomlexeme": "مفردة عشوائية",
 	"wikibase-queryservice": "خدمة الاستعلام",
-	"data-access": "الوصول إلى البيانات"
+	"data-access": "الوصول إلى البيانات",
+	"gadget-section-wikidata": "مرتكزة على ويكي بيانات",
+	"gadget-section-general": "عامة"
 }

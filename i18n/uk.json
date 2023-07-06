@@ -9,5 +9,8 @@
 	"wikibase-lexeme-lexicographical-data": "Лексикографічні дані",
 	"wikibase-lexeme-randomlexeme": "Випадкова Лексема",
 	"wikibase-queryservice": "Сервіс Запитів",
-	"data-access": "Доступ до даних"
+	"data-access": "Доступ до даних",
+	"gadget-section-wikidata": "Специфічні для Вікіданих",
+	"gadget-section-general": "Загальні",
+	"gadget-section-admin-gadgets": "Додатки для адміністраторів"
 }

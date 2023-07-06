@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Adam78",
+			"Bináris",
 			"Tacsipacsi"
 		]
 	},
@@ -9,5 +10,7 @@
 	"wikibase-lexeme-lexicographical-data": "Lexikográfiai adatok",
 	"wikibase-lexeme-randomlexeme": "Lexéma találomra",
 	"wikibase-queryservice": "Lekérdezési szolgáltatás",
-	"data-access": "Adathozzáférés"
+	"data-access": "Adathozzáférés",
+	"gadget-section-wikidata": "A Wikidatához kötődő",
+	"gadget-section-general": "Általános"
 }

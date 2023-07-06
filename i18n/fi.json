@@ -3,10 +3,14 @@
 		"authors": [
 			"01miki10",
 			"Jnovikov",
-			"Pyscowicz"
+			"Pyscowicz",
+			"Stryn"
 		]
 	},
 	"wikidata-org-desc": "Wikibasen konfiguraatio ja muokkaukset, jotka koskevat wikidata.orgia",
 	"wikibase-lexeme-randomlexeme": "Satunnainen lekseemi",
-	"data-access": "Datan käyttäminen"
+	"data-access": "Datan käyttäminen",
+	"gadget-section-wikidata": "Wikidata",
+	"gadget-section-general": "Yleiset",
+	"gadget-section-admin-gadgets": "Pienoisohjelmat ylläpitäjille"
 }

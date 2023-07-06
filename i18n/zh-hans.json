@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Liuxinyu970226",
+			"Stevenliuyi",
 			"VulpesVulpes825",
 			"Xzonn"
 		]
@@ -10,5 +11,7 @@
 	"wikibase-lexeme-lexicographical-data": "词典编纂数据",
 	"wikibase-lexeme-randomlexeme": "随机词位",
 	"wikibase-queryservice": "查询服务",
-	"data-access": "数据访问"
+	"data-access": "数据访问",
+	"gadget-section-wikidata": "维基数据相关工具",
+	"gadget-section-general": "通用工具"
 }

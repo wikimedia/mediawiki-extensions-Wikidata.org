@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Arkanosis",
 			"Ladsgroup",
 			"Lucie-Aimée Kaffee",
 			"Verdy p",
@@ -11,5 +12,8 @@
 	"wikibase-lexeme-lexicographical-data": "Données lexicographiques",
 	"wikibase-lexeme-randomlexeme": "Lexème au hasard",
 	"wikibase-queryservice": "Service de requête",
-	"data-access": "Accès aux données"
+	"data-access": "Accès aux données",
+	"gadget-section-wikidata": "Outils pour Wikidata",
+	"gadget-section-general": "Outils généraux",
+	"gadget-section-admin-gadgets": "Gadgets pour les administrateurs"
 }

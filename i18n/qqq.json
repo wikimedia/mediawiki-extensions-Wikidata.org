@@ -3,7 +3,8 @@
 		"authors": [
 			"Amire80",
 			"Bene*",
-			"Lucie-Aimée Kaffee"
+			"Lucie-Aimée Kaffee",
+			"Nikki"
 		]
 	},
 	"wikidata-org-desc": "{{desc|name=Wikidata.org|url=https://github.com/wmde/Wikidata.org}}",
@@ -12,5 +13,9 @@
 	"wikibase-lexeme-randomlexeme-url": "{{Ignored}\nA link to a random lexeme.",
 	"wikibase-queryservice": "A label for a link title in the sidebar. Takes the user to the query service.",
 	"wikibase-queryservice-url": "{{Ignored}}\nA URL to the Query Service.",
-	"data-access": "Title for the link to the data access page."
+	"data-access": "Title for the link to the data access page.",
+	"gadget-section-wikidata": "Section heading on the gadgets tab in the preferences. Section contains tools designed for Wikidata.",
+	"gadget-section-lexemes": "Section heading on the gadgets tab in the preferences. Section contains tools for lexicographical data.",
+	"gadget-section-general": "Section heading on the gadgets tab in the preferences. Section contains tools not specific to Wikidata.",
+	"gadget-section-admin-gadgets": "Section heading on the gadgets tab in the preferences. Section contains tools designed for admins."
 }
