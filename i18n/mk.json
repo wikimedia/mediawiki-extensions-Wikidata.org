@@ -8,5 +8,8 @@
 	"wikibase-lexeme-lexicographical-data": "Лексикографски податоци",
 	"wikibase-lexeme-randomlexeme": "Случајна лексема",
 	"wikibase-queryservice": "Побарувања",
-	"data-access": "Податочен пристап"
+	"data-access": "Податочен пристап",
+	"gadget-section-wikidata": "За Википодатоците",
+	"gadget-section-general": "Општи",
+	"gadget-section-admin-gadgets": "Алатки за администратори"
 }

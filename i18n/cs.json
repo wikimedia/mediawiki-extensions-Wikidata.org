@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Littledogboy",
 			"Matěj Suchánek"
 		]
 	},
@@ -8,5 +9,8 @@
 	"wikibase-lexeme-lexicographical-data": "Slovníková data",
 	"wikibase-lexeme-randomlexeme": "Náhodný lexém",
 	"wikibase-queryservice": "Dotazovací služba",
-	"data-access": "Přístup k datům"
+	"data-access": "Přístup k datům",
+	"gadget-section-wikidata": "Speciality pro Wikidata",
+	"gadget-section-general": "Všeobecná",
+	"gadget-section-admin-gadgets": "Udělátka pro správce"
 }

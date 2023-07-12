@@ -3,7 +3,11 @@
 		"authors": [
 			"Amire80",
 			"Bene*",
-			"Lucie-Aimée Kaffee"
+			"Jasper Deng",
+			"Legoktm",
+			"Lucie-Aimée Kaffee",
+			"Nikki",
+			"Theopolisme"
 		]
 	},
 	"wikidata-org-desc": "Configuration for and customizations to Wikibase that are specific to wikidata.org",
@@ -12,5 +16,9 @@
 	"wikibase-lexeme-randomlexeme-url": "Special:Random/Lexeme",
 	"wikibase-queryservice": "Query Service",
 	"wikibase-queryservice-url": "//query.wikidata.org/",
-	"data-access": "Data access"
+	"data-access": "Data access",
+	"gadget-section-wikidata": "Wikidata-centric",
+	"gadget-section-lexemes": "Lexemes",
+	"gadget-section-general": "General",
+	"gadget-section-admin-gadgets": "Gadgets for administrators"
 }

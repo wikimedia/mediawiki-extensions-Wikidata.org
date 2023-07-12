@@ -1,15 +1,19 @@
 {
 	"@metadata": {
 		"authors": [
-			"Aftabuzzaman",
+			"Aftab1995",
+			"Leemon2010",
 			"Mahir256",
 			"আজিজ",
-			"আফতাবুজ্জামান"
+			"আফতাবুজ্জামান",
+			"লিমন২০১০"
 		]
 	},
 	"wikidata-org-desc": "উইকিভিতের জন্য কনফিগারেশন ও অনুকূলকরণ  wikidata.org-এর জন্য নির্দিষ্ট",
 	"wikibase-lexeme-lexicographical-data": "আভিধানিক উপাত্ত",
 	"wikibase-lexeme-randomlexeme": "অজানা যেকোনো লেক্সিম",
 	"wikibase-queryservice": "কোয়েরি সেবা",
-	"data-access": "উপাত্তে প্রবেশাধিকার"
+	"data-access": "উপাত্তে প্রবেশাধিকার",
+	"gadget-section-wikidata": "উইকিউপাত্ত - কেন্দ্রীয়",
+	"gadget-section-general": "সাধারণ"
 }

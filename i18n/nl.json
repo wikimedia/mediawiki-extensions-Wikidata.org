@@ -9,5 +9,8 @@
 	"wikidata-org-desc": "Configuratie en aanpassingen aan Wikibase die specifiek zijn voor wikidata.org",
 	"wikibase-lexeme-lexicographical-data": "Lexicografische gegevens",
 	"wikibase-lexeme-randomlexeme": "Willekeurig lexeem",
-	"data-access": "Gegevenstoegang"
+	"data-access": "Gegevenstoegang",
+	"gadget-section-wikidata": "Wikidata-specifiek",
+	"gadget-section-general": "Algemeen",
+	"gadget-section-admin-gadgets": "Hulpmiddelen voor moderatoren"
 }

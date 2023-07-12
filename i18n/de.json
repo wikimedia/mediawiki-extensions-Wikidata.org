@@ -1,6 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
+			"CennoxX",
+			"Fomafix",
 			"Lucie-Aimée Kaffee",
 			"Metalhead64",
 			"Nikki",
@@ -11,5 +13,8 @@
 	"wikibase-lexeme-lexicographical-data": "Lexikographische Daten",
 	"wikibase-lexeme-randomlexeme": "Zufälliges Lexem",
 	"wikibase-queryservice": "Abfragedienst",
-	"data-access": "Datenzugriff"
+	"data-access": "Datenzugriff",
+	"gadget-section-wikidata": "Wikidata",
+	"gadget-section-general": "Allgemeines",
+	"gadget-section-admin-gadgets": "Helferlein für Administratoren"
 }

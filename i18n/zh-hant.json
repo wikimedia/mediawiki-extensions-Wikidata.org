@@ -4,6 +4,7 @@
 			"Kly",
 			"Lakejason0",
 			"Liuxinyu970226",
+			"Stevenliuyi",
 			"VulpesVulpes825"
 		]
 	},
@@ -11,5 +12,7 @@
 	"wikibase-lexeme-lexicographical-data": "詞典編纂資料",
 	"wikibase-lexeme-randomlexeme": "隨機詞彙",
 	"wikibase-queryservice": "查詢服務",
-	"data-access": "資料存取"
+	"data-access": "資料存取",
+	"gadget-section-wikidata": "維基數據相關工具",
+	"gadget-section-general": "通用工具"
 }

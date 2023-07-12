@@ -10,5 +10,8 @@
 	"wikibase-lexeme-lexicographical-data": "Dane leksykograficzne",
 	"wikibase-lexeme-randomlexeme": "Losowy leksem",
 	"wikibase-queryservice": "Obsługa zapytań",
-	"data-access": "Dostęp do danych"
+	"data-access": "Dostęp do danych",
+	"gadget-section-wikidata": "Wikidane",
+	"gadget-section-general": "Ogólne",
+	"gadget-section-admin-gadgets": "Gadżety dla administratorów"
 }

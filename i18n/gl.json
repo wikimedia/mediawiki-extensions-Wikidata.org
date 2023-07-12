@@ -1,9 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Elisardojm"
+			"Elisardojm",
+			"Vivaelcelta"
 		]
 	},
 	"wikidata-org-desc": "Configuración e personalizacións de Wikibase que son específicas para wikidata.org",
-	"data-access": "Acceso a datos"
+	"data-access": "Acceso a datos",
+	"gadget-section-general": "Xeral",
+	"gadget-section-admin-gadgets": "Trebellos para os administradores"
 }

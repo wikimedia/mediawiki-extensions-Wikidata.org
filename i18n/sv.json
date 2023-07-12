@@ -10,5 +10,8 @@
 	"wikibase-lexeme-lexicographical-data": "Lexikografisk data",
 	"wikibase-lexeme-randomlexeme": "Slumplexem",
 	"wikibase-queryservice": "Frågetjänst",
-	"data-access": "Dataåtkomst"
+	"data-access": "Dataåtkomst",
+	"gadget-section-wikidata": "Wikidata-specifikt",
+	"gadget-section-general": "Allmänt",
+	"gadget-section-admin-gadgets": "Finesser för administratörer"
 }

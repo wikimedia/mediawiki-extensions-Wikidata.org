@@ -3,6 +3,7 @@
 		"authors": [
 			"Afaz",
 			"Lucie-Aimée Kaffee",
+			"Rxy",
 			"Whym"
 		]
 	},
@@ -10,5 +11,8 @@
 	"wikibase-lexeme-lexicographical-data": "語彙データ",
 	"wikibase-lexeme-randomlexeme": "おまかせ表示（語彙素）",
 	"wikibase-queryservice": "クエリサービス",
-	"data-access": "データへのアクセス"
+	"data-access": "データへのアクセス",
+	"gadget-section-wikidata": "ウィキデータ向け",
+	"gadget-section-general": "全般",
+	"gadget-section-admin-gadgets": "管理者向けガジェット"
 }
