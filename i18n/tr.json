@@ -11,5 +11,9 @@
 	"wikibase-lexeme-lexicographical-data": "Sözlükbilimsel veri",
 	"wikibase-lexeme-randomlexeme": "Rastgele Sözcükbirim",
 	"wikibase-queryservice": "Sorgulama Servisi",
-	"data-access": "Veri erişimi"
+	"data-access": "Veri erişimi",
+	"gadget-section-wikidata": "Vikiveri-merkezli",
+	"gadget-section-lexemes": "Sözcükbirimler",
+	"gadget-section-general": "Genel",
+	"gadget-section-admin-gadgets": "Hizmetliler için küçük araçlar"
 }

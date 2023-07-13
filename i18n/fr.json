@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Arkanosis",
+			"Gomoko",
 			"Ladsgroup",
 			"Lucie-Aimée Kaffee",
 			"Verdy p",
@@ -14,6 +15,7 @@
 	"wikibase-queryservice": "Service de requête",
 	"data-access": "Accès aux données",
 	"gadget-section-wikidata": "Outils pour Wikidata",
+	"gadget-section-lexemes": "Lexèmes",
 	"gadget-section-general": "Outils généraux",
 	"gadget-section-admin-gadgets": "Gadgets pour les administrateurs"
 }

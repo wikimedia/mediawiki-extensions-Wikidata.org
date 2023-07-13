@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"Abijeet Patro",
 			"Saurmandal"
 		]
 	},
 	"wikidata-org-desc": "विकिबेस के लिए कॉन्फिगरेशन और अनुकूलन जो विशिष्ट रूप से wikidata.org के लिए हैं",
-	"data-access": "डेटा तक पहुँच"
+	"data-access": "डेटा तक पहुँच",
+	"gadget-section-general": "सामान्य"
 }

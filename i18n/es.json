@@ -4,12 +4,14 @@
 			"Abián",
 			"Hasley",
 			"Macofe",
-			"Vivaelcelta"
+			"Vivaelcelta",
+			"Whovian Biologist"
 		]
 	},
 	"wikidata-org-desc": "Configuración y personalizaciones de Wikibase que son específicas para wikidata.org",
 	"wikibase-lexeme-lexicographical-data": "Datos lexicográficos",
 	"wikibase-lexeme-randomlexeme": "Lexema aleatorio",
 	"data-access": "Acceso a datos",
+	"gadget-section-general": "General",
 	"gadget-section-admin-gadgets": "Accesorios para los administradores"
 }

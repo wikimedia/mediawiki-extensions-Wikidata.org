@@ -6,6 +6,7 @@
 			"Mahir256",
 			"আজিজ",
 			"আফতাবুজ্জামান",
+			"খাত্তাব হাসান",
 			"লিমন২০১০"
 		]
 	},
@@ -15,5 +16,6 @@
 	"wikibase-queryservice": "কোয়েরি সেবা",
 	"data-access": "উপাত্তে প্রবেশাধিকার",
 	"gadget-section-wikidata": "উইকিউপাত্ত - কেন্দ্রীয়",
-	"gadget-section-general": "সাধারণ"
+	"gadget-section-general": "সাধারণ",
+	"gadget-section-admin-gadgets": "প্রশাসকদের জন্য গ্যাজেট"
 }

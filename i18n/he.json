@@ -9,5 +9,9 @@
 	"wikibase-lexeme-lexicographical-data": "נתונים מילוניים",
 	"wikibase-lexeme-randomlexeme": "יחידה מילונית אקראית",
 	"wikibase-queryservice": "שירות שאילתות",
-	"data-access": "גישה לנתונים"
+	"data-access": "גישה לנתונים",
+	"gadget-section-wikidata": "ממוקדים בוויקינתונים",
+	"gadget-section-lexemes": "יחידות מילוניות",
+	"gadget-section-general": "כללי",
+	"gadget-section-admin-gadgets": "גאדג'טים למפעילים"
 }

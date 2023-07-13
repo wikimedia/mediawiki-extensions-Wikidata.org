@@ -14,7 +14,8 @@
 	"wikibase-lexeme-randomlexeme": "Zufälliges Lexem",
 	"wikibase-queryservice": "Abfragedienst",
 	"data-access": "Datenzugriff",
-	"gadget-section-wikidata": "Wikidata",
-	"gadget-section-general": "Allgemeines",
+	"gadget-section-wikidata": "Wikidata-zentriert",
+	"gadget-section-lexemes": "Lexeme",
+	"gadget-section-general": "Allgemein",
 	"gadget-section-admin-gadgets": "Helferlein für Administratoren"
 }
