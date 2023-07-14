@@ -8,5 +8,9 @@
 	"wikibase-lexeme-lexicographical-data": "Datos lexicographic",
 	"wikibase-lexeme-randomlexeme": "Lexema aleatori",
 	"wikibase-queryservice": "Servicio de consulta",
-	"data-access": "Accesso a datos"
+	"data-access": "Accesso a datos",
+	"gadget-section-wikidata": "Specific pro Wikidata",
+	"gadget-section-lexemes": "Lexemas",
+	"gadget-section-general": "General",
+	"gadget-section-admin-gadgets": "Gadgets pro administratores"
 }

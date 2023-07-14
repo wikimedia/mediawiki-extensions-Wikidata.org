@@ -1,9 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"Adriendelucca",
 			"Fulup"
 		]
 	},
 	"wikidata-org-desc": "Kefluniadur ha personeladur Wikibase a zo dibar da wikidata.org",
-	"data-access": "Monet d'ar roadennoù"
+	"data-access": "Monet d'ar roadennoù",
+	"gadget-section-lexemes": "Leksemoù",
+	"gadget-section-general": "Hollek"
 }
