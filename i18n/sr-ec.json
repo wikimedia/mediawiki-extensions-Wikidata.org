@@ -1,10 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
+			"Milicevic01",
 			"Zenfiric",
 			"Милан Јелисавчић"
 		]
 	},
 	"wikidata-org-desc": "Подешавања и прилагођавања Викибазе особена за wikidata.org",
-	"data-access": "Приступ подацима"
+	"data-access": "Приступ подацима",
+	"gadget-section-wikidata": "За Википодатке",
+	"gadget-section-lexemes": "Лексема",
+	"gadget-section-general": "Опште",
+	"gadget-section-admin-gadgets": "За администраторе"
 }

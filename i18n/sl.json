@@ -9,5 +9,9 @@
 	"wikibase-lexeme-lexicographical-data": "Leksikografski podatki",
 	"wikibase-lexeme-randomlexeme": "Naključni leksem",
 	"wikibase-queryservice": "Storitev poizvedbe",
-	"data-access": "Dostop do podatkov"
+	"data-access": "Dostop do podatkov",
+	"gadget-section-wikidata": "Osredotočeno na Wikipodatke",
+	"gadget-section-lexemes": "Leksemi",
+	"gadget-section-general": "Splošno",
+	"gadget-section-admin-gadgets": "Pripomočki za administratorje"
 }

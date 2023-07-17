@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Kaganer",
+			"Kareyac",
 			"Laboramus",
 			"Okras",
 			"Putnik"
@@ -13,6 +14,7 @@
 	"wikibase-queryservice": "Сервис запросов",
 	"data-access": "Доступ к данным",
 	"gadget-section-wikidata": "Для Викиданных",
+	"gadget-section-lexemes": "Лексемы",
 	"gadget-section-general": "Общие",
 	"gadget-section-admin-gadgets": "Для администраторов"
 }

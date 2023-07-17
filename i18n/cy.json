@@ -8,5 +8,7 @@
 	"wikibase-lexeme-lexicographical-data": "Data geiriadurol",
 	"wikibase-lexeme-randomlexeme": "Geirem ar hap",
 	"wikibase-queryservice": "Gwasanaeth Ymholiadau",
-	"data-access": "Mynediad i ddata"
+	"data-access": "Mynediad i ddata",
+	"gadget-section-lexemes": "Geiremau",
+	"gadget-section-general": "Cyffredinol"
 }
