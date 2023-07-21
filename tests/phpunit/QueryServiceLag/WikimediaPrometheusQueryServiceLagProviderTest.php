@@ -25,11 +25,11 @@ class WikimediaPrometheusQueryServiceLagProviderTest extends \PHPUnit\Framework\
 	 */
 	public function testGetLags(
 		?array $expectedLags,
-		HttpRequestFactory $httpRequestFactory,
+		array $responses,
 		array $prometheusUrls
 	) {
 		$lagProvider = new WikimediaPrometheusQueryServiceLagProvider(
-			$httpRequestFactory,
+			$this->newHttpRequestFactoryMock( ...$responses ),
 			new NullLogger(),
 			$prometheusUrls
 		);
@@ -37,26 +37,23 @@ class WikimediaPrometheusQueryServiceLagProviderTest extends \PHPUnit\Framework\
 		$this->assertSame( $expectedLags, $lagProvider->getLag() );
 	}
 
-	private function newMWHttpRequestMock( $getContentCallback ) {
+	private function newMWHttpRequestMock( $response ) {
 		$request = $this->createMock( MWHttpRequest::class );
-
 		$request->method( 'execute' )
-			->willReturn( Status::newGood() );
+			->willReturn( $response ? Status::newGood() : Status::newFatal( '' ) );
 		$request->method( 'getContent' )
-			->willReturnCallback( $getContentCallback );
-
+			->willReturn( $response );
 		return $request;
 	}
 
-	private function newHttpRequestFactoryMock( $httpRequestMocks ) {
+	private function newHttpRequestFactoryMock( ...$responses ) {
 		$requestFactory = $this->createMock( HttpRequestFactory::class );
 		$requestFactory->method( 'create' )
-			->will( call_user_func_array( [ $this, 'onConsecutiveCalls' ], $httpRequestMocks ) );
-
+			->willReturnOnConsecutiveCalls( ...array_map( [ $this, 'newMWHttpRequestMock' ], $responses ) );
 		return $requestFactory;
 	}
 
-	public function getLagsProvider() {
+	public static function getLagsProvider() {
 		$json = '{
 			"status": "success",
 			"data": {
@@ -90,27 +87,15 @@ class WikimediaPrometheusQueryServiceLagProviderTest extends \PHPUnit\Framework\
 			}
 		}';
 
-		$failingRequest = $this->createMock( MWHttpRequest::class );
-		$failingRequest->method( 'execute' )
-			->willReturn( Status::newFatal( 'foo' ) );
-
-		$normalRequest = $this->newMWHttpRequestMock( static function () use ( $json ) {
-			return $json;
-		} );
-
-		$normalRequestCodfw = $this->newMWHttpRequestMock( static function () use ( $jsonCodfw ) {
-			return $jsonCodfw;
-		} );
-
 		return [
 			'empty prometheus URL array' => [
 				null,
-				$this->createMock( HttpRequestFactory::class ),
+				[],
 				[],
 			],
 			'failing request' => [
 				null,
-				$this->newHttpRequestFactoryMock( [ $failingRequest ] ),
+				[ false ],
 				[ 'http://prometheus.svc.eqiad.wmnet/ops/api/v1/query' ],
 			],
 			'multiple successful requests' => [
@@ -118,7 +103,7 @@ class WikimediaPrometheusQueryServiceLagProviderTest extends \PHPUnit\Framework\
 					'lag' => 168,
 					'host' => 'wdqs2011',
 				],
-				$this->newHttpRequestFactoryMock( [ $normalRequest, $normalRequestCodfw ] ),
+				[ $json, $jsonCodfw ],
 				[
 					'http://prometheus.svc.eqiad.wmnet/ops/api/v1/query',
 					'http://prometheus.svc.codfw.wmnet/ops/api/v1/query',
@@ -127,22 +112,14 @@ class WikimediaPrometheusQueryServiceLagProviderTest extends \PHPUnit\Framework\
 		];
 	}
 
-	public function getLagsInvalidJSONProvider() {
-		$emptyMock = $this->newMWHttpRequestMock( static function () {
-			return json_encode( [] );
-		} );
-
-		$randomStuff = $this->newMWHttpRequestMock( static function () {
-			return json_encode( [ 'cookie' => [ 'monster' => [] ] ] );
-		} );
-
+	public static function getLagsInvalidJSONProvider() {
 		return [
 			[
-				$this->newHttpRequestFactoryMock( [ $emptyMock ] ),
+				[],
 				[ 'http://prometheus.svc.eqiad.wmnet/ops/api/v1/query' ],
 			],
 			[
-				$this->newHttpRequestFactoryMock( [ $randomStuff ] ),
+				[ 'cookie' => [ 'monster' => [] ] ],
 				[ 'http://prometheus.svc.eqiad.wmnet/ops/api/v1/query' ],
 			],
 		];
@@ -152,11 +129,11 @@ class WikimediaPrometheusQueryServiceLagProviderTest extends \PHPUnit\Framework\
 	 * @dataProvider getLagsInvalidJSONProvider
 	 */
 	public function testGetLags_invalidJson(
-		HttpRequestFactory $httpRequestFactory,
+		array $content,
 		array $prometheusUrls
 	) {
 		$lagProvider = new WikimediaPrometheusQueryServiceLagProvider(
-			$httpRequestFactory,
+			$this->newHttpRequestFactoryMock( json_encode( $content ) ),
 			new NullLogger(),
 			$prometheusUrls
 		);
