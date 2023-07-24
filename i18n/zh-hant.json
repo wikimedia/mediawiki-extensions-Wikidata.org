@@ -14,5 +14,7 @@
 	"wikibase-queryservice": "查詢服務",
 	"data-access": "資料存取",
 	"gadget-section-wikidata": "維基數據相關工具",
-	"gadget-section-general": "通用工具"
+	"gadget-section-lexemes": "詞位",
+	"gadget-section-general": "通用工具",
+	"gadget-section-admin-gadgets": "管理員小工具"
 }
