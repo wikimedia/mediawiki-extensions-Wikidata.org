@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Chrumps",
+			"Msz2001",
 			"Rzuwig",
 			"Woytecr"
 		]
@@ -12,6 +13,7 @@
 	"wikibase-queryservice": "Obsługa zapytań",
 	"data-access": "Dostęp do danych",
 	"gadget-section-wikidata": "Wikidane",
+	"gadget-section-lexemes": "Leksemy",
 	"gadget-section-general": "Ogólne",
 	"gadget-section-admin-gadgets": "Gadżety dla administratorów"
 }
