@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Base",
 			"Kaganer",
 			"Kareyac",
 			"Laboramus",
@@ -9,6 +10,7 @@
 		]
 	},
 	"wikidata-org-desc": "Конфигурации и настройки Wikibase, являющиеся специфическими для wikidata.org",
+	"wikibase-randomitem": "Случайный элемент",
 	"wikibase-lexeme-lexicographical-data": "Лексикографические данные",
 	"wikibase-lexeme-randomlexeme": "Случайная лексема",
 	"wikibase-queryservice": "Сервис запросов",

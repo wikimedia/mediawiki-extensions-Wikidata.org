@@ -3,11 +3,13 @@
 		"authors": [
 			"Beta16",
 			"Epìdosis",
+			"Ricordisamoa",
 			"Sannita",
 			"Vituzzu"
 		]
 	},
 	"wikidata-org-desc": "Configurazione e personalizzazioni di Wikibase che sono specifici per wikidata.org",
+	"wikibase-randomitem": "Un elemento a caso",
 	"wikibase-lexeme-lexicographical-data": "Dati lessicografici",
 	"wikibase-lexeme-randomlexeme": "Un lessema a caso",
 	"data-access": "Accesso ai dati",

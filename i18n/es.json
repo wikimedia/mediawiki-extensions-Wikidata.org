@@ -3,12 +3,14 @@
 		"authors": [
 			"Abián",
 			"Hasley",
+			"Hazard-SJ",
 			"Macofe",
 			"Vivaelcelta",
 			"Whovian Biologist"
 		]
 	},
 	"wikidata-org-desc": "Configuración y personalizaciones de Wikibase que son específicas para wikidata.org",
+	"wikibase-randomitem": "Elemento aleatorio",
 	"wikibase-lexeme-lexicographical-data": "Datos lexicográficos",
 	"wikibase-lexeme-randomlexeme": "Lexema aleatorio",
 	"data-access": "Acceso a datos",

@@ -6,10 +6,12 @@
 			"Lucie-Aimée Kaffee",
 			"Metalhead64",
 			"Nikki",
-			"ThisCarthing"
+			"ThisCarthing",
+			"Vogone"
 		]
 	},
 	"wikidata-org-desc": "Konfiguration und Anpassungen an Wikibase, die speziell für wikidata.org sind",
+	"wikibase-randomitem": "Zufälliges Datenobjekt",
 	"wikibase-lexeme-lexicographical-data": "Lexikographische Daten",
 	"wikibase-lexeme-randomlexeme": "Zufälliges Lexem",
 	"wikibase-queryservice": "Abfragedienst",

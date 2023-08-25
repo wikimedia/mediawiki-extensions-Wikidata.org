@@ -3,6 +3,7 @@
 		"authors": [
 			"Arkanosis",
 			"Gomoko",
+			"Hazard-SJ",
 			"Ladsgroup",
 			"Lucie-Aimée Kaffee",
 			"Verdy p",
@@ -10,6 +11,7 @@
 		]
 	},
 	"wikidata-org-desc": "Configuration et personnalisation de Wikibase qui sont spécifiques à wikidata.org",
+	"wikibase-randomitem": "Élément au hasard",
 	"wikibase-lexeme-lexicographical-data": "Données lexicographiques",
 	"wikibase-lexeme-randomlexeme": "Lexème au hasard",
 	"wikibase-queryservice": "Service de requête",

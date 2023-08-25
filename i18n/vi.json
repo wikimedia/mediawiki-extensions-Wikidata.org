@@ -2,10 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Minh Nguyen",
+			"Mxn",
 			"Nikki"
 		]
 	},
 	"wikidata-org-desc": "Cấu hình và tùy chỉnh Wikibase đặc biệt cho wikidata.org",
+	"wikibase-randomitem": "Khoản mục ngẫu nhiên",
 	"wikibase-lexeme-lexicographical-data": "Dữ liệu từ điển học",
 	"wikibase-lexeme-randomlexeme": "Từ vị ngẫu nhiên",
 	"wikibase-queryservice": "Dịch vụ truy vấn",

@@ -3,10 +3,12 @@
 		"authors": [
 			"Grondin",
 			"Lucie-Aimée Kaffee",
-			"Toniher"
+			"Toniher",
+			"Vriullop"
 		]
 	},
 	"wikidata-org-desc": "Configuració i personalitzacions de Wikibase que són específiques de wikidata.org",
+	"wikibase-randomitem": "Element a l'atzar",
 	"data-access": "Accés a les dades",
 	"gadget-section-wikidata": "Interfície principal",
 	"gadget-section-general": "Ginys d'edició"

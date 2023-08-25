@@ -2,10 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Piramidion",
+			"Romaine",
 			"Пан Хаунд"
 		]
 	},
 	"wikidata-org-desc": "Конфігурації та налаштування Вікібази, специфічні для wikidata.org",
+	"wikibase-randomitem": "Випадковий елемент",
 	"wikibase-lexeme-lexicographical-data": "Лексикографічні дані",
 	"wikibase-lexeme-randomlexeme": "Випадкова Лексема",
 	"wikibase-queryservice": "Сервіс Запитів",
