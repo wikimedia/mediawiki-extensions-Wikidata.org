@@ -3,13 +3,14 @@
 		"authors": [
 			"Amire80",
 			"Bene*",
-			"Lucie-Aimée Kaffee"
+			"Lucie-Aimée Kaffee",
+			"Nikki"
 		]
 	},
 	"wikidata-org-desc": "{{desc|name=Wikidata.org|url=https://github.com/wmde/Wikidata.org}}",
 	"wikibase-lexeme-lexicographical-data": "A label for a title of a section of links in the sidebar.",
 	"wikibase-lexeme-randomlexeme": "A label for a link title in the sidebar. Takes the user to a random page in the Lexeme namespace.",
-	"wikibase-lexeme-randomlexeme-url": "{{Ignored}\nA link to a random lexeme.",
+	"wikibase-lexeme-randomlexeme-url": "{{Ignored}}\nA link to a random lexeme.",
 	"wikibase-queryservice": "A label for a link title in the sidebar. Takes the user to the query service.",
 	"wikibase-queryservice-url": "{{Ignored}}\nA URL to the Query Service.",
 	"data-access": "Title for the link to the data access page."
