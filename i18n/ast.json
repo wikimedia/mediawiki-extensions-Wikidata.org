@@ -1,9 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Xuacu"
+			"Xuacu",
+			"YoaR"
 		]
 	},
 	"wikidata-org-desc": "Configuración y personalizaciones de Wikibase que son específiques pa wikidata.org",
-	"data-access": "Accesu a los datos"
+	"wikibase-lexeme-lexicographical-data": "Datos lexicográficos",
+	"data-access": "Accesu a los datos",
+	"gadget-section-lexemes": "Lexemes",
+	"gadget-section-general": "Xeneral",
+	"gadget-section-admin-gadgets": "Accesorios p'alministradores"
 }
