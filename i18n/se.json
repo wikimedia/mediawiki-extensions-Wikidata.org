@@ -7,5 +7,7 @@
 	"wikibase-lexeme-lexicographical-data": "Leksikográfalaš dieđut",
 	"wikibase-queryservice": "Jearranbálvalus",
 	"data-access": "Dieđuide beassan",
-	"gadget-section-lexemes": "Leksemat"
+	"gadget-section-wikidata": "Ráhkaduvvon Wikidata várás",
+	"gadget-section-lexemes": "Leksemat",
+	"gadget-section-general": "Obbalaš"
 }
