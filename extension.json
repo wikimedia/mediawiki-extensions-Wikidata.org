@@ -33,9 +33,14 @@
 		"remoteExtPath": "Wikidata.org/resources"
 	},
 	"Hooks": {
-		"BeforePageDisplay": "WikidataOrg\\Hooks::onBeforePageDisplay",
-		"ApiMaxLagInfo": "WikidataOrg\\Hooks::onApiMaxLagInfo",
-		"SkinAddFooterLinks": "WikidataOrg\\Hooks::onSkinAddFooterLinks"
+		"BeforePageDisplay": "main",
+		"ApiMaxLagInfo": "main",
+		"SkinAddFooterLinks": "main"
+	},
+	"HookHandlers": {
+		"main": {
+			"class": "WikidataOrg\\Hooks"
+		}
 	},
 	"config": {
 		"WikidataOrgQueryServiceMaxLagFactor": {

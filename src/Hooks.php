@@ -5,6 +5,9 @@ namespace WikidataOrg;
 use Exception;
 use ExtensionRegistry;
 use Html;
+use MediaWiki\Api\Hook\ApiMaxLagInfoHook;
+use MediaWiki\Hook\BeforePageDisplayHook;
+use MediaWiki\Hook\SkinAddFooterLinksHook;
 use MediaWiki\MediaWikiServices;
 use OutputPage;
 use Skin;
@@ -20,7 +23,11 @@ use WikidataOrg\QueryServiceLag\CacheQueryServiceLagStore;
  * @author Bene* < benestar.wikimedia@gmail.com >
  * @author Lucie-Aimée Kaffee < lucie.kaffee@wikimedia.org >
  */
-final class Hooks {
+final class Hooks implements
+	BeforePageDisplayHook,
+	ApiMaxLagInfoHook,
+	SkinAddFooterLinksHook
+{
 
 	/**
 	 * Handler for the BeforePageDisplay hook, adds the
@@ -31,7 +38,7 @@ final class Hooks {
 	 * @param OutputPage $out
 	 * @param Skin $skin
 	 */
-	public static function onBeforePageDisplay( OutputPage $out, Skin $skin ) {
+	public function onBeforePageDisplay( $out, $skin ): void {
 		if ( !ExtensionRegistry::getInstance()->isLoaded( 'WikibaseRepository' ) ) {
 			throw new Exception( 'The Wikidata.org extension requires Wikibase to be installed' );
 		}
@@ -50,7 +57,7 @@ final class Hooks {
 	 * @param string $key
 	 * @param array &$footerItems
 	 */
-	public static function onSkinAddFooterLinks(
+	public function onSkinAddFooterLinks(
 		Skin $skin,
 		string $key,
 		array &$footerItems
@@ -72,7 +79,7 @@ final class Hooks {
 	 *
 	 * @param array &$lagInfo
 	 */
-	public static function onApiMaxLagInfo( array &$lagInfo ) {
+	public function onApiMaxLagInfo( &$lagInfo ): void {
 		$mw = MediaWikiServices::getInstance();
 		$config = $mw->getMainConfig();
 
