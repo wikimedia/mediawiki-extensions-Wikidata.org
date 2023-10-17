@@ -10,6 +10,7 @@
 	"wikidata-org-desc": "{{desc|name=Wikidata.org|url=https://github.com/wmde/Wikidata.org}}",
 	"wikibase-randomitem": "A label for a link title in the sidebar. Takes the user to a random item.",
 	"wikibase-randomitem-url": "{{Ignored}}\nA link to a random item.",
+	"accesskey-n-wikibase-randomitem": "{{doc-accesskey}}\nAccess key for {{msg-mw|wikibase-randomitem}}. Replaces {{msg-mw|accesskey-n-randompage}}.",
 	"wikibase-lexeme-lexicographical-data": "A label for a title of a section of links in the sidebar.",
 	"wikibase-lexeme-randomlexeme": "A label for a link title in the sidebar. Takes the user to a random page in the Lexeme namespace.",
 	"wikibase-lexeme-randomlexeme-url": "{{Ignored}}\nA link to a random lexeme.",
