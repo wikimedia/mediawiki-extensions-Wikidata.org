@@ -4,11 +4,12 @@
 			"Incelemeelemani",
 			"Joseph",
 			"MuratTheTurkish",
-			"Sezgin İbiş"
+			"Sezgin İbiş",
+			"ToprakM"
 		]
 	},
 	"wikidata-org-desc": "wikidata.org'a özgü Wikibase için yapılandırma ve özelleştirmeler",
-	"wikibase-randomitem": "Gelişigüzel Öge",
+	"wikibase-randomitem": "Rastgele Öğe",
 	"wikibase-lexeme-lexicographical-data": "Sözlükbilimsel veri",
 	"wikibase-lexeme-randomlexeme": "Rastgele Sözlükbirim",
 	"wikibase-queryservice": "Sorgulama Servisi",
