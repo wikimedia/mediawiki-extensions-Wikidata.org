@@ -15,6 +15,7 @@
 	"wikidata-org-desc": "Configuration for and customizations to Wikibase that are specific to wikidata.org",
 	"wikibase-randomitem": "Random Item",
 	"wikibase-randomitem-url": "Special:Random/Main",
+	"accesskey-n-wikibase-randomitem": "x",
 	"wikibase-lexeme-lexicographical-data": "Lexicographical data",
 	"wikibase-lexeme-randomlexeme": "Random Lexeme",
 	"wikibase-lexeme-randomlexeme-url": "Special:Random/Lexeme",
