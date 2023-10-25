@@ -5,8 +5,13 @@
 		]
 	},
 	"wikidata-org-desc": "Tatarajah untuk dan pelangganan kepada Wikibase yang khusus kepada wikidata.org",
+	"wikibase-randomitem": "Butir Rawak",
 	"wikibase-lexeme-lexicographical-data": "Data perkamusan",
 	"wikibase-lexeme-randomlexeme": "Leksem Rawak",
 	"wikibase-queryservice": "Perkhidmatan Pertanyaan",
-	"data-access": "Capaian data"
+	"data-access": "Capaian data",
+	"gadget-section-wikidata": "berpusatkan Wikidata",
+	"gadget-section-lexemes": "Leksem",
+	"gadget-section-general": "Umum",
+	"gadget-section-admin-gadgets": "Gajet untuk penyelia"
 }
