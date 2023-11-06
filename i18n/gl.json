@@ -2,12 +2,18 @@
 	"@metadata": {
 		"authors": [
 			"Elisardojm",
+			"Toliño",
 			"Vivaelcelta"
 		]
 	},
 	"wikidata-org-desc": "Configuración e personalizacións de Wikibase que son específicas para wikidata.org",
 	"wikibase-randomitem": "Elemento aleatorio",
+	"wikibase-lexeme-lexicographical-data": "Datos lexicográficos",
+	"wikibase-lexeme-randomlexeme": "Lexema aleatorio",
+	"wikibase-queryservice": "Servizo de consulta",
 	"data-access": "Acceso a datos",
+	"gadget-section-wikidata": "Específico de Wikidata",
+	"gadget-section-lexemes": "Lexemas",
 	"gadget-section-general": "Xeral",
 	"gadget-section-admin-gadgets": "Trebellos para os administradores"
 }
