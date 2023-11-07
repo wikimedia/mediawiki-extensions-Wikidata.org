@@ -1,9 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Elisardojm"
+			"Elisardojm",
+			"Toliño",
+			"Vivaelcelta"
 		]
 	},
 	"wikidata-org-desc": "Configuración e personalizacións de Wikibase que son específicas para wikidata.org",
+	"wikibase-lexeme-lexicographical-data": "Datos lexicográficos",
+	"wikibase-lexeme-randomlexeme": "Lexema aleatorio",
+	"wikibase-queryservice": "Servizo de consulta",
 	"data-access": "Acceso a datos"
 }
