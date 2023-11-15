@@ -4,7 +4,8 @@
 			"Liuxinyu970226",
 			"Stevenliuyi",
 			"VulpesVulpes825",
-			"Xzonn"
+			"Xzonn",
+			"沈澄心"
 		]
 	},
 	"wikidata-org-desc": "针对wikidata.org配置与自定义Wikibase",
@@ -14,5 +15,7 @@
 	"wikibase-queryservice": "查询服务",
 	"data-access": "数据访问",
 	"gadget-section-wikidata": "维基数据相关工具",
-	"gadget-section-general": "通用工具"
+	"gadget-section-lexemes": "词位",
+	"gadget-section-general": "通用工具",
+	"gadget-section-admin-gadgets": "管理员小工具"
 }
