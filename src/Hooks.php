@@ -100,7 +100,7 @@ final class Hooks implements
 			return;
 		}
 
-		list( $server, $lag ) = $storedLag;
+		[ $server, $lag ] = $storedLag;
 
 		$fakeDispatchLag = $lag / (float)$factor;
 		if ( $fakeDispatchLag > $lagInfo['lag'] ) {
