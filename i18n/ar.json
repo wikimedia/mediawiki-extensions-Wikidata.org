@@ -4,14 +4,18 @@
 			"Helmoony",
 			"ديفيد",
 			"ديفيد عادل وهبة خليل 2",
-			"علاء"
+			"علاء",
+			"Michel Bakni"
 		]
 	},
 	"wikidata-org-desc": "تكوين وتخصيصات لقاعدة ويكي خاصة بـwikidata.org",
+	"wikibase-randomitem": "عنصرٌ عشوائي",
 	"wikibase-lexeme-lexicographical-data": "بيانات معجمية",
-	"wikibase-lexeme-randomlexeme": "مفردة عشوائية",
+	"wikibase-lexeme-randomlexeme": "وحدة معجمية عشوائية",
 	"wikibase-queryservice": "خدمة الاستعلام",
 	"data-access": "الوصول إلى البيانات",
 	"gadget-section-wikidata": "مرتكزة على ويكي بيانات",
-	"gadget-section-general": "عامة"
+	"gadget-section-lexemes": "وحدات معجمية",
+	"gadget-section-general": "عام",
+	"gadget-section-admin-gadgets": "أدوات للإداريين"
 }
