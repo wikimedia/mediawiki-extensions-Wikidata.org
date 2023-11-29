@@ -4,11 +4,14 @@
 			"Grondin",
 			"Lucie-Aimée Kaffee",
 			"Toniher",
-			"Vriullop"
+			"Vriullop",
+			"Paucabot"
 		]
 	},
 	"wikidata-org-desc": "Configuració i personalitzacions de Wikibase que són específiques de wikidata.org",
 	"wikibase-randomitem": "Element a l'atzar",
+	"wikibase-lexeme-randomlexeme": "Lexema aleatori",
+	"wikibase-queryservice": "Servei de consultes",
 	"data-access": "Accés a les dades",
 	"gadget-section-wikidata": "Interfície principal",
 	"gadget-section-general": "Ginys d'edició"
