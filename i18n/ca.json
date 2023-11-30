@@ -2,9 +2,14 @@
 	"@metadata": {
 		"authors": [
 			"Lucie-Aimée Kaffee",
-			"Toniher"
+			"Toniher",
+			"Grondin",
+			"Paucabot",
+			"Vriullop"
 		]
 	},
 	"wikidata-org-desc": "Configuració i personalitzacions de Wikibase que són específiques de wikidata.org",
+	"wikibase-lexeme-randomlexeme": "Lexema aleatori",
+	"wikibase-queryservice": "Servei de consultes",
 	"data-access": "Accés a les dades"
 }

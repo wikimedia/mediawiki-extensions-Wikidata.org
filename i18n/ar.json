@@ -3,12 +3,14 @@
 		"authors": [
 			"Helmoony",
 			"ديفيد",
-			"علاء"
+			"علاء",
+			"Michel Bakni",
+			"ديفيد عادل وهبة خليل 2"
 		]
 	},
 	"wikidata-org-desc": "تكوين وتخصيصات لقاعدة ويكي خاصة بـwikidata.org",
 	"wikibase-lexeme-lexicographical-data": "بيانات معجمية",
-	"wikibase-lexeme-randomlexeme": "مفردة عشوائية",
+	"wikibase-lexeme-randomlexeme": "وحدة معجمية عشوائية",
 	"wikibase-queryservice": "خدمة الاستعلام",
 	"data-access": "الوصول إلى البيانات"
 }
