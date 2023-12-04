@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Mainframe98",
+			"McDutchie",
 			"Romaine",
 			"Sjoerddebruin"
 		]
@@ -13,5 +14,5 @@
 	"data-access": "Gegevenstoegang",
 	"gadget-section-wikidata": "Wikidata-specifiek",
 	"gadget-section-general": "Algemeen",
-	"gadget-section-admin-gadgets": "Hulpmiddelen voor moderatoren"
+	"gadget-section-admin-gadgets": "Gadgets voor moderatoren"
 }
