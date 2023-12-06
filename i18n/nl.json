@@ -3,7 +3,8 @@
 		"authors": [
 			"Mainframe98",
 			"Romaine",
-			"Sjoerddebruin"
+			"Sjoerddebruin",
+			"McDutchie"
 		]
 	},
 	"wikidata-org-desc": "Configuratie en aanpassingen aan Wikibase die specifiek zijn voor wikidata.org",
@@ -13,5 +14,5 @@
 	"data-access": "Gegevenstoegang",
 	"gadget-section-wikidata": "Wikidata-specifiek",
 	"gadget-section-general": "Algemeen",
-	"gadget-section-admin-gadgets": "Hulpmiddelen voor moderatoren"
+	"gadget-section-admin-gadgets": "Gadgets voor moderatoren"
 }
