@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mirishkorlik"
+		]
+	},
+	"wikidata-org-desc": "Wikidata.org uchun maxsus boʻlgan Wikibaseni konfiguratsiya va moslashtirish",
+	"wikibase-randomitem": "Tasodifiy element",
+	"wikibase-lexeme-lexicographical-data": "Leksikografik maʼlumotlar",
+	"wikibase-lexeme-randomlexeme": "Tasodifiy leksema",
+	"wikibase-queryservice": "Soʻrovlar xizmati",
+	"data-access": "Maʼlumotlarga kirish",
+	"gadget-section-wikidata": "Vikimaʼlumotlarga asoslangan",
+	"gadget-section-lexemes": "Leksemalar",
+	"gadget-section-general": "Asosiy",
+	"gadget-section-admin-gadgets": "Administratorlar uchun gadjetlar"
+}
