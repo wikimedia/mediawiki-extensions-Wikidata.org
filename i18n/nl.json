@@ -2,9 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Mainframe98",
-			"Sjoerddebruin"
+			"Sjoerddebruin",
+			"McDutchie",
+			"Romaine"
 		]
 	},
-	"wikidata-org-desc": "Configuratie en aanpassingen aan Wikibase die specifiek zijn voor wikidata.org",
+	"wikidata-org-desc": "Instellingen voor en aanpassingen aan Wikibase die specifiek zijn voor wikidata.org",
 	"data-access": "Gegevenstoegang"
 }
