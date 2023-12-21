@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Helmoony",
+			"Hubaishan",
 			"Michel Bakni",
 			"ديفيد",
 			"ديفيد عادل وهبة خليل 2",
@@ -14,7 +15,7 @@
 	"wikibase-lexeme-randomlexeme": "وحدة معجمية عشوائية",
 	"wikibase-queryservice": "خدمة الاستعلام",
 	"data-access": "الوصول إلى البيانات",
-	"gadget-section-wikidata": "مرتكزة على ويكي بيانات",
+	"gadget-section-wikidata": "عناصر ويكي بيانات",
 	"gadget-section-lexemes": "وحدات معجمية",
 	"gadget-section-general": "عام",
 	"gadget-section-admin-gadgets": "أدوات للإداريين"
