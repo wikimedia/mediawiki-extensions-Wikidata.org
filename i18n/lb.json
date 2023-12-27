@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Volvox"
+		]
+	},
+	"wikidata-org-desc": "Konfiguratiounen an Upassunge vu Wikibase, déi spezifesch fir wikidata.org sinn",
+	"wikibase-randomitem": "Zoufällegt Element",
+	"wikibase-lexeme-lexicographical-data": "Lexikografesch Daten",
+	"wikibase-lexeme-randomlexeme": "Zoufällege Lexeem",
+	"wikibase-queryservice": "Query Service",
+	"data-access": "Datenzougrëff",
+	"gadget-section-wikidata": "Wikidata-zentréiert",
+	"gadget-section-lexemes": "Lexeemen",
+	"gadget-section-general": "Allgemeng",
+	"gadget-section-admin-gadgets": "Gadgete fir Administrateuren"
+}
