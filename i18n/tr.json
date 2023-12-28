@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Hedda",
 			"Incelemeelemani",
 			"Joseph",
 			"MuratTheTurkish",
@@ -9,7 +10,7 @@
 		]
 	},
 	"wikidata-org-desc": "wikidata.org'a özgü Wikibase için yapılandırma ve özelleştirmeler",
-	"wikibase-randomitem": "Rastgele Öğe",
+	"wikibase-randomitem": "Rastgele Öge",
 	"wikibase-lexeme-lexicographical-data": "Sözlükbilimsel veri",
 	"wikibase-lexeme-randomlexeme": "Rastgele Sözlükbirim",
 	"wikibase-queryservice": "Sorgulama Servisi",
