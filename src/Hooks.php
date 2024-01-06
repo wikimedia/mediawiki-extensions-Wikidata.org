@@ -4,12 +4,12 @@ namespace WikidataOrg;
 
 use Exception;
 use ExtensionRegistry;
-use Html;
 use MediaWiki\Api\Hook\ApiMaxLagInfoHook;
 use MediaWiki\Hook\BeforePageDisplayHook;
 use MediaWiki\Hook\SkinAddFooterLinksHook;
+use MediaWiki\Html\Html;
 use MediaWiki\MediaWikiServices;
-use OutputPage;
+use MediaWiki\Output\OutputPage;
 use Skin;
 use Wikibase\Repo\WikibaseRepo;
 use WikidataOrg\QueryServiceLag\CacheQueryServiceLagStore;
