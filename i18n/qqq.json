@@ -20,5 +20,14 @@
 	"gadget-section-wikidata": "Section heading on the gadgets tab in the preferences. Section contains tools designed for Wikidata.",
 	"gadget-section-lexemes": "Section heading on the gadgets tab in the preferences. Section contains tools for lexicographical data.",
 	"gadget-section-general": "Section heading on the gadgets tab in the preferences. Section contains tools not specific to Wikidata.",
-	"gadget-section-admin-gadgets": "Section heading on the gadgets tab in the preferences. Section contains tools designed for admins."
+	"gadget-section-admin-gadgets": "Section heading on the gadgets tab in the preferences. Section contains tools designed for admins.",
+	"tag-client-automatic-update": "The text shown for the \"client-automatic-update\" change tag.",
+	"tag-client-automatic-update-description": "The description for the \"client-automatic-update\" change tag.",
+	"tag-client-linkitem-change": "The text shown for the \"client-linkitem-change\" change tag.",
+	"tag-client-linkitem-change-description": "The description for the \"client-linkitem-change\" change tag.",
+	"tag-data-bridge": "The text shown for the \"data-bridge\" change tag.",
+	"tag-termbox": "The text shown for the \"termbox\" change tag.",
+	"tag-termbox-description": "The description for the \"termbox\" change tag.",
+	"tag-wikidata-ui": "The text shown for the \"wikidata-ui\" change tag.",
+	"tag-wikidata-ui-description": "The description for the \"wikidata-ui\" change tag."
 }

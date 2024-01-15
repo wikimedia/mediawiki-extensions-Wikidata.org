@@ -25,5 +25,14 @@
 	"gadget-section-wikidata": "Wikidata-centric",
 	"gadget-section-lexemes": "Lexemes",
 	"gadget-section-general": "General",
-	"gadget-section-admin-gadgets": "Gadgets for administrators"
+	"gadget-section-admin-gadgets": "Gadgets for administrators",
+	"tag-client-automatic-update": "Automatic update from connected wiki",
+	"tag-client-automatic-update-description": "An edit that was made automatically because a connected page was moved or deleted.",
+	"tag-client-linkitem-change": "Sitelink change from connected wiki",
+	"tag-client-linkitem-change-description": "An edit that was made using the sitelinks UI on a connected wiki.",
+	"tag-data-bridge": "[[Special:MyLanguage/Wikidata:Wikidata Bridge|Wikidata Bridge]]",
+	"tag-termbox": "Mobile termbox",
+	"tag-termbox-description": "An edit made using the mobile termbox interface.",
+	"tag-wikidata-ui": "Wikidata user interface",
+	"tag-wikidata-ui-description": "A manual edit made using the regular user interface on Wikidata."
 }
