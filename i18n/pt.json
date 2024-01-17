@@ -6,8 +6,13 @@
 		]
 	},
 	"wikidata-org-desc": "Configuração e personalizações do Wikibase que são específicas do wikidata.org",
+	"wikibase-randomitem": "Elemento aleatório",
 	"wikibase-lexeme-lexicographical-data": "Dados lexicográficos",
 	"wikibase-lexeme-randomlexeme": "Lexema aleatório",
 	"wikibase-queryservice": "Serviço de consulta",
-	"data-access": "Acesso a dados"
+	"data-access": "Acesso a dados",
+	"gadget-section-wikidata": "''Gadgets'' para Wikidata",
+	"gadget-section-lexemes": "Lexemas",
+	"gadget-section-general": "Gerais",
+	"gadget-section-admin-gadgets": "''Gadgets'' para administradores"
 }
