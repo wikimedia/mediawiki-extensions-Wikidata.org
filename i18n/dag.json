@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kalakpagh"
+		]
+	},
+	"tag-client-automatic-update": "Dintoli niŋbu din yina wiki",
+	"tag-client-automatic-update-description": "Maliniŋ shɛli din daa niŋ di toli daliri nyɛla yaɣa shɛli din daa kpɛ n-daa zaŋ labisi luɣ'shɛli bee yihi.",
+	"tag-client-linkitem-change": "Sitɛlink nyɛla din taɣi lahabali din kpɛ wiki",
+	"tag-client-linkitem-change-description": "Maliniŋ shɛli bɛ ni daa zaŋ \"sitelinks UI\" niŋ nyɛla din kpɛ wiki.",
+	"tag-termbox-description": "Maliniŋ shɛli bɛ ni zaŋ \"mobile termbox interface\" niŋ."
+}

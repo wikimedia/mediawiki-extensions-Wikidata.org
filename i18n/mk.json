@@ -13,5 +13,14 @@
 	"gadget-section-wikidata": "За Википодатоците",
 	"gadget-section-lexemes": "Лексеми",
 	"gadget-section-general": "Општи",
-	"gadget-section-admin-gadgets": "Алатки за администратори"
+	"gadget-section-admin-gadgets": "Алатки за администратори",
+	"tag-client-automatic-update": "Автоматска поднова од поврзано вики",
+	"tag-client-automatic-update-description": "Уредување кое е направено автоматски бидејќи поврзана страница е преместена или избришана.",
+	"tag-client-linkitem-change": "Сменета викиврска од поврзано вики",
+	"tag-client-linkitem-change-description": "УРедување напарвено користејќи го посредникот за викиврски на поврзано вики.",
+	"tag-data-bridge": "[[Special:MyLanguage/Wikidata:Wikidata Bridge|Мост на Википодатоците]]",
+	"tag-termbox": "Мобилно поимовно поле",
+	"tag-termbox-description": "уредување направено со мобилното поимовно поле.",
+	"tag-wikidata-ui": "Кориснички посредник на Википодатоците",
+	"tag-wikidata-ui-description": "Рачно уредување направено користејќи го редовниот кориснички посредник на Википодатоците."
 }

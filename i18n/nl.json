@@ -3,6 +3,7 @@
 		"authors": [
 			"Mainframe98",
 			"McDutchie",
+			"Robin van der Vliet",
 			"Romaine",
 			"Sjoerddebruin"
 		]
@@ -16,5 +17,10 @@
 	"gadget-section-wikidata": "Wikidata-specifiek",
 	"gadget-section-lexemes": "Lexemen",
 	"gadget-section-general": "Algemeen",
-	"gadget-section-admin-gadgets": "Gadgets voor moderatoren"
+	"gadget-section-admin-gadgets": "Gadgets voor moderatoren",
+	"tag-client-automatic-update": "Automatische update van een gekoppelde wiki",
+	"tag-client-automatic-update-description": "Een bewerking die automatisch is uitgevoerd omdat een gekoppelde pagina is verplaatst of verwijderd.",
+	"tag-client-linkitem-change": "Sitekoppeling-wijziging vanaf verbonden wiki",
+	"tag-data-bridge": "[[Special:MyLanguage/Wikidata:Wikidata Bridge|Wikidata-brug]]",
+	"tag-wikidata-ui": "Wikidata-gebruikersinterface"
 }

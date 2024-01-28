@@ -12,5 +12,9 @@
 	"gadget-section-wikidata": "За Википодатке",
 	"gadget-section-lexemes": "Лексема",
 	"gadget-section-general": "Опште",
-	"gadget-section-admin-gadgets": "За администраторе"
+	"gadget-section-admin-gadgets": "За администраторе",
+	"tag-client-automatic-update": "Аутоматско ажурирање са повезаног викија",
+	"tag-client-automatic-update-description": "Аутоматска измена због премештања или брисања повезане странице.",
+	"tag-client-linkitem-change": "Промена везе са повезаног викија",
+	"tag-wikidata-ui-description": "Ручна измена преко интерфејса Википодатака."
 }

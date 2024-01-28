@@ -14,5 +14,14 @@
 	"gadget-section-wikidata": "''Gadgets'' para Wikidata",
 	"gadget-section-lexemes": "Lexemas",
 	"gadget-section-general": "Gerais",
-	"gadget-section-admin-gadgets": "''Gadgets'' para administradores"
+	"gadget-section-admin-gadgets": "''Gadgets'' para administradores",
+	"tag-client-automatic-update": "Atualização automática desde a wiki ligada",
+	"tag-client-automatic-update-description": "Uma edição que foi feita de forma automática porque uma página ligada foi movida ou eliminada.",
+	"tag-client-linkitem-change": "Alteração por hiperligação intersites desde a wiki ligada",
+	"tag-client-linkitem-change-description": "Uma edição que foi feita usando a interface de utilizador das hiperligações intersites numa wiki ligada.",
+	"tag-data-bridge": "[[Special:MyLanguage/Wikidata:Wikidata Bridge|Ponte Wikidata]]",
+	"tag-termbox": "Caixa de termos móvel",
+	"tag-termbox-description": "Uma edição feita usando a interface da caixa de termos móvel.",
+	"tag-wikidata-ui": "Interface de utilizador de Wikidata",
+	"tag-wikidata-ui-description": "Uma edição manual feita usando a normal interface do utilizador de Wikidata."
 }

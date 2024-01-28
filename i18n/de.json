@@ -19,5 +19,14 @@
 	"gadget-section-wikidata": "Wikidata-zentriert",
 	"gadget-section-lexemes": "Lexeme",
 	"gadget-section-general": "Allgemein",
-	"gadget-section-admin-gadgets": "Helferlein für Administratoren"
+	"gadget-section-admin-gadgets": "Helferlein für Administratoren",
+	"tag-client-automatic-update": "Automatisches Update aus verbundenem Wiki",
+	"tag-client-automatic-update-description": "Eine Bearbeitung, die automatisch vorgenommen wurde, weil eine verbundene Seite verschoben oder gelöscht wurde.",
+	"tag-client-linkitem-change": "Sitelink-Änderung vom verbundenen Wiki",
+	"tag-client-linkitem-change-description": "Eine Bearbeitung, die über die Sitelinks-Benutzeroberfläche in einem verbundenen Wiki vorgenommen wurde.",
+	"tag-data-bridge": "[[Special:MyLanguage/Wikidata:Wikidata Bridge|Wikidata-Bridge]]",
+	"tag-termbox": "Mobile Termbox",
+	"tag-termbox-description": "Eine Bearbeitung, die über die mobile Termbox-Schnittstelle vorgenommen wurde.",
+	"tag-wikidata-ui": "Wikidata-Benutzeroberfläche",
+	"tag-wikidata-ui-description": "Eine manuelle Bearbeitung, die über die reguläre Benutzeroberfläche von Wikidata vorgenommen wurde."
 }

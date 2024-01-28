@@ -14,5 +14,14 @@
 	"gadget-section-wikidata": "ממוקדים בוויקינתונים",
 	"gadget-section-lexemes": "יחידות מילוניות",
 	"gadget-section-general": "כללי",
-	"gadget-section-admin-gadgets": "גאדג'טים למפעילים"
+	"gadget-section-admin-gadgets": "גאדג'טים למפעילים",
+	"tag-client-automatic-update": "עדכון אוטומטי מוויקי מחובר",
+	"tag-client-automatic-update-description": "עריכה שנעשתה באופן אוטומטי בגלל שדף מחובר הועבר או נמחק.",
+	"tag-client-linkitem-change": "שינוי קישור אתר מוויקי מחובר",
+	"tag-client-linkitem-change-description": "עריכה שנעשתה באמצעות ממשק המשתמש של קישורי אתר בוויקי מחובר.",
+	"tag-data-bridge": "[[Special:MyLanguage/Wikidata:Wikidata Bridge|קשר ויקינתונים]]",
+	"tag-termbox": "תיבת איברים ניידת",
+	"tag-termbox-description": "עריכה שנעשתה באמצעות תיבת איברים ניידת.",
+	"tag-wikidata-ui": "ממשק משתמש של ויקינתונים",
+	"tag-wikidata-ui-description": "עריכה ידנית שנעשתה באמצעות ממשק המשתמש הרגיל בוויקינתונים."
 }

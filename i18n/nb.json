@@ -13,5 +13,14 @@
 	"gadget-section-wikidata": "Wikidata-spesifikt",
 	"gadget-section-lexemes": "Leksemer",
 	"gadget-section-general": "Generelt",
-	"gadget-section-admin-gadgets": "Tilleggsfunksjoner for administratorer"
+	"gadget-section-admin-gadgets": "Tilleggsfunksjoner for administratorer",
+	"tag-client-automatic-update": "Automatisk oppdatering fra tilknyttet wiki",
+	"tag-client-automatic-update-description": "Redigering som ble gjort automatisk fordi en tilknyttet side ble flyttet eller slettet",
+	"tag-client-linkitem-change": "Sidelenkeendring fra tilknyttet wiki",
+	"tag-client-linkitem-change-description": "Redigering som ble gjort med sidelenkegrensesnittet på en tilknyttet wiki.",
+	"tag-data-bridge": "[[Special:MyLanguage/Wikidata:Wikidata Bridge|Wikidata Bridge]]",
+	"tag-termbox": "Mobil termboks",
+	"tag-termbox-description": "Redigering gjort via termboksens mobilgrensesnitt.",
+	"tag-wikidata-ui": "Wikidatas brukergrensesnitt",
+	"tag-wikidata-ui-description": "Manuell redigering gjort via Wikidatas vanlige brukergrensesnitt."
 }

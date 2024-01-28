@@ -18,5 +18,14 @@
 	"gadget-section-wikidata": "Vikiveri-merkezli",
 	"gadget-section-lexemes": "Sözlükbirimler",
 	"gadget-section-general": "Genel",
-	"gadget-section-admin-gadgets": "Hizmetliler için küçük araçlar"
+	"gadget-section-admin-gadgets": "Hizmetliler için küçük araçlar",
+	"tag-client-automatic-update": "Bağlı vikiden kendiliğinden güncelleme",
+	"tag-client-automatic-update-description": "Bağlı bir sayfanın taşınması ya da silinmesi nedeniyle kendiliğinden yapılan bir düzenleme.",
+	"tag-client-linkitem-change": "Bağlı vikiden site bağlantısı değişikliği",
+	"tag-client-linkitem-change-description": "Bağlı bir vikideki site bağlantıları kullanıcı arayüzü kullanılarak yapılan bir düzenleme.",
+	"tag-data-bridge": "[[Special:MyLanguage/Wikidata:Wikidata Bridge|Vikiveri Köprüsü]]",
+	"tag-termbox": "Taşınabilir terim kutusu",
+	"tag-termbox-description": "Taşınabilir terim kutusu arayüzü kullanılarak yapılan bir düzenleme.",
+	"tag-wikidata-ui": "Vikiveri kullanıcı arayüzü",
+	"tag-wikidata-ui-description": "Vikiveri'deki normal kullanıcı arayüzü kullanılarak yapılan elle düzenleme."
 }

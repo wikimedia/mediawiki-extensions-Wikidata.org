@@ -5,6 +5,7 @@
 			"Hasley",
 			"Hazard-SJ",
 			"Macofe",
+			"No se",
 			"Vivaelcelta",
 			"Whovian Biologist"
 		]
@@ -15,5 +16,6 @@
 	"wikibase-lexeme-randomlexeme": "Lexema aleatorio",
 	"data-access": "Acceso a datos",
 	"gadget-section-general": "General",
-	"gadget-section-admin-gadgets": "Accesorios para los administradores"
+	"gadget-section-admin-gadgets": "Accesorios para los administradores",
+	"tag-client-automatic-update-description": "Una edición que se realizó automáticamente porque una página conectada se movió o eliminó."
 }

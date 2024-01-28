@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Patsagorn Y."
+			"Patsagorn Y.",
+			"RidJasper"
 		]
 	},
-	"data-access": "การเข้าถึงข้อมูล"
+	"data-access": "การเข้าถึงข้อมูล",
+	"gadget-section-general": "ทั่วไป",
+	"gadget-section-admin-gadgets": "อุปกรณ์เสริมสำหรับผู้ดูแล"
 }

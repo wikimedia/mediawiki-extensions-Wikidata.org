@@ -10,5 +10,12 @@
 	"data-access": "Dieđuide beassan",
 	"gadget-section-wikidata": "Ráhkaduvvon Wikidata várás",
 	"gadget-section-lexemes": "Leksemat",
-	"gadget-section-general": "Obbalaš"
+	"gadget-section-general": "Obbalaš",
+	"tag-client-automatic-update": "Automáhtalaš beaivádeapmi liŋkejuvvon wikis",
+	"tag-client-automatic-update-description": "Rievdaduvvon automáhtalaččat daningo liŋkejuvvon siidu sirdojuvvui dahje sihkkojuvvui.",
+	"tag-data-bridge": "[[Special:MyLanguage/Wikidata:Wikidata Bridge|Wikidata Bridge]]",
+	"tag-termbox": "Mobiila tearbmalođá",
+	"tag-termbox-description": "Rievdaduvvon tearbmalođá mobiilageavahanlavtta bokte.",
+	"tag-wikidata-ui": "Wikidata geavahanlakta",
+	"tag-wikidata-ui-description": "Manuálalaš rievdadeapmi Wikidata dábálaš geavahanlavtta bokte"
 }

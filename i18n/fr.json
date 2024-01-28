@@ -2,10 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Arkanosis",
+			"Daniel236",
 			"Gomoko",
 			"Hazard-SJ",
 			"Ladsgroup",
 			"Lucie-Aimée Kaffee",
+			"Momo50WM",
 			"Verdy p",
 			"Wladek92"
 		]
@@ -19,5 +21,12 @@
 	"gadget-section-wikidata": "Outils pour Wikidata",
 	"gadget-section-lexemes": "Lexèmes",
 	"gadget-section-general": "Outils généraux",
-	"gadget-section-admin-gadgets": "Gadgets pour les administrateurs"
+	"gadget-section-admin-gadgets": "Gadgets pour les administrateurs",
+	"tag-client-automatic-update": "Mise à jour automatique depuis le wiki connecté",
+	"tag-client-automatic-update-description": "Une modification qui a été effectuée automatiquement parce qu'une page connectée a été déplacée ou supprimée.",
+	"tag-client-linkitem-change": "Changement de lien annexe depuis le wiki connecté",
+	"tag-client-linkitem-change-description": "Une modification qui a été effectuée à l'aide de l'interface utilisateur des liens annexes sur un wiki connecté.",
+	"tag-termbox": "Boîte à terme mobile",
+	"tag-wikidata-ui": "Interface utilisateur Wikidata",
+	"tag-wikidata-ui-description": "Une modification manuelle réalisée à l'aide de l'interface utilisateur régulière sur Wikidata."
 }

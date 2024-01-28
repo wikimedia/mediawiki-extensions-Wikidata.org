@@ -3,6 +3,7 @@
 		"authors": [
 			"Beta16",
 			"Epìdosis",
+			"Luca.favorido",
 			"Ricordisamoa",
 			"Sannita",
 			"Vituzzu"
@@ -12,7 +13,19 @@
 	"wikibase-randomitem": "Un elemento a caso",
 	"wikibase-lexeme-lexicographical-data": "Dati lessicografici",
 	"wikibase-lexeme-randomlexeme": "Un lessema a caso",
+	"wikibase-queryservice": "Query Service",
 	"data-access": "Accesso ai dati",
 	"gadget-section-wikidata": "Specifici per Wikidata",
-	"gadget-section-general": "Generali"
+	"gadget-section-lexemes": "Lessemi",
+	"gadget-section-general": "Generali",
+	"gadget-section-admin-gadgets": "Accessori per gli amministratori",
+	"tag-client-automatic-update": "Aggiornamento automatico dal wiki connesso",
+	"tag-client-automatic-update-description": "Una modifica effettuata automaticamente perché una pagina connessa è stata spostata o eliminata.",
+	"tag-client-linkitem-change": "Modifica di sitelink dal wiki connesso",
+	"tag-client-linkitem-change-description": "Una modifica apportata utilizzando l'interfaccia utente dei sitelink su un wiki connesso.",
+	"tag-data-bridge": "[[Special:MyLanguage/Wikidata:Wikidata Bridge|Wikidata Bridge]]",
+	"tag-termbox": "Termbox mobile",
+	"tag-termbox-description": "Una modifica apportata utilizzando l'interfaccia della termbox mobile.",
+	"tag-wikidata-ui": "Interfaccia utente di Wikidata",
+	"tag-wikidata-ui-description": "Una modifica manuale effettuata utilizzando l'interfaccia utente comune di Wikidata."
 }
