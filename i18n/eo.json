@@ -1,9 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Mirin"
+			"Mirin",
+			"Robin van der Vliet"
 		]
 	},
 	"wikidata-org-desc": "Agordoj kaj laŭmendigoj al Vikibazo specifaj por wikidata.org",
+	"wikibase-lexeme-lexicographical-data": "Leksikografiaj datumoj",
+	"wikibase-lexeme-randomlexeme": "Hazarda leksemo",
 	"data-access": "Aliro al dateno"
 }
