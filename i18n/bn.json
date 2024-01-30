@@ -19,5 +19,7 @@
 	"gadget-section-wikidata": "উইকিউপাত্ত - কেন্দ্রীয়",
 	"gadget-section-lexemes": "লেক্সিম",
 	"gadget-section-general": "সাধারণ",
-	"gadget-section-admin-gadgets": "প্রশাসকদের জন্য গ্যাজেট"
+	"gadget-section-admin-gadgets": "প্রশাসকদের জন্য গ্যাজেট",
+	"tag-client-automatic-update": "সংযুক্ত উইকি থেকে স্বয়ংক্রিয় হালনাগাদ",
+	"tag-wikidata-ui": "উইকিউপাত্ত ব্যবহারকারী ইন্টারফেস"
 }

@@ -4,14 +4,24 @@
 			"01miki10",
 			"Jnovikov",
 			"Pyscowicz",
+			"Samoasambia",
 			"Stryn"
 		]
 	},
 	"wikidata-org-desc": "Wikibasen konfiguraatio ja muokkaukset, jotka koskevat wikidata.orgia",
 	"wikibase-randomitem": "Satunnainen kohde",
+	"wikibase-lexeme-lexicographical-data": "Leksikografiset tiedot",
 	"wikibase-lexeme-randomlexeme": "Satunnainen lekseemi",
+	"wikibase-queryservice": "Kyselypalvelu",
 	"data-access": "Datan käyttäminen",
 	"gadget-section-wikidata": "Wikidata",
+	"gadget-section-lexemes": "Lekseemit",
 	"gadget-section-general": "Yleiset",
-	"gadget-section-admin-gadgets": "Pienoisohjelmat ylläpitäjille"
+	"gadget-section-admin-gadgets": "Pienoisohjelmat ylläpitäjille",
+	"tag-client-automatic-update": "Automaattinen päivitys yhdistetystä wikistä",
+	"tag-client-automatic-update-description": "Muokkaus, joka tehtiin automaattisesti, koska yhdistetty sivu siirrettiin tai poistettiin.",
+	"tag-client-linkitem-change": "Sivustolinkin muutos yhdistetystä wikistä",
+	"tag-client-linkitem-change-description": "Muokkaus, joka tehtiin käyttämällä yhdistetyn wikin sivustolinkkien käyttöliittymää.",
+	"tag-wikidata-ui": "Wikidatan käyttöliittymä",
+	"tag-wikidata-ui-description": "Manuaalinen muokkaus, joka on tehty käyttämällä Wikidatan tavallista käyttöliittymää."
 }
