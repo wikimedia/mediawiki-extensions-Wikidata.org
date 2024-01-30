@@ -2,11 +2,16 @@
 	"@metadata": {
 		"authors": [
 			"Beta16",
-			"Epìdosis"
+			"Epìdosis",
+			"Luca.favorido",
+			"Ricordisamoa",
+			"Sannita",
+			"Vituzzu"
 		]
 	},
 	"wikidata-org-desc": "Configurazione e personalizzazioni di Wikibase che sono specifici per wikidata.org",
 	"wikibase-lexeme-lexicographical-data": "Dati lessicografici",
 	"wikibase-lexeme-randomlexeme": "Un lessema a caso",
+	"wikibase-queryservice": "Query Service",
 	"data-access": "Accesso ai dati"
 }
