@@ -16,5 +16,14 @@
 	"gadget-section-wikidata": "Wikidane",
 	"gadget-section-lexemes": "Leksemy",
 	"gadget-section-general": "Ogólne",
-	"gadget-section-admin-gadgets": "Gadżety dla administratorów"
+	"gadget-section-admin-gadgets": "Gadżety dla administratorów",
+	"tag-client-automatic-update": "Automatyczna aktualizacja z połączonej wiki",
+	"tag-client-automatic-update-description": "Zmiana została wykonana automatycznie, ponieważ połączona strona została przeniesiona lub usunięta.",
+	"tag-client-linkitem-change": "Zmiana interwiki z połączonej wiki",
+	"tag-client-linkitem-change-description": "Edycja wykonana przy użyciu interfejsu do zmiany linków interwiki na połączonej wiki.",
+	"tag-data-bridge": "[[Special:MyLanguage/Wikidata:Wikidata Bridge|Wikidata Bridge]]",
+	"tag-termbox": "Metryczka w wersji mobilnej",
+	"tag-termbox-description": "Zmiana wykonana przy użyciu metryczki elementu w wersji mobilnej strony.",
+	"tag-wikidata-ui": "Interfejs użytkownika Wikidanych",
+	"tag-wikidata-ui-description": "Ręczna edycja, wykonana w standardowym interfejsie użytkownika na Wikidanych."
 }

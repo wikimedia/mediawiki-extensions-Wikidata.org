@@ -5,7 +5,8 @@
 			"Lakejason0",
 			"Liuxinyu970226",
 			"Stevenliuyi",
-			"VulpesVulpes825"
+			"VulpesVulpes825",
+			"Winston Sung"
 		]
 	},
 	"wikidata-org-desc": "針對 wikidata.org 的設置與自定義的 Wikibase",
@@ -17,5 +18,6 @@
 	"gadget-section-wikidata": "維基數據相關工具",
 	"gadget-section-lexemes": "詞位",
 	"gadget-section-general": "通用工具",
-	"gadget-section-admin-gadgets": "管理員小工具"
+	"gadget-section-admin-gadgets": "管理員小工具",
+	"tag-wikidata-ui": "維基數據使用者介面"
 }
