@@ -3,10 +3,14 @@
 		"authors": [
 			"01miki10",
 			"Jnovikov",
-			"Pyscowicz"
+			"Pyscowicz",
+			"Samoasambia",
+			"Stryn"
 		]
 	},
 	"wikidata-org-desc": "Wikibasen konfiguraatio ja muokkaukset, jotka koskevat wikidata.orgia",
+	"wikibase-lexeme-lexicographical-data": "Leksikografiset tiedot",
 	"wikibase-lexeme-randomlexeme": "Satunnainen lekseemi",
+	"wikibase-queryservice": "Kyselypalvelu",
 	"data-access": "Datan käyttäminen"
 }
