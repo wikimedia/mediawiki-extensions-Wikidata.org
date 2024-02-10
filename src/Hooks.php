@@ -2,7 +2,6 @@
 
 namespace WikidataOrg;
 
-use Exception;
 use ExtensionRegistry;
 use MediaWiki\Api\Hook\ApiMaxLagInfoHook;
 use MediaWiki\Hook\BeforePageDisplayHook;
@@ -10,6 +9,7 @@ use MediaWiki\Hook\SkinAddFooterLinksHook;
 use MediaWiki\Html\Html;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Output\OutputPage;
+use RuntimeException;
 use Skin;
 use Wikibase\Repo\WikibaseRepo;
 use WikidataOrg\QueryServiceLag\CacheQueryServiceLagStore;
@@ -40,7 +40,7 @@ final class Hooks implements
 	 */
 	public function onBeforePageDisplay( $out, $skin ): void {
 		if ( !ExtensionRegistry::getInstance()->isLoaded( 'WikibaseRepository' ) ) {
-			throw new Exception( 'The Wikidata.org extension requires Wikibase to be installed' );
+			throw new RuntimeException( 'The Wikidata.org extension requires Wikibase to be installed' );
 		}
 		$entityNamespaceLookup = WikibaseRepo::getEntityNamespaceLookup();
 
