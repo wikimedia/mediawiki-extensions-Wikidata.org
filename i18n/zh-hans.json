@@ -15,5 +15,14 @@
 	"gadget-section-wikidata": "维基数据相关工具",
 	"gadget-section-lexemes": "词位",
 	"gadget-section-general": "通用工具",
-	"gadget-section-admin-gadgets": "管理员小工具"
+	"gadget-section-admin-gadgets": "管理员小工具",
+	"tag-client-automatic-update": "从连接的wiki自动更新",
+	"tag-client-automatic-update-description": "由于连接的页面被移动或删除而自动进行的编辑。",
+	"tag-client-linkitem-change": "从连接的wiki的网站链接更改",
+	"tag-client-linkitem-change-description": "使用已连接的wiki上的网站链接UI进行的编辑。",
+	"tag-data-bridge": "[[Special:MyLanguage/Wikidata:Wikidata Bridge|维基数据桥]]",
+	"tag-termbox": "移动术语框",
+	"tag-termbox-description": "使用移动术语框界面进行的编辑。",
+	"tag-wikidata-ui": "维基数据用户界面",
+	"tag-wikidata-ui-description": "使用维基数据上的常规用户界面进行的手动编辑。"
 }
