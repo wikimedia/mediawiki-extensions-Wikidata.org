@@ -5,8 +5,12 @@
 		]
 	},
 	"wikidata-org-desc": "Ffurfweddu ac addasiadau i Wicibase ar gyfer wikidata.org",
+	"wikibase-randomitem": "Eitem ar Hap",
 	"wikibase-queryservice": "Gwasanaeth Ymholiadau",
 	"data-access": "Mynediad i ddata",
+	"gadget-section-wikidata": "Wicidata-ganolog",
 	"gadget-section-lexemes": "Geiremau",
-	"gadget-section-general": "Cyffredinol"
+	"gadget-section-general": "Cyffredinol",
+	"gadget-section-admin-gadgets": "Teclynnau ar gyfer gweinyddwyr",
+	"tag-data-bridge": "[[Special:MyLanguage/Wikidata:Wikidata Bridge|Pont Wicidata]]"
 }
