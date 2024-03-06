@@ -4,5 +4,6 @@
 			"Njardarlogar"
 		]
 	},
-	"wikibase-queryservice": "Spørjeteneste"
+	"wikibase-queryservice": "Spørjeteneste",
+	"tag-wikidata-ui": "Wikidata-brukargrensesnittet"
 }
