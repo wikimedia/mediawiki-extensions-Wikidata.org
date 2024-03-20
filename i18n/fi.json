@@ -20,6 +20,9 @@
 	"tag-client-automatic-update-description": "Muokkaus, joka tehtiin automaattisesti, koska yhdistetty sivu siirrettiin tai poistettiin.",
 	"tag-client-linkitem-change": "Sivustolinkin muutos yhdistetystä wikistä",
 	"tag-client-linkitem-change-description": "Muokkaus, joka tehtiin käyttämällä yhdistetyn wikin sivustolinkkien käyttöliittymää.",
+	"tag-data-bridge": "[[Special:MyLanguage/Wikidata:Wikidata Bridge|Wikidata Bridge]]",
+	"tag-termbox": "Mobiilitermilaatikko",
+	"tag-termbox-description": "Muokkaus tehtiin käyttämällä mobiilitermilaatikon käyttöliittymää.",
 	"tag-wikidata-ui": "Wikidatan käyttöliittymä",
 	"tag-wikidata-ui-description": "Manuaalinen muokkaus, joka on tehty käyttämällä Wikidatan tavallista käyttöliittymää."
 }
