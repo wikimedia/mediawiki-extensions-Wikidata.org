@@ -11,5 +11,14 @@
 	"gadget-section-wikidata": "Specific pro Wikidata",
 	"gadget-section-lexemes": "Lexemas",
 	"gadget-section-general": "General",
-	"gadget-section-admin-gadgets": "Gadgets pro administratores"
+	"gadget-section-admin-gadgets": "Gadgets pro administratores",
+	"tag-client-automatic-update": "Actualisation automatic desde le wiki connectite",
+	"tag-client-automatic-update-description": "Un modification que ha essite facite automaticamente perque un pagina connectite ha essite renominate o delite.",
+	"tag-client-linkitem-change": "Cambiamento de ligamine de sito desde le wiki connectite",
+	"tag-client-linkitem-change-description": "Un modification que ha essite facite usante le interfacie de usator de ligamines de sito sur un wiki connectite.",
+	"tag-data-bridge": "[[Special:MyLanguage/Wikidata:Wikidata Bridge|Ponte Wikidata]]",
+	"tag-termbox": "Cassa de terminos mobile",
+	"tag-termbox-description": "Un modification facite usante le interfacie del cassa de terminos mobile.",
+	"tag-wikidata-ui": "Interfacie de usator de Wikidata",
+	"tag-wikidata-ui-description": "Un modification manual facite usante le interfacie de usator normal sur Wikidata."
 }
