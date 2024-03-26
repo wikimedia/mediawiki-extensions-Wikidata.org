@@ -32,18 +32,26 @@ class WikimediaPrometheusQueryServiceLagProvider {
 	private $prometheusUrls;
 
 	/**
+	 * @var float
+	 */
+	private float $pooledServerMinQueryRate;
+
+	/**
 	 * @param HttpRequestFactory $httpRequestFactory
 	 * @param LoggerInterface $logger
 	 * @param string[] $prometheusUrls Prometheus query endpoint URLs (.../query)
+	 * @param float $pooledMinServerQueryRate Minimal query rate expected to be served from a pooled server
 	 */
 	public function __construct(
 		HttpRequestFactory $httpRequestFactory,
 		LoggerInterface $logger,
-		array $prometheusUrls
+		array $prometheusUrls,
+		float $pooledMinServerQueryRate
 	) {
 		$this->prometheusUrls = $prometheusUrls;
 		$this->httpRequestFactory = $httpRequestFactory;
 		$this->logger = $logger;
+		$this->pooledServerMinQueryRate = $pooledMinServerQueryRate;
 	}
 
 	/**
@@ -104,7 +112,7 @@ class WikimediaPrometheusQueryServiceLagProvider {
 		return 'topk(1, time() - label_replace(blazegraph_lastupdated, "host", "$1", "instance", "^([^:]+):.*")' .
 			'and on(host) label_replace(rate(' .
 			'org_wikidata_query_rdf_blazegraph_filters_QueryEventSenderFilter_event_sender_filter_StartedQueries{}' .
-			'[5m]) > 1, "host", "$1", "instance", "^([^:]+):.*"))';
+			'[5m]) > ' . round( $this->pooledServerMinQueryRate, 3 ) . ', "host", "$1", "instance", "^([^:]+):.*"))';
 	}
 
 }

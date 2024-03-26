@@ -31,7 +31,8 @@ class WikimediaPrometheusQueryServiceLagProviderTest extends \PHPUnit\Framework\
 		$lagProvider = new WikimediaPrometheusQueryServiceLagProvider(
 			$this->newHttpRequestFactoryMock( ...$responses ),
 			new NullLogger(),
-			$prometheusUrls
+			$prometheusUrls,
+			0.5
 		);
 
 		$this->assertSame( $expectedLags, $lagProvider->getLag() );
@@ -135,7 +136,8 @@ class WikimediaPrometheusQueryServiceLagProviderTest extends \PHPUnit\Framework\
 		$lagProvider = new WikimediaPrometheusQueryServiceLagProvider(
 			$this->newHttpRequestFactoryMock( json_encode( $content ) ),
 			new NullLogger(),
-			$prometheusUrls
+			$prometheusUrls,
+			0.5
 		);
 
 		$actualLag = $lagProvider->getLag();

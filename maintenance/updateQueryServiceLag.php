@@ -28,6 +28,8 @@ class UpdateQueryServiceLag extends Maintenance {
 	 */
 	private const TTL_DEFAULT = 70;
 
+	private const POOLED_SERVER_MIN_QUERY_RATE = 1.0;
+
 	public function __construct() {
 		parent::__construct();
 
@@ -76,6 +78,14 @@ class UpdateQueryServiceLag extends Maintenance {
 			true
 		);
 
+		$this->addOption(
+			'pooled-server-min-query-rate',
+			"The minimal query rate that is expected to be served from a pooled server. " .
+			"Defaults to " . self::POOLED_SERVER_MIN_QUERY_RATE,
+			false,
+			true
+		);
+
 		$this->requireExtension( 'Wikidata.org' );
 	}
 
@@ -85,6 +95,8 @@ class UpdateQueryServiceLag extends Maintenance {
 			$prometheusUrls[] = 'http://' . $host . '/ops/api/v1/query';
 		}
 		$ttl = (int)$this->getOption( 'ttl', self::TTL_DEFAULT );
+		$minQueryRate = floatval( $this->getOption( "pooled-server-min-query-rate",
+			self::POOLED_SERVER_MIN_QUERY_RATE ) );
 
 		$mw = MediaWikiServices::getInstance();
 		// For now just use the Wikibase log channel
@@ -93,7 +105,8 @@ class UpdateQueryServiceLag extends Maintenance {
 		$lagProvider = new WikimediaPrometheusQueryServiceLagProvider(
 			$mw->getHttpRequestFactory(),
 			$logger,
-			$prometheusUrls
+			$prometheusUrls,
+			$minQueryRate
 		);
 		[ 'lag' => $lag, 'host' => $server ] = $lagProvider->getLag();
 
