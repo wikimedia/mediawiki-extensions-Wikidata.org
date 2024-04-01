@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Pikne"
+		]
+	},
+	"wikidata-org-desc": "Vikibaasi kohandused, mis on eriomased wikidata.org-ile",
+	"wikibase-randomitem": "Juhuslik üksus",
+	"wikibase-queryservice": "Päringuteenus",
+	"data-access": "Andmejuurdepääs",
+	"gadget-section-wikidata": "Wikidata-keskne",
+	"gadget-section-lexemes": "Lekseemid",
+	"gadget-section-general": "Üldine",
+	"gadget-section-admin-gadgets": "Administraatorite tööriistad",
+	"tag-client-automatic-update": "Automaatne muudatus ühendatud vikist",
+	"tag-client-automatic-update-description": "Muudatus tehti automaatselt, sest ühendatud lehekülg teisaldati või kustutati.",
+	"tag-client-linkitem-change": "Võrgukohalingi muudatus ühendatud vikist",
+	"tag-client-linkitem-change-description": "Muudatus tehti ühendatud vikis, kasutades võrgukohalingi kasutajaliidest.",
+	"tag-termbox": "Mobiili termikast",
+	"tag-termbox-description": "Muudatus tehti kasutades mobiili termikasti liidest.",
+	"tag-wikidata-ui": "Wikidata kasutajaliides",
+	"tag-wikidata-ui-description": "Wikidata harilikus kasutajaliideses käsitsi tehtud muudatus."
+}
