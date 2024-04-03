@@ -1,8 +1,17 @@
 {
 	"@metadata": {
 		"authors": [
-			"Abián"
+			"Abián",
+			"Pikne"
 		]
 	},
-	"wikibase-lexeme-lexicographical-data": "Leksikograafilised andmed"
+	"wikidata-org-desc": "Vikibaasi kohandused, mis on eriomased wikidata.org-ile",
+	"wikibase-randomitem": "Juhuslik üksus",
+	"wikibase-lexeme-lexicographical-data": "Leksikograafilised andmed",
+	"wikibase-queryservice": "Päringuteenus",
+	"data-access": "Andmejuurdepääs",
+	"gadget-section-wikidata": "Wikidata-keskne",
+	"gadget-section-lexemes": "Lekseemid",
+	"gadget-section-general": "Üldine",
+	"gadget-section-admin-gadgets": "Administraatorite tööriistad"
 }
