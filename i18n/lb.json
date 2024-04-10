@@ -11,5 +11,14 @@
 	"gadget-section-wikidata": "Wikidata-zentréiert",
 	"gadget-section-lexemes": "Lexeemen",
 	"gadget-section-general": "Allgemeng",
-	"gadget-section-admin-gadgets": "Gadgete fir Administrateuren"
+	"gadget-section-admin-gadgets": "Gadgete fir Administrateuren",
+	"tag-client-automatic-update": "Automateschen Update vun enger verbonnener Wiki",
+	"tag-client-automatic-update-description": "Eng Ännerung, déi automatesch gemaach gouf, well eng verbonne Säit geréckelt oder geläscht gouf.",
+	"tag-client-linkitem-change": "Sitelink-Ännerung vun der verbonnener Wiki",
+	"tag-client-linkitem-change-description": "Eng Ännerung, déi iwwer de Sitelinks-Benotzerinterface an enger verbonnenner Wiki gemaach gouf.",
+	"tag-data-bridge": "[[Special:MyLanguage/Wikidata:Wikidata Bridge|Wikidata-Bridge]]",
+	"tag-termbox": "Mobil Termbox",
+	"tag-termbox-description": "Eng Ännerung, déi iwwer de mobillen Termbox-Interface gemaach gouf.",
+	"tag-wikidata-ui": "Wikidata-Benotzerinterface",
+	"tag-wikidata-ui-description": "Eng manuell Ännerung, déi iwwer deen normale Benotzerinterface vu Wikidata gemaach gouf."
 }
