@@ -7,7 +7,8 @@
 			"Stevenliuyi",
 			"SupaplexTW",
 			"VulpesVulpes825",
-			"Winston Sung"
+			"Winston Sung",
+			"Cookai1205"
 		]
 	},
 	"wikidata-org-desc": "針對 wikidata.org 的設置與自定義的 Wikibase",
@@ -23,7 +24,7 @@
 	"tag-client-linkitem-change": "連接 wiki 的附加連結更改",
 	"tag-client-linkitem-change-description": "使用連接的 wiki 上的附加連結使用者界面進行的編輯。",
 	"tag-data-bridge": "[[Special:MyLanguage/Wikidata:Wikidata Bridge|維基數據橋樑]]",
-	"tag-termbox": "行動術語箱",
+	"tag-termbox": "行動術語框",
 	"tag-termbox-description": "使用行動術語框介面進行的編輯。",
 	"tag-wikidata-ui": "維基數據使用者介面",
 	"tag-wikidata-ui-description": "使用維基數據上一般使用者介面進行手動編輯。"
