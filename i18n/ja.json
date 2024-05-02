@@ -8,9 +8,11 @@
 		]
 	},
 	"wikidata-org-desc": "wikidata.org向けのWikibaseの設定とカスタマイズ",
+	"wikibase-randomitem": "おまかせ表示（項目）",
 	"wikibase-queryservice": "クエリサービス",
 	"data-access": "データへのアクセス",
 	"gadget-section-wikidata": "ウィキデータ向け",
+	"gadget-section-lexemes": "語彙素",
 	"gadget-section-general": "全般",
 	"gadget-section-admin-gadgets": "管理者向けガジェット"
 }
