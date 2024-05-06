@@ -19,6 +19,8 @@
 	"tag-client-automatic-update": "Automatische update van een gekoppelde wiki",
 	"tag-client-automatic-update-description": "Een bewerking die automatisch is uitgevoerd omdat een gekoppelde pagina is verplaatst of verwijderd.",
 	"tag-client-linkitem-change": "Sitekoppeling-wijziging vanaf verbonden wiki",
+	"tag-client-linkitem-change-description": "Een bewerking die gemaakt is met de sitekoppeling-interface op een verbonden wiki.",
 	"tag-data-bridge": "[[Special:MyLanguage/Wikidata:Wikidata Bridge|Wikidata-brug]]",
-	"tag-wikidata-ui": "Wikidata-gebruikersinterface"
+	"tag-wikidata-ui": "Wikidata-gebruikersinterface",
+	"tag-wikidata-ui-description": "Een handmatige bewerking die gemaakt is met de reguliere gebruikersinterface op Wikidata."
 }
