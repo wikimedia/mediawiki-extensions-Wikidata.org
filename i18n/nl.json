@@ -21,6 +21,8 @@
 	"tag-client-linkitem-change": "Sitekoppeling-wijziging vanaf verbonden wiki",
 	"tag-client-linkitem-change-description": "Een bewerking die gemaakt is met de sitekoppeling-interface op een verbonden wiki.",
 	"tag-data-bridge": "[[Special:MyLanguage/Wikidata:Wikidata Bridge|Wikidata-brug]]",
+	"tag-termbox": "Mobiel termenvak",
+	"tag-termbox-description": "Een bewerking gemaakt met behulp van de mobiele termenvak-interface.",
 	"tag-wikidata-ui": "Wikidata-gebruikersinterface",
 	"tag-wikidata-ui-description": "Een handmatige bewerking die gemaakt is met de reguliere gebruikersinterface op Wikidata."
 }
