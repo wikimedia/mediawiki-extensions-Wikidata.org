@@ -19,7 +19,7 @@
 	"gadget-section-lexemes": "詞位",
 	"gadget-section-general": "通用工具",
 	"gadget-section-admin-gadgets": "管理員小工具",
-	"tag-client-automatic-update": "從連線的 wiki 自動更新",
+	"tag-client-automatic-update": "從連接的 wiki 自動更新",
 	"tag-client-automatic-update-description": "由於連接的頁面被移動或刪除而自動進行的編輯。",
 	"tag-client-linkitem-change": "連接 wiki 的附加連結更改",
 	"tag-client-linkitem-change-description": "使用連接的 wiki 上的附加連結使用者界面進行的編輯。",
