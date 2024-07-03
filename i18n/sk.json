@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Oujon"
+		]
+	},
+	"wikidata-org-desc": "Konfigurácia a prispôsobenia Wikibase, ktoré sú špecifické pre wikidata.org",
+	"wikibase-randomitem": "Náhodný predmet",
+	"wikibase-queryservice": "Dopytová služba",
+	"data-access": "Prístup k údajom",
+	"gadget-section-wikidata": "Zamerané na wikidata",
+	"gadget-section-lexemes": "Lexémy",
+	"gadget-section-general": "Všeobecné",
+	"gadget-section-admin-gadgets": "Gadgets pre správcov"
+}
