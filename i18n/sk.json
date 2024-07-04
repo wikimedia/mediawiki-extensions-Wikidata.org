@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Oujon"
+		]
+	},
+	"wikidata-org-desc": "Konfigurácia a prispôsobenia Wikibase, ktoré sú špecifické pre wikidata.org",
+	"wikibase-randomitem": "Náhodný predmet",
+	"wikibase-queryservice": "Dopytová služba",
+	"data-access": "Prístup k údajom",
+	"gadget-section-wikidata": "Zamerané na wikidata",
+	"gadget-section-lexemes": "Lexémy",
+	"gadget-section-general": "Všeobecné",
+	"gadget-section-admin-gadgets": "Gadgets pre správcov",
+	"tag-client-automatic-update": "Automatické aktualizácie z pripojeného wiki",
+	"tag-client-automatic-update-description": "Úprava, ktorá bola vykonaná automaticky, pretože pripojená stránka bola presunutá alebo odstránená.",
+	"tag-client-linkitem-change": "Zmena odkazu na podstránku z pripojenej wiki",
+	"tag-client-linkitem-change-description": "Úprava, ktorá bola vykonaná pomocou interfejsu prepojených stránok na prepojenom wiki.",
+	"tag-data-bridge": "[[Special:MyLanguage/Wikidata:Wikidata Bridge|Wikidata Bridge]]",
+	"tag-termbox": "Mobilný termbox",
+	"tag-termbox-description": "Úprava vykonaná pomocou mobilného rozhrania termboxu.",
+	"tag-wikidata-ui": "Používateľské rozhranie Wikidata",
+	"tag-wikidata-ui-description": "Manuálna úprava vykonaná pomocou bežného používateľského rozhrania na Wikidata."
+}
