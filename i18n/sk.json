@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Oujon"
+		]
+	},
+	"wikidata-org-desc": "Konfigurácia a prispôsobenia Wikibase, ktoré sú špecifické pre wikidata.org",
+	"wikibase-queryservice": "Dopytová služba",
+	"data-access": "Prístup k údajom"
+}
