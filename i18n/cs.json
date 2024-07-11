@@ -3,7 +3,8 @@
 		"authors": [
 			"Danny B.",
 			"Littledogboy",
-			"Matěj Suchánek"
+			"Matěj Suchánek",
+			"Mormegil"
 		]
 	},
 	"wikidata-org-desc": "Konfigurace a přizpůsobení Wikibase, které jsou specifické pro wikidata.org",
@@ -11,6 +12,15 @@
 	"wikibase-queryservice": "Dotazovací služba",
 	"data-access": "Přístup k datům",
 	"gadget-section-wikidata": "Speciality pro Wikidata",
+	"gadget-section-lexemes": "Lexémy",
 	"gadget-section-general": "Všeobecná",
-	"gadget-section-admin-gadgets": "Udělátka pro správce"
+	"gadget-section-admin-gadgets": "Udělátka pro správce",
+	"tag-client-automatic-update": "Automatická aktualizace z propojené wiki",
+	"tag-client-automatic-update-description": "Editace, která byla provedena automaticky, protože propojená stránka byla přesunuta nebo smazána.",
+	"tag-client-linkitem-change": "Změna odkazu na článek z propojené wiki",
+	"tag-client-linkitem-change-description": "Editace, která byla provedena pomocí uživatelského rozhraní pro změnu odkazů na propojené wiki.",
+	"tag-termbox": "Mobilní termbox",
+	"tag-termbox-description": "Editace provedená pomocí mobilního rozhraní termboxu.",
+	"tag-wikidata-ui": "Uživatelské rozhraní Wikidat",
+	"tag-wikidata-ui-description": "Ruční editace provedená pomocí běžného uživatelského rozhraní na Wikidatech."
 }
