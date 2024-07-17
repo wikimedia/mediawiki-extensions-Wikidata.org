@@ -3,7 +3,8 @@
 		"authors": [
 			"Danny B.",
 			"Littledogboy",
-			"Matěj Suchánek"
+			"Matěj Suchánek",
+			"Mormegil"
 		]
 	},
 	"wikidata-org-desc": "Konfigurace a přizpůsobení Wikibase, které jsou specifické pro wikidata.org",
@@ -13,6 +14,7 @@
 	"wikibase-queryservice": "Dotazovací služba",
 	"data-access": "Přístup k datům",
 	"gadget-section-wikidata": "Speciality pro Wikidata",
+	"gadget-section-lexemes": "Lexémy",
 	"gadget-section-general": "Všeobecná",
 	"gadget-section-admin-gadgets": "Udělátka pro správce"
 }
