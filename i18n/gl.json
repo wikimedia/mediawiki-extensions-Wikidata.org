@@ -13,5 +13,14 @@
 	"gadget-section-wikidata": "Específico de Wikidata",
 	"gadget-section-lexemes": "Lexemas",
 	"gadget-section-general": "Xeral",
-	"gadget-section-admin-gadgets": "Trebellos para os administradores"
+	"gadget-section-admin-gadgets": "Trebellos para os administradores",
+	"tag-client-automatic-update": "Actualización automática desde un wiki conectado",
+	"tag-client-automatic-update-description": "Unha edición automática porque a páxina conectada se trasladou ou se borrou.",
+	"tag-client-linkitem-change": "Cambio na ligazón de sitio desde un wiki conectado",
+	"tag-client-linkitem-change-description": "Unha edición feita mediante a interface das ligazóns de sitio nun wiki conectado.",
+	"tag-data-bridge": "[[Special:MyLanguage/Wikidata:Wikidata Bridge|Ponte Wikidata]]",
+	"tag-termbox": "Caixa de termos móbil",
+	"tag-termbox-description": "Unha edición feita mediante a interface da caixa de termos móbil.",
+	"tag-wikidata-ui": "Interface de usuario de Wikidata",
+	"tag-wikidata-ui-description": "Unha edición manual feita mediante a interface de usuario de Wikidata."
 }
