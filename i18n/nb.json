@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"EdoAug",
 			"Jon Harald Søby"
 		]
 	},
@@ -17,7 +18,7 @@
 	"tag-client-linkitem-change": "Sidelenkeendring fra tilknyttet wiki",
 	"tag-client-linkitem-change-description": "Redigering som ble gjort med sidelenkegrensesnittet på en tilknyttet wiki.",
 	"tag-data-bridge": "[[Special:MyLanguage/Wikidata:Wikidata Bridge|Wikidata Bridge]]",
-	"tag-termbox": "Mobil termboks",
+	"tag-termbox": "Mobiltermboks",
 	"tag-termbox-description": "Redigering gjort via termboksens mobilgrensesnitt.",
 	"tag-wikidata-ui": "Wikidatas brukergrensesnitt",
 	"tag-wikidata-ui-description": "Manuell redigering gjort via Wikidatas vanlige brukergrensesnitt."
