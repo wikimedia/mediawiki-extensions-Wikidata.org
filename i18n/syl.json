@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"ꠢꠣꠍꠘ ꠞꠣꠎꠣ"
+		]
+	},
+	"wikibase-randomitem": "ꠎꠦꠍꠣ ꠎꠤꠘꠤꠡ",
+	"wikibase-queryservice": "ꠈꠥꠎꠇꠞꠣꠞ ꠡꠦꠛꠣ",
+	"data-access": "ꠒꠣꠐꠣꠞ ꠟꠣꠉ",
+	"gadget-section-wikidata": "ꠃꠁꠇꠤꠒꠣꠐꠣ ꠟꠂꠀ",
+	"gadget-section-lexemes": "ꠝꠥꠟ ꠡꠛ꠆ꠖꠣꠁꠘ",
+	"gadget-section-general": "ꠡꠣꠗꠣꠞꠘ",
+	"gadget-section-admin-gadgets": "ꠄꠒꠝꠤꠘꠣꠁꠘ꠆ꠔꠞ ꠟꠣꠉꠤ ꠉꠦꠎꠦꠐꠣꠁꠘ",
+	"tag-client-automatic-update": "ꠟꠉ ꠟꠣꠉꠣꠁꠟ ꠃꠁꠇꠤꠘꠕꠘꠦ ꠀꠙꠌꠦ ꠀꠁꠀ ꠟꠣꠉꠍꠦ",
+	"tag-client-linkitem-change": "ꠍꠣꠁꠐꠟꠤꠋꠇ ꠟꠉ ꠟꠣꠉꠣꠁꠟ ꠃꠁꠇꠤꠘꠕꠘꠦ ꠛꠖꠟꠤꠍꠦ",
+	"tag-termbox": "ꠝꠥꠛꠣꠁꠟ ꠐꠣꠞꠝꠛꠇꠍ",
+	"tag-wikidata-ui": "ꠃꠁꠇꠤꠒꠣꠐꠣ ꠛꠦꠛꠀꠞꠇꠞꠞꠣꠞꠉꠣꠟꠣ"
+}
