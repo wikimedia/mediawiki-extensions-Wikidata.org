@@ -109,10 +109,25 @@ class WikimediaPrometheusQueryServiceLagProvider {
 	}
 
 	private function getQuery(): string {
-		return 'topk(1, time() - label_replace(blazegraph_lastupdated, "host", "$1", "instance", "^([^:]+):.*")' .
-			'and on(host) label_replace(rate(' .
-			'org_wikidata_query_rdf_blazegraph_filters_QueryEventSenderFilter_event_sender_filter_StartedQueries{}' .
-			'[5m]) > ' . round( $this->pooledServerMinQueryRate, 3 ) . ', "host", "$1", "instance", "^([^:]+):.*"))';
+		$thresh = round( $this->pooledServerMinQueryRate, 3 );
+		return <<<EOQ
+topk(
+  1,
+  time() - (
+    label_replace(
+      blazegraph_lastupdated{cluster="wdqs", instance=~".*:9193"},
+      "host", "$1", "instance", "^([^:]+):.*"
+    )
+    and on(host)
+    label_replace(
+      rate(org_wikidata_query_rdf_blazegraph_filters_QueryEventSenderFilter_event_sender_filter_StartedQueries{
+          cluster="wdqs", instance=~".*:9102"
+      }[5m]) > $thresh,
+      "host", "$1", "instance", "^([^:]+):.*"
+    )
+  )
+)
+EOQ;
 	}
 
 }
