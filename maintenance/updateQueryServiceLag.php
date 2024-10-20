@@ -2,8 +2,8 @@
 
 namespace WikidataOrg;
 
-use Maintenance;
 use MediaWiki\Logger\LoggerFactory;
+use MediaWiki\Maintenance\Maintenance;
 use MediaWiki\MediaWikiServices;
 use WikidataOrg\QueryServiceLag\CacheQueryServiceLagStore;
 use WikidataOrg\QueryServiceLag\WikimediaPrometheusQueryServiceLagProvider;

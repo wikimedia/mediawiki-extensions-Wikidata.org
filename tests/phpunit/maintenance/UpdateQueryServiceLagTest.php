@@ -4,12 +4,12 @@ declare( strict_types = 1 );
 
 namespace WikidataOrg\Tests\Maintenance;
 
-use HashBagOStuff;
 use MediaWiki\Tests\Maintenance\MaintenanceBaseTestCase;
 use MockHttpTrait;
-use WANObjectCache;
 use WikidataOrg\QueryServiceLag\CacheQueryServiceLagStore;
 use WikidataOrg\UpdateQueryServiceLag;
+use Wikimedia\ObjectCache\HashBagOStuff;
+use Wikimedia\ObjectCache\WANObjectCache;
 
 // files in maintenance/ are not autoloaded, so load explicitly
 require_once __DIR__ . '/../../../maintenance/updateQueryServiceLag.php';

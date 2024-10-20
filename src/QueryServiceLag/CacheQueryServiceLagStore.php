@@ -2,7 +2,7 @@
 
 namespace WikidataOrg\QueryServiceLag;
 
-use WANObjectCache;
+use Wikimedia\ObjectCache\WANObjectCache;
 
 /**
  * Manages retrieving and updating query service lag data in cache

@@ -2,9 +2,9 @@
 
 namespace WikidataOrg\Tests\QueryServiceLag;
 
-use HashBagOStuff;
-use WANObjectCache;
 use WikidataOrg\QueryServiceLag\CacheQueryServiceLagStore;
+use Wikimedia\ObjectCache\HashBagOStuff;
+use Wikimedia\ObjectCache\WANObjectCache;
 
 /**
  * @covers \WikidataOrg\QueryServiceLag\CacheQueryServiceLagStore
