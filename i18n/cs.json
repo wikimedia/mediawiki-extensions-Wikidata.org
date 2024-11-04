@@ -1,7 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Matěj Suchánek"
+			"Matěj Suchánek",
+			"Danny B.",
+			"Littledogboy",
+			"Mormegil"
 		]
 	},
 	"wikidata-org-desc": "Konfigurace a přizpůsobení Wikibase, které jsou specifické pro wikidata.org",

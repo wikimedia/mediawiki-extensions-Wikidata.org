@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Saurmandal"
+			"Saurmandal",
+			"Abijeet Patro"
 		]
 	},
 	"wikidata-org-desc": "विकिबेस के लिए कॉन्फिगरेशन और अनुकूलन जो विशिष्ट रूप से wikidata.org के लिए हैं",
