@@ -4,6 +4,7 @@
 			"BAB ZAA",
 			"Helmoony",
 			"Hubaishan",
+			"Meno25",
 			"Michel Bakni",
 			"ديفيد",
 			"ديفيد عادل وهبة خليل 2",
@@ -23,6 +24,7 @@
 	"tag-client-linkitem-change": "تغيير وصلة موقع من ويكي موصول",
 	"tag-client-linkitem-change-description": "تعديل تم إجراؤه باستخدام واجهة مستخدم لوصلات الموقع على موقع ويكي موصول.",
 	"tag-data-bridge": "[[Special:MyLanguage/Wikidata:Wikidata Bridge|جسر ويكي بيانات]]",
+	"tag-termbox": "تطبيق termbox للجوال",
 	"tag-termbox-description": "تعديل تم باستخدام واجهة مربع المعلومات الخاصة بالأجهزة المحمولة.",
 	"tag-wikidata-ui": "واجهة مستخدم ويكي بيانات",
 	"tag-wikidata-ui-description": "تعديل يدوي تم إجراؤه باستخدام واجهة المستخدم العادية في ويكي بيانات."
