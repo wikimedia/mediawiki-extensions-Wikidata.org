@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nemoralis"
+		]
+	},
+	"wikidata-org-desc": "Wikidata.org-a xas olan Wikibase üçün konfiqurasiya və fərdiləşdirmələr",
+	"wikibase-randomitem": "Təsadüfi element",
+	"wikibase-queryservice": "Sorğu Xidməti",
+	"data-access": "Dataya giriş",
+	"gadget-section-wikidata": "Vikidata mərkəzli",
+	"gadget-section-lexemes": "Leksemlər",
+	"gadget-section-general": "Ümumi",
+	"gadget-section-admin-gadgets": "İdarəçilər üçün qadcetlər",
+	"tag-client-automatic-update": "Qoşulmuş vikidən avtomatik yeniləmə",
+	"tag-client-automatic-update-description": "Əlaqədar səhifə köçürüldüyü və ya silindiyi üçün avtomatik olaraq edilən redaktə.",
+	"tag-client-linkitem-change": "Qoşulmuş vikidə sayt linkinin dəyişməsi",
+	"tag-client-linkitem-change-description": "Qoşulmuş vikidə sitelinks UI istifadə edərək edilən redaktə.",
+	"tag-data-bridge": "[[Special:MyLanguage/Wikidata:Wikidata Bridge|Vikidata Körpüsü]]",
+	"tag-termbox": "Mobil termbox",
+	"tag-termbox-description": "Mobil termbox interfeysindən istifadə edilən redaktə.",
+	"tag-wikidata-ui": "Vikidata istifadəçi interfeysi",
+	"tag-wikidata-ui-description": "Vikidatada adi istifadəçi interfeysindən istifadə etməklə edilən manual redaktə."
+}
