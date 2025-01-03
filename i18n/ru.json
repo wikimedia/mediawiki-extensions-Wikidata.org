@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Base",
 			"Kaganer",
 			"Kareyac",
@@ -16,5 +17,12 @@
 	"gadget-section-wikidata": "Для Викиданных",
 	"gadget-section-lexemes": "Лексемы",
 	"gadget-section-general": "Общие",
-	"gadget-section-admin-gadgets": "Для администраторов"
+	"gadget-section-admin-gadgets": "Для администраторов",
+	"tag-client-automatic-update": "Автоматическое обновление из подключённой вики",
+	"tag-client-automatic-update-description": "Правка, которое была сделана автоматически, поскольку связанная страница была переименована или удалена.",
+	"tag-client-linkitem-change": "Изменение ссылки сайта из подключённой вики",
+	"tag-client-linkitem-change-description": "Правка, которая была сделана с использованием интерфейса ссылок на сайт на подключённой вики.",
+	"tag-data-bridge": "[[Special:MyLanguage/Wikidata:Wikidata Bridge|Мост Викиданных]]",
+	"tag-termbox": "Мобильная рамка термов",
+	"tag-termbox-description": "Правка, сделанная с использованием мобильного рамки термов."
 }
