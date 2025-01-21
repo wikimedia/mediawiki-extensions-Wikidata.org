@@ -11,5 +11,14 @@
 	"gadget-section-wikidata": "berpusatkan Wikidata",
 	"gadget-section-lexemes": "Leksem",
 	"gadget-section-general": "Umum",
-	"gadget-section-admin-gadgets": "Gajet untuk penyelia"
+	"gadget-section-admin-gadgets": "Gajet untuk penyelia",
+	"tag-client-automatic-update": "Kemas kini automatik daripada wiki yang disambungkan",
+	"tag-client-automatic-update-description": "Suntingan yang telah dibuat secara automatik disebabkan laman yang disambungkan telah dipindahkan atau dihapuskan.",
+	"tag-client-linkitem-change": "Pautan tapak berubah daripada wiki yang disambungkan",
+	"tag-client-linkitem-change-description": "Suntingan yang dibuat menggunakan UI pautan tapak di wiki yang disambungkan.",
+	"tag-data-bridge": "[[Special:MyLanguage/Wikidata:Wikidata Bridge|Jambatan Wikidata]]",
+	"tag-termbox": "Kotak istilah mudah alih",
+	"tag-termbox-description": "Suntingan dibuat menggunakan antara muka kotak istilah mudah alih.",
+	"tag-wikidata-ui": "Antara muka pengguna Wikidata",
+	"tag-wikidata-ui-description": "Suntingan manual dibuat menggunakan antara muka pengguna biasa di Wikidata."
 }
