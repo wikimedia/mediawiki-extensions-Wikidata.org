@@ -20,11 +20,6 @@
 	"support": {
 		"irc": "irc://irc.libera.chat/wikidata"
 	},
-	"autoload": {
-		"psr-4": {
-			"WikidataOrg\\": "src/"
-		}
-	},
 	"require-dev": {
 		"mediawiki/mediawiki-codesniffer": "46.0.0",
 		"mediawiki/mediawiki-phan-config": "0.15.1",
