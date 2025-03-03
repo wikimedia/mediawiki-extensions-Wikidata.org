@@ -23,6 +23,7 @@
 	"tag-client-linkitem-change": "The text shown for the \"client-linkitem-change\" change tag.",
 	"tag-client-linkitem-change-description": "The description for the \"client-linkitem-change\" change tag.",
 	"tag-data-bridge": "The text shown for the \"data-bridge\" change tag.",
+	"tag-data-bridge-helppage": "{{notranslate}}",
 	"tag-termbox": "The text shown for the \"termbox\" change tag.",
 	"tag-termbox-description": "The description for the \"termbox\" change tag.",
 	"tag-wikidata-ui": "The text shown for the \"wikidata-ui\" change tag.",
