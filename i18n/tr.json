@@ -21,7 +21,7 @@
 	"tag-client-automatic-update-description": "Bağlı bir sayfanın taşınması ya da silinmesi nedeniyle kendiliğinden yapılan bir düzenleme.",
 	"tag-client-linkitem-change": "Bağlı vikiden site bağlantısı değişikliği",
 	"tag-client-linkitem-change-description": "Bağlı bir vikideki site bağlantıları kullanıcı arayüzü kullanılarak yapılan bir düzenleme.",
-	"tag-data-bridge": "[[Special:MyLanguage/Wikidata:Wikidata Bridge|Vikiveri Köprüsü]]",
+	"tag-data-bridge": "Vikiveri Köprüsü",
 	"tag-termbox": "Taşınabilir terim kutusu",
 	"tag-termbox-description": "Taşınabilir terim kutusu arayüzü kullanılarak yapılan bir düzenleme.",
 	"tag-wikidata-ui": "Vikiveri kullanıcı arayüzü",

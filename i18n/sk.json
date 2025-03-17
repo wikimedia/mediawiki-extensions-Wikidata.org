@@ -16,7 +16,7 @@
 	"tag-client-automatic-update-description": "Úprava, ktorá bola vykonaná automaticky, pretože pripojená stránka bola presunutá alebo odstránená.",
 	"tag-client-linkitem-change": "Zmena odkazu na podstránku z pripojenej wiki",
 	"tag-client-linkitem-change-description": "Úprava, ktorá bola vykonaná pomocou interfejsu prepojených stránok na prepojenom wiki.",
-	"tag-data-bridge": "[[Special:MyLanguage/Wikidata:Wikidata Bridge|Wikidata Bridge]]",
+	"tag-data-bridge": "Wikidata Bridge",
 	"tag-termbox": "Mobilný termbox",
 	"tag-termbox-description": "Úprava vykonaná pomocou mobilného rozhrania termboxu.",
 	"tag-wikidata-ui": "Používateľské rozhranie Wikidata",

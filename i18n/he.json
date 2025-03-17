@@ -17,7 +17,7 @@
 	"tag-client-automatic-update-description": "עריכה שנעשתה באופן אוטומטי בגלל שדף מחובר הועבר או נמחק.",
 	"tag-client-linkitem-change": "שינוי קישור אתר מוויקי מחובר",
 	"tag-client-linkitem-change-description": "עריכה שנעשתה באמצעות ממשק המשתמש של קישורי אתר בוויקי מחובר.",
-	"tag-data-bridge": "[[Special:MyLanguage/Wikidata:Wikidata Bridge|קשר ויקינתונים]]",
+	"tag-data-bridge": "גשר ויקינתונים",
 	"tag-termbox": "תיבת איברים ניידת",
 	"tag-termbox-description": "עריכה שנעשתה באמצעות תיבת איברים ניידת.",
 	"tag-wikidata-ui": "ממשק משתמש של ויקינתונים",

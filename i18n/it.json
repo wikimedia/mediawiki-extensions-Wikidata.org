@@ -21,7 +21,7 @@
 	"tag-client-automatic-update-description": "Una modifica effettuata automaticamente perché una pagina connessa è stata spostata o eliminata.",
 	"tag-client-linkitem-change": "Modifica di sitelink dal wiki connesso",
 	"tag-client-linkitem-change-description": "Una modifica apportata utilizzando l'interfaccia utente dei sitelink su un wiki connesso.",
-	"tag-data-bridge": "[[Special:MyLanguage/Wikidata:Wikidata Bridge|Wikidata Bridge]]",
+	"tag-data-bridge": "Wikidata Bridge",
 	"tag-termbox": "Termbox mobile",
 	"tag-termbox-description": "Una modifica apportata utilizzando l'interfaccia della termbox mobile.",
 	"tag-wikidata-ui": "Interfaccia utente di Wikidata",

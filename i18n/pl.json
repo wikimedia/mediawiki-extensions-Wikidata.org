@@ -19,7 +19,7 @@
 	"tag-client-automatic-update-description": "Zmiana została wykonana automatycznie, ponieważ połączona strona została przeniesiona lub usunięta.",
 	"tag-client-linkitem-change": "Zmiana interwiki z połączonej wiki",
 	"tag-client-linkitem-change-description": "Edycja wykonana przy użyciu interfejsu do zmiany linków interwiki na połączonej wiki.",
-	"tag-data-bridge": "[[Special:MyLanguage/Wikidata:Wikidata Bridge|Wikidata Bridge]]",
+	"tag-data-bridge": "Wikidata Bridge",
 	"tag-termbox": "Metryczka w wersji mobilnej",
 	"tag-termbox-description": "Zmiana wykonana przy użyciu metryczki elementu w wersji mobilnej strony.",
 	"tag-wikidata-ui": "Interfejs użytkownika Wikidanych",

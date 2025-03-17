@@ -22,7 +22,7 @@
 	"tag-client-automatic-update-description": "Правка, которое была сделана автоматически, поскольку связанная страница была переименована или удалена.",
 	"tag-client-linkitem-change": "Изменение ссылки на сайт из подключённой вики",
 	"tag-client-linkitem-change-description": "Правка, которая была сделана с использованием интерфейса ссылок на сайт на подключённой вики.",
-	"tag-data-bridge": "[[Special:MyLanguage/Wikidata:Wikidata Bridge|Мост Викиданных]]",
+	"tag-data-bridge": "Мост Викиданных",
 	"tag-termbox": "Мобильная панель термов",
 	"tag-termbox-description": "Правка, сделанная с использованием мобильной панели термов."
 }

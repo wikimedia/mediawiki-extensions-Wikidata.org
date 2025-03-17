@@ -17,7 +17,7 @@
 	"tag-client-automatic-update-description": "Urejanje, ki je bilo opravljeno samodejno, ker je bila povezana stran prestavljena ali izbrisana.",
 	"tag-client-linkitem-change": "sprememba povezave do spletnega mesta iz povezanega vikija",
 	"tag-client-linkitem-change-description": "Urejanje, ki je bilo opravljeno z uporabniškim vmesnikom povezav do spletnih mest v povezanem vikiju.",
-	"tag-data-bridge": "[[Special:MyLanguage/Wikidata:Wikidata Bridge|Wikidata Bridge]]",
+	"tag-data-bridge": "Wikidata Bridge",
 	"tag-termbox": "Mobilno izrazno polje",
 	"tag-termbox-description": "Urejanje z vmesnikom mobilnega izraznega polja.",
 	"tag-wikidata-ui": "Uporabniški vmesnik Wikipodatkov",

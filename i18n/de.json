@@ -22,7 +22,7 @@
 	"tag-client-automatic-update-description": "Eine Bearbeitung, die automatisch vorgenommen wurde, weil eine verbundene Seite verschoben oder gelöscht wurde.",
 	"tag-client-linkitem-change": "Sitelink-Änderung vom verbundenen Wiki",
 	"tag-client-linkitem-change-description": "Eine Bearbeitung, die über die Sitelinks-Benutzeroberfläche in einem verbundenen Wiki vorgenommen wurde.",
-	"tag-data-bridge": "[[Special:MyLanguage/Wikidata:Wikidata Bridge|Wikidata-Bridge]]",
+	"tag-data-bridge": "Wikidata-Bridge",
 	"tag-termbox": "Mobile Termbox",
 	"tag-termbox-description": "Eine Bearbeitung, die über die mobile Termbox-Schnittstelle vorgenommen wurde.",
 	"tag-wikidata-ui": "Wikidata-Benutzeroberfläche",
