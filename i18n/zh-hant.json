@@ -23,7 +23,7 @@
 	"tag-client-automatic-update-description": "由於連接的頁面被移動或刪除而自動進行的編輯。",
 	"tag-client-linkitem-change": "連接 wiki 的附加連結更改",
 	"tag-client-linkitem-change-description": "使用連接的 wiki 上的附加連結使用者界面進行的編輯。",
-	"tag-data-bridge": "維基數據橋樑",
+	"tag-data-bridge": "維基數據橋",
 	"tag-termbox": "行動版術語框",
 	"tag-termbox-description": "使用行動版術語框介面進行的編輯。",
 	"tag-wikidata-ui": "維基數據使用者介面",
