@@ -1,9 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Cedric31"
+			"Cedric31",
+			"Lhanars"
 		]
 	},
 	"wikidata-org-desc": "Configuracion e personalizacions de Wikibase que son especificas a wikidata.org",
+	"wikibase-randomitem": "Element a l'azard",
+	"wikibase-queryservice": "Servici de consultas",
 	"data-access": "Accès a las donadas"
 }
