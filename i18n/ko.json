@@ -9,5 +9,6 @@
 	},
 	"wikidata-org-desc": "Wikidata.org에서 사용되는 위키베이스 설정과 최적화",
 	"wikibase-queryservice": "쿼리 서비스",
-	"data-access": "데이터 접근"
+	"data-access": "데이터 접근",
+	"tag-data-bridge": "위키데이터 브리지"
 }
