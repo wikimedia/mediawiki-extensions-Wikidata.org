@@ -8,8 +8,6 @@ use MediaWiki\Tests\Maintenance\MaintenanceBaseTestCase;
 use MockHttpTrait;
 use WikidataOrg\QueryServiceLag\CacheQueryServiceLagStore;
 use WikidataOrg\UpdateQueryServiceLag;
-use Wikimedia\ObjectCache\HashBagOStuff;
-use Wikimedia\ObjectCache\WANObjectCache;
 
 // files in maintenance/ are not autoloaded, so load explicitly
 require_once __DIR__ . '/../../../maintenance/updateQueryServiceLag.php';
@@ -31,17 +29,6 @@ class UpdateQueryServiceLagTest extends MaintenanceBaseTestCase {
 
 	protected function setUp(): void {
 		parent::setUp();
-
-		$this->overrideMwServices(
-			null,
-			[
-				'MainWANObjectCache' => static function () {
-					return new WANObjectCache(
-						[ 'cache' => new HashBagOStuff() ]
-					);
-				}
-			]
-		);
 
 		$this->installMockHttp( function ( string $url ) {
 			if ( str_starts_with( $url, 'http://prometheus.tld/ops/api/v1/query?query=topk' ) ) {
