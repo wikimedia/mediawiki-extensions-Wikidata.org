@@ -9,8 +9,8 @@ use MediaWiki\MediaWikiServices;
 use MediaWiki\Output\Hook\BeforePageDisplayHook;
 use MediaWiki\Output\OutputPage;
 use MediaWiki\Registration\ExtensionRegistry;
+use MediaWiki\Skin\Skin;
 use RuntimeException;
-use Skin;
 use Wikibase\Repo\WikibaseRepo;
 use WikidataOrg\QueryServiceLag\CacheQueryServiceLagStore;
 
