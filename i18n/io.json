@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Algentem"
+			"Algentem",
+			"Joao Xavier"
 		]
 	},
-	"data-access": "Donaji-aceso"
+	"data-access": "Donaji-aceso",
+	"tag-client-automatic-update": "Automatal aktualigo de Wiki konektita"
 }
