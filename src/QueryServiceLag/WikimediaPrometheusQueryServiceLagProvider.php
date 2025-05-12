@@ -115,13 +115,13 @@ topk(
   1,
   time() - (
     label_replace(
-      blazegraph_lastupdated{cluster="wdqs", instance=~".*:9193"},
+      blazegraph_lastupdated{cluster=~"wdqs-(main|scholarly)", instance=~".*:9193"},
       "host", "$1", "instance", "^([^:]+):.*"
     )
     and on(host)
     label_replace(
       rate(org_wikidata_query_rdf_blazegraph_filters_QueryEventSenderFilter_event_sender_filter_StartedQueries{
-          cluster="wdqs", instance=~".*:9102"
+          cluster=~"wdqs-(main|scholarly)", instance=~".*:9102"
       }[5m]) > $thresh,
       "host", "$1", "instance", "^([^:]+):.*"
     )
