@@ -1,9 +1,24 @@
 {
 	"@metadata": {
 		"authors": [
-			"ToJack"
+			"ToJack",
+			"Farorud"
 		]
 	},
 	"wikidata-org-desc": "Конфигуратсияҳо ва танзимоти Wikibase, ки барои wikidata.org спетсификӣ мебошанд",
-	"data-access": "Дастрасӣ ба маълумот"
+	"wikibase-randomitem": "Элементи ногаҳонӣ",
+	"wikibase-queryservice": "Сервиси дархостҳо",
+	"data-access": "Дастрасӣ ба маълумот",
+	"gadget-section-wikidata": "Барои Викидода",
+	"gadget-section-lexemes": "Лексемаҳо",
+	"gadget-section-general": "Умумӣ",
+	"gadget-section-admin-gadgets": "Барои мудирон",
+	"tag-client-automatic-update": "Навсозии худкор аз викии пайвастшуда",
+	"tag-client-automatic-update-description": "Вироише, ки ба таври худкорӣ бо сабти ҳаракат ё несткунии саҳифаи пайвастшуда иҷро шудааст",
+	"tag-client-linkitem-change": "Тағйири пайванд ба сомона аз викии васлшуда",
+	"tag-client-linkitem-change-description": "Вироише, ки бо воситаи интерфейси пайвандҳо ба вебсайт дар викии васлшуда анҷом шудааст.",
+	"tag-termbox": "Панели мобилии истилоҳот",
+	"tag-termbox-description": "Вироише, ки бо панели мобилии истилоҳот анҷом шудааст.",
+	"tag-wikidata-ui": "Интерфейси корбарии Викидодаҳо",
+	"tag-wikidata-ui-description": "Вироиши дастӣ, иҷрошуда тавассути интерфейси оддии корбарии Викидодаҳо"
 }
