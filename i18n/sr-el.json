@@ -3,5 +3,14 @@
 		"authors": []
 	},
 	"wikidata-org-desc": "Podešavanja i prilagođavanja Vikibaze osobena za wikidata.org",
-	"data-access": "Pristup podacima"
+	"wikibase-randomitem": "Slučajna stavka",
+	"data-access": "Pristup podacima",
+	"gadget-section-wikidata": "Za Vikipodatke",
+	"gadget-section-lexemes": "Leksema",
+	"gadget-section-general": "Opšte",
+	"gadget-section-admin-gadgets": "Za administratore",
+	"tag-client-automatic-update": "Automatsko ažuriranje sa povezanog vikija",
+	"tag-client-automatic-update-description": "Automatska izmena zbog premeštanja ili brisanja povezane stranice.",
+	"tag-client-linkitem-change": "Promena međuviki veze sa povezanog vikija",
+	"tag-wikidata-ui-description": "Ručna izmena preko interfejsa Vikipodataka."
 }
