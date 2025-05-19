@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"ToJack"
+			"ToJack",
+			"Farorud"
 		]
 	},
 	"wikidata-org-desc": "Конфигуратсияҳо ва танзимоти Wikibase, ки барои wikidata.org спетсификӣ мебошанд",
+	"wikibase-queryservice": "Сервиси дархостҳо",
 	"data-access": "Дастрасӣ ба маълумот"
 }
