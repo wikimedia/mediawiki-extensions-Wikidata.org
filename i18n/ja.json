@@ -14,5 +14,13 @@
 	"gadget-section-wikidata": "ウィキデータ向け",
 	"gadget-section-lexemes": "語彙素",
 	"gadget-section-general": "全般",
-	"gadget-section-admin-gadgets": "管理者向けガジェット"
+	"gadget-section-admin-gadgets": "管理者向けガジェット",
+	"tag-client-automatic-update": "接続されたウィキからの自動更新",
+	"tag-client-automatic-update-description": "接続されたページが移動または削除されたために自動的に行われた編集。",
+	"tag-client-linkitem-change": "接続されたウィキからのサイトリンクの変更",
+	"tag-client-linkitem-change-description": "接続されたウィキのサイトリンク UI を使用して行われた編集。",
+	"tag-termbox": "モバイルタームボックス",
+	"tag-termbox-description": "モバイルタームボックス・インターフェースを使用して行われた編集。",
+	"tag-wikidata-ui": "ウィキデータ UI",
+	"tag-wikidata-ui-description": "ウィキデータの通常のユーザーインターフェースを使用して行われた手動編集。"
 }
