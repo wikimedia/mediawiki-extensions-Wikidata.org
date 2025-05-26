@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Hakimi97",
 			"Tofeiku"
 		]
 	},
@@ -16,7 +17,7 @@
 	"tag-client-automatic-update-description": "Suntingan yang telah dibuat secara automatik disebabkan laman yang disambungkan telah dipindahkan atau dihapuskan.",
 	"tag-client-linkitem-change": "Pautan tapak berubah daripada wiki yang disambungkan",
 	"tag-client-linkitem-change-description": "Suntingan yang dibuat menggunakan UI pautan tapak di wiki yang disambungkan.",
-	"tag-data-bridge": "Jambatan Wikidata",
+	"tag-data-bridge": "Anjungan Wikidata",
 	"tag-termbox": "Kotak istilah mudah alih",
 	"tag-termbox-description": "Suntingan dibuat menggunakan antara muka kotak istilah mudah alih.",
 	"tag-wikidata-ui": "Antara muka pengguna Wikidata",
