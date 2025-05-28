@@ -12,7 +12,13 @@
 	"gadget-section-lexemes": "Лексемаш",
 	"gadget-section-general": "Йукъара",
 	"gadget-section-admin-gadgets": "Администраторшна лерина гаджеташ",
+	"tag-client-automatic-update": "Авто карладаккхар зӀе йолчу вики тӀера",
+	"tag-client-automatic-update-description": "АгӀонан цӀе хийцина йа дӀайаьккхина хиларна, авто бина хийцам.",
+	"tag-client-linkitem-change": "ЗӀе йолчу вики тӀера сайтан хьажорг хийцар",
+	"tag-client-linkitem-change-description": "ЗӀе йолчу вики тӀехь хьажоргийн интерфейс лелош бина хийцам.",
 	"tag-data-bridge": "Викихаамийн тӀай",
 	"tag-termbox": "Мобилан термийн панель",
-	"tag-wikidata-ui": "Викихаамийн лелоран интерфейс"
+	"tag-termbox-description": "Мобилан терминийн панель лелош бина хийцамаш.",
+	"tag-wikidata-ui": "Викихаамийн лелоран интерфейс",
+	"tag-wikidata-ui-description": "Куьйга хийцамаш бина рогӀера Викихаамийн интерфейсехула."
 }
