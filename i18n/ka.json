@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mehman97"
+		]
+	},
+	"wikidata-org-desc": "Wikidata.org-თვის სპეციფიკური კონფიგურაცია და Wikibase-თვის მორგება",
+	"wikibase-randomitem": "შემთხვევითი ელემენტი",
+	"wikibase-queryservice": "ძიების სერვისი",
+	"data-access": "მონაცემებზე წვდომა",
+	"gadget-section-wikidata": "ვიკიმონაცემებზე-ორიენტირებული",
+	"gadget-section-lexemes": "ლექსემები",
+	"gadget-section-general": "მთავარი",
+	"gadget-section-admin-gadgets": "გაჯეტები ადმინისტრატორებისთვის",
+	"tag-client-automatic-update": "ავტომატური განახლება დაკავშირებული ვიკიდან",
+	"tag-client-automatic-update-description": "ავტომატურად განხორციელებული რედაქტირება, დაკავშირებული გვერდის გადატანის ან წაშლის გამო.",
+	"tag-client-linkitem-change": "საიტის ბმული შეიცვალა დაკავშირებული ვიკიდან",
+	"tag-client-linkitem-change-description": "რედაქტირება, რომელიც განხორციელდა დაკავშირებული ვიკიდან საიტის ბმულების UI-ს გამოყენებით.",
+	"tag-data-bridge": "ვიკიმონაცემების ხიდი",
+	"tag-termbox": "Mobile termbox",
+	"tag-termbox-description": "რედაქტირება განხორციელდა mobile termbox-ის ინტერფეისის გამოყენებით.",
+	"tag-wikidata-ui": "ვიკიმონაცემების მომხმარებლის ინტერფეისი",
+	"tag-wikidata-ui-description": "ხელით შესწორება განხორციელდა ვიკიმონაცემების ჩვეულებრივი მომხმარებლის ინტერფეისის გამოყენებით."
+}
