@@ -4,11 +4,16 @@
 			"Kwj2772",
 			"Revi",
 			"Underbaaar",
-			"Ykhwong"
+			"Ykhwong",
+			"YeBoy371"
 		]
 	},
 	"wikidata-org-desc": "Wikidata.org에서 사용되는 위키베이스 설정과 최적화",
+	"wikibase-randomitem": "임의의 항목으로",
 	"wikibase-queryservice": "쿼리 서비스",
 	"data-access": "데이터 접근",
-	"tag-data-bridge": "위키데이터 브리지"
+	"gadget-section-lexemes": "어휘소",
+	"gadget-section-general": "일반",
+	"tag-data-bridge": "위키데이터 브리지",
+	"tag-wikidata-ui": "위키데이터 사용자 인터페이스"
 }
