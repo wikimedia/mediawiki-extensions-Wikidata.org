@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Къарачайлы"
+		]
+	},
+	"wikidata-org-desc": "wikidata.org ючюн энчи болгъан Wikibase конфигурацияла эмда джарашдырыула",
+	"wikibase-randomitem": "Рандом элемент",
+	"wikibase-queryservice": "Соруулау Къуллукъ",
+	"data-access": "Билгилеге джетишиу",
+	"gadget-section-wikidata": "Викибилгилеге энчи",
+	"gadget-section-lexemes": "Лексемала",
+	"gadget-section-general": "Баш",
+	"gadget-section-admin-gadgets": "Администраторла ючюн гаджетле",
+	"tag-client-automatic-update": "Байламлы викиден автомат джангыртыу",
+	"tag-client-automatic-update-description": "Байламлы бетни ташылгъаны неда кетерилгени ючюн автомат халда этилген тюзетию.",
+	"tag-client-linkitem-change": "Байланнган викиден сайт джибериу тюрлениую",
+	"tag-client-linkitem-change-description": "Байламлы викидеги сайт джибериулени интерфейсини болушлугъу бла этилген тюзетиу.",
+	"tag-termbox": "Мобил термбокс",
+	"tag-termbox-description": "Мобил термбокс интерфейсни хайырландырыб этилген тюзетиу.",
+	"tag-wikidata-ui": "Викибилги хайырланыучу интерфейс",
+	"tag-wikidata-ui-description": "Викибилгилени тюз хайырланыучу интерфейсини юсю бла этилген къол тюзетиу."
+}
