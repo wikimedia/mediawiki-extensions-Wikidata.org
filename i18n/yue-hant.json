@@ -1,8 +1,25 @@
 {
 	"@metadata": {
 		"authors": [
+			"JeffreyKim",
 			"Winston Sung"
 		]
 	},
-	"wikibase-queryservice": "查詢服務"
+	"wikidata-org-desc": "專為wikidata.org而設嘅維基基礎配置同自訂",
+	"wikibase-randomitem": "隨機項目",
+	"wikibase-queryservice": "查詢服務",
+	"data-access": "數據存取權",
+	"gadget-section-wikidata": "以維基數據為中心",
+	"gadget-section-lexemes": "詞典",
+	"gadget-section-general": "一般",
+	"gadget-section-admin-gadgets": "畀管理員用嘅小工具",
+	"tag-client-automatic-update": "由連接咗嘅維基自動更新",
+	"tag-client-automatic-update-description": "由於連接咗嘅頁面被移動或者刪除而自動進行嘅編輯。",
+	"tag-client-linkitem-change": "由連接咗嘅維基改變咗網站連結",
+	"tag-client-linkitem-change-description": "呢個係用連接咗嘅維基上面嘅網站連結用戶介面進行嘅編輯。",
+	"tag-data-bridge": "維基數據橋",
+	"tag-termbox": "流動條款箱",
+	"tag-termbox-description": "用咗流動條款箱介面做嘅編輯。",
+	"tag-wikidata-ui": "維基數據用戶介面",
+	"tag-wikidata-ui-description": "用維基數據嘅常規用戶介面進行嘅手動編輯。"
 }
