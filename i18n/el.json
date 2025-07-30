@@ -20,5 +20,5 @@
 	"tag-client-linkitem-change": "Αλλαγή διασυνδέσμου από συνδεδεμένο βίκι",
 	"tag-client-linkitem-change-description": "Μια επεξεργασία που έγινε χρησιμοποιώντας την διεπαφή χρήστη διασυνδέσμων σε συνδεδεμένο βίκι.",
 	"tag-wikidata-ui": "Διεπαφή χρήστη Wikidata",
-	"tag-wikidata-ui-description": "Μια χειροκίνητη επεξεργασία που έγινε μέσω της κανονικής διεπαφής χρήστη στα Wikidata."
+	"tag-wikidata-ui-description": "Μια επεξεργασία που έγινε με το χέρι μέσω της κανονικής διεπαφής χρήστη στα Wikidata."
 }
