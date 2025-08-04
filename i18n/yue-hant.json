@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Winston Sung"
+			"Winston Sung",
+			"JeffreyKim"
 		]
 	},
-	"wikibase-queryservice": "查詢服務"
+	"wikidata-org-desc": "專為wikidata.org而設嘅維基基礎配置同自訂",
+	"wikibase-queryservice": "查詢服務",
+	"data-access": "數據存取權"
 }
