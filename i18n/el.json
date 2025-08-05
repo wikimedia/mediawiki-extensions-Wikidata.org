@@ -3,14 +3,22 @@
 		"authors": [
 			"DesVaMan",
 			"Geraki",
-			"NikosLikomitros"
+			"NikosLikomitros",
+			"Warudo"
 		]
 	},
 	"wikidata-org-desc": "Διαμόρφωση και προσαρμογές στη Wikibase που είναι ειδικά για το wikidata.org",
+	"wikibase-randomitem": "Τυχαίο Αντικείμενο",
 	"wikibase-queryservice": "Υπηρεσία ερωτημάτων",
 	"data-access": "Πρόσβαση δεδομένων",
 	"gadget-section-wikidata": "Θέμα το οποίο είναι σχετικό και επικεντρώνεται στα Βικιδεδομένα",
 	"gadget-section-lexemes": "Lexeme",
 	"gadget-section-general": "Γενικά",
-	"gadget-section-admin-gadgets": "Γκάτζετς για διαχειριστές"
+	"gadget-section-admin-gadgets": "Γκάτζετς για διαχειριστές",
+	"tag-client-automatic-update": "Αυτόματη ενημέρωση από συνδεδεμένο βίκι",
+	"tag-client-automatic-update-description": "Μια επεξεργασία που έγινε αυτόματα επειδή μια συνδεδεμένη σελίδα μετακινήθηκε ή διαγράφηκε.",
+	"tag-client-linkitem-change": "Αλλαγή διασυνδέσμου από συνδεδεμένο βίκι",
+	"tag-client-linkitem-change-description": "Μια επεξεργασία που έγινε χρησιμοποιώντας την διεπαφή χρήστη διασυνδέσμων σε συνδεδεμένο βίκι.",
+	"tag-wikidata-ui": "Διεπαφή χρήστη Wikidata",
+	"tag-wikidata-ui-description": "Μια επεξεργασία που έγινε με το χέρι μέσω της κανονικής διεπαφής χρήστη στα Wikidata."
 }
