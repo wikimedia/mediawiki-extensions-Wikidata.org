@@ -2,7 +2,9 @@
 	"@metadata": {
 		"authors": [
 			"Winston Sung",
-			"JeffreyKim"
+			"JeffreyKim",
+			"Ktchankt",
+			"Yueman"
 		]
 	},
 	"wikidata-org-desc": "專為wikidata.org而設嘅維基基礎配置同自訂",
