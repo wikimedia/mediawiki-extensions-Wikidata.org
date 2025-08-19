@@ -2,7 +2,9 @@
 	"@metadata": {
 		"authors": [
 			"Winston Sung",
-			"JeffreyKim"
+			"JeffreyKim",
+			"Ktchankt",
+			"Yueman"
 		]
 	},
 	"wikidata-org-desc": "專為wikidata.org而設嘅維基基礎配置同自訂",
@@ -14,8 +16,8 @@
 	"gadget-section-general": "一般",
 	"gadget-section-admin-gadgets": "畀管理員用嘅小工具",
 	"tag-client-automatic-update": "由連接咗嘅維基自動更新",
-	"tag-client-automatic-update-description": "由於連接咗嘅頁面被移動或者刪除而自動進行嘅編輯。",
-	"tag-client-linkitem-change": "由連接咗嘅維基改變咗網站連結",
+	"tag-client-automatic-update-description": "由於連接咗嘅頁面被搬或者被刪而自動進行嘅編輯。",
+	"tag-client-linkitem-change": "由連接咗嘅維基嘅網站連結改動",
 	"tag-client-linkitem-change-description": "呢個係用連接咗嘅維基上面嘅網站連結用戶介面進行嘅編輯。",
 	"tag-termbox": "流動條款箱",
 	"tag-termbox-description": "用咗流動條款箱介面做嘅編輯。",
