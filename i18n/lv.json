@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Silraks"
+			"Silraks",
+			"Papuass"
 		]
 	},
-	"data-access": "Datu piekļuve"
+	"data-access": "Datu piekļuve",
+	"gadget-section-lexemes": "Leksēmas"
 }
