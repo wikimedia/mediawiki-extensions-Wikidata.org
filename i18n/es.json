@@ -7,13 +7,20 @@
 			"Macofe",
 			"No se",
 			"Vivaelcelta",
-			"Whovian Biologist"
+			"Whovian Biologist",
+			"Ovruni"
 		]
 	},
 	"wikidata-org-desc": "Configuración y personalizaciones de Wikibase que son específicas para wikidata.org",
 	"wikibase-randomitem": "Elemento aleatorio",
+	"wikibase-queryservice": "Servicio de consultas",
 	"data-access": "Acceso a datos",
+	"gadget-section-lexemes": "Lexemas",
 	"gadget-section-general": "General",
 	"gadget-section-admin-gadgets": "Accesorios para los administradores",
-	"tag-client-automatic-update-description": "Una edición que se realizó automáticamente porque una página conectada se movió o eliminó."
+	"tag-client-automatic-update-description": "Una edición que se realizó automáticamente porque una página conectada se movió o eliminó.",
+	"tag-termbox": "Termbox móvil",
+	"tag-termbox-description": "Una edición realizada utilizando la interfaz del termbox móvil.",
+	"tag-wikidata-ui": "Interfaz de usuario de Wikidata",
+	"tag-wikidata-ui-description": "Una edición manual realizada utilizando la interfaz de usuario regular en Wikidata."
 }
