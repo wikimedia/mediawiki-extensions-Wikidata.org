@@ -12,9 +12,6 @@ class CacheQueryServiceLagStore {
 	private const CACHE_CLASS = 'CacheQueryServiceLagStore';
 	private const CACHE_KEY_LAG = 'lag';
 
-	/** @var WANObjectCache */
-	private $cache;
-
 	/** @var int */
 	private $ttl;
 
@@ -23,14 +20,13 @@ class CacheQueryServiceLagStore {
 	 * @param int $ttl positive time-to-live in seconds for cached lag
 	 */
 	public function __construct(
-		WANObjectCache $cache,
+		private readonly WANObjectCache $cache,
 		$ttl
 	) {
 		if ( !is_int( $ttl ) || $ttl <= 0 ) {
 			throw new \InvalidArgumentException( '$ttl cannot be less or equal to 0' );
 		}
 
-		$this->cache = $cache;
 		$this->ttl = $ttl;
 	}
 

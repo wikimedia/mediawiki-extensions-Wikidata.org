@@ -17,41 +17,17 @@ use Psr\Log\LoggerInterface;
 class WikimediaPrometheusQueryServiceLagProvider {
 
 	/**
-	 * @var HttpRequestFactory
-	 */
-	private $httpRequestFactory;
-
-	/**
-	 * @var LoggerInterface
-	 */
-	private $logger;
-
-	/**
-	 * @var string[]
-	 */
-	private $prometheusUrls;
-
-	/**
-	 * @var float
-	 */
-	private float $pooledServerMinQueryRate;
-
-	/**
 	 * @param HttpRequestFactory $httpRequestFactory
 	 * @param LoggerInterface $logger
 	 * @param string[] $prometheusUrls Prometheus query endpoint URLs (.../query)
-	 * @param float $pooledMinServerQueryRate Minimal query rate expected to be served from a pooled server
+	 * @param float $pooledServerMinQueryRate Minimal query rate expected to be served from a pooled server
 	 */
 	public function __construct(
-		HttpRequestFactory $httpRequestFactory,
-		LoggerInterface $logger,
-		array $prometheusUrls,
-		float $pooledMinServerQueryRate
+		private readonly HttpRequestFactory $httpRequestFactory,
+		private readonly LoggerInterface $logger,
+		private readonly array $prometheusUrls,
+		private readonly float $pooledServerMinQueryRate,
 	) {
-		$this->prometheusUrls = $prometheusUrls;
-		$this->httpRequestFactory = $httpRequestFactory;
-		$this->logger = $logger;
-		$this->pooledServerMinQueryRate = $pooledMinServerQueryRate;
 	}
 
 	/**
