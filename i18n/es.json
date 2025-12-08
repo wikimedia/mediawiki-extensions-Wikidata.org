@@ -7,11 +7,13 @@
 			"Hazard-SJ",
 			"No se",
 			"Vivaelcelta",
-			"Whovian Biologist"
+			"Whovian Biologist",
+			"Ovruni"
 		]
 	},
 	"wikidata-org-desc": "Configuración y personalizaciones de Wikibase que son específicas para wikidata.org",
 	"wikibase-lexeme-lexicographical-data": "Datos lexicográficos",
 	"wikibase-lexeme-randomlexeme": "Lexema aleatorio",
+	"wikibase-queryservice": "Servicio de consultas",
 	"data-access": "Acceso a datos"
 }
