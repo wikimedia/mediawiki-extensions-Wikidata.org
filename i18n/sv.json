@@ -4,7 +4,8 @@
 			"André Costa (WMSE)",
 			"Mahir256",
 			"Sabelöga",
-			"WikiPhoenix"
+			"WikiPhoenix",
+			"Stefan2255"
 		]
 	},
 	"wikidata-org-desc": "Konfiguration och anpassningar till Wikibase som är specifika för wikidata.org",
@@ -12,6 +13,16 @@
 	"wikibase-queryservice": "Frågetjänst",
 	"data-access": "Dataåtkomst",
 	"gadget-section-wikidata": "Wikidata-specifikt",
+	"gadget-section-lexemes": "Lexem",
 	"gadget-section-general": "Allmänt",
-	"gadget-section-admin-gadgets": "Finesser för administratörer"
+	"gadget-section-admin-gadgets": "Finesser för administratörer",
+	"tag-client-automatic-update": "Automatisk uppdatering från ansluten wiki",
+	"tag-client-automatic-update-description": "En redigering som gjordes automatiskt eftersom en ansluten sida flyttades eller togs bort.",
+	"tag-client-linkitem-change": "Ändring av webbplatslänk från ansluten wiki",
+	"tag-client-linkitem-change-description": "En redigering som gjordes med hjälp av webbplatslänkarnas användargränssnitt på en ansluten wiki.",
+	"tag-data-bridge": "Wikidata-bryggan",
+	"tag-termbox": "Mobil termbox",
+	"tag-termbox-description": "En redigering gjord med hjälp av det mobila termbox-gränssnittet.",
+	"tag-wikidata-ui": "Wikidatas användargränssnitt",
+	"tag-wikidata-ui-description": "En manuell redigering gjord med det vanliga användargränssnittet på Wikidata."
 }
