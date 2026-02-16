@@ -7,7 +7,6 @@
 /composer.lock
 /vendor
 /build/
-!.*
 .idea/
 .eslintcache
 /.stylelintcache
