@@ -1,9 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Muhaideen Faiz Brichini"
+			"Muhaideen Faiz Brichini",
+			"Uthman salma"
 		]
 	},
 	"wikibase-randomitem": "Kaŋa Jaa",
+	"wikibase-queryservice": "pɩɛhɩbʋ tʋma",
+	"data-access": "Duoho vuorɩ",
+	"gadget-section-wikidata": "Wikiduoho-centric",
+	"gadget-section-lexemes": "Lexemɩhɩ",
 	"gadget-section-general": "Jie Jaa bee Yɩli Jaa bee Boŋ Jaa"
 }
