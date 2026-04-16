@@ -3,6 +3,7 @@
 		"authors": [
 			"Kwj2772",
 			"Revi",
+			"Tensama0415",
 			"Underbaaar",
 			"YeBoy371",
 			"Ykhwong"
@@ -14,6 +15,7 @@
 	"data-access": "데이터 접근",
 	"gadget-section-lexemes": "어휘소",
 	"gadget-section-general": "일반",
+	"gadget-section-admin-gadgets": "관리자용 소도구",
 	"tag-data-bridge": "위키데이터 브리지",
 	"tag-wikidata-ui": "위키데이터 사용자 인터페이스"
 }
