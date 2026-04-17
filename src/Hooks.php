@@ -3,12 +3,12 @@
 namespace WikidataOrg;
 
 use MediaWiki\Api\Hook\ApiMaxLagInfoHook;
-use MediaWiki\Hook\SkinAddFooterLinksHook;
 use MediaWiki\Html\Html;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Output\Hook\BeforePageDisplayHook;
 use MediaWiki\Output\OutputPage;
 use MediaWiki\Registration\ExtensionRegistry;
+use MediaWiki\Skin\Hook\SkinAddFooterLinksHook;
 use MediaWiki\Skin\Skin;
 use RuntimeException;
 use Wikibase\Repo\WikibaseRepo;

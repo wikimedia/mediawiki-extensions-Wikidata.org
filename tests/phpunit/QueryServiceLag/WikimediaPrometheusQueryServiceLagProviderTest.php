@@ -5,8 +5,8 @@ declare( strict_types = 1 );
 namespace WikidataOrg\Tests\QueryServiceLag;
 
 use MediaWiki\Http\HttpRequestFactory;
+use MediaWiki\Http\MWHttpRequest;
 use MediaWiki\Status\Status;
-use MWHttpRequest;
 use Psr\Log\NullLogger;
 use WikidataOrg\QueryServiceLag\WikimediaPrometheusQueryServiceLagProvider;
 
