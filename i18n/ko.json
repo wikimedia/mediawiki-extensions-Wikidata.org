@@ -5,7 +5,8 @@
 			"Revi",
 			"Underbaaar",
 			"Ykhwong",
-			"YeBoy371"
+			"YeBoy371",
+			"Tensama0415"
 		]
 	},
 	"wikidata-org-desc": "Wikidata.org에서 사용되는 위키베이스 설정과 최적화",
@@ -14,5 +15,6 @@
 	"data-access": "데이터 접근",
 	"gadget-section-lexemes": "어휘소",
 	"gadget-section-general": "일반",
+	"gadget-section-admin-gadgets": "관리자용 소도구",
 	"tag-wikidata-ui": "위키데이터 사용자 인터페이스"
 }
