@@ -13,9 +13,17 @@
 	"wikibase-randomitem": "임의의 항목으로",
 	"wikibase-queryservice": "쿼리 서비스",
 	"data-access": "데이터 접근",
+	"gadget-section-wikidata": "위키데이터 중심적",
 	"gadget-section-lexemes": "어휘소",
 	"gadget-section-general": "일반",
 	"gadget-section-admin-gadgets": "관리자용 소도구",
+	"tag-client-automatic-update": "연결된 위키에서의 자동 업데이트",
+	"tag-client-automatic-update-description": "연결된 문서가 이동되거나 삭제되어 자동으로 이루어진 편집입니다.",
+	"tag-client-linkitem-change": "연결된 위키에서의 사이트링크 변경",
+	"tag-client-linkitem-change-description": "연결된 위키에서 사이트링크 UI를 사용하여 이루어진 편집입니다.",
 	"tag-data-bridge": "위키데이터 브리지",
-	"tag-wikidata-ui": "위키데이터 사용자 인터페이스"
+	"tag-termbox": "모바일 텀박스",
+	"tag-termbox-description": "모바일 텀박스 인터페이스를 사용하여 이루어진 편집입니다.",
+	"tag-wikidata-ui": "위키데이터 사용자 인터페이스",
+	"tag-wikidata-ui-description": "위키데이터의 일반 사용자 인터페이스를 사용하여 이루어진 수동 편집입니다."
 }
