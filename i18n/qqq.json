@@ -27,5 +27,10 @@
 	"tag-termbox": "The text shown for the \"termbox\" change tag.",
 	"tag-termbox-description": "The description for the \"termbox\" change tag.",
 	"tag-wikidata-ui": "The text shown for the \"wikidata-ui\" change tag.",
-	"tag-wikidata-ui-description": "The description for the \"wikidata-ui\" change tag."
+	"tag-wikidata-ui-description": "The description for the \"wikidata-ui\" change tag.",
+	"wikiprojects-sidebar-wikiproject-music": "The name of [[d:Special:MyLanguage/Wikidata:WikiProject Music|WikiProject Music]] to use in the Related WikiProjects sidebar section.\nSee also: {{msg-mw|wikibase-wikiprojects-sidebar-section}}",
+	"wikiprojects-sidebar-wikiproject-medicine": "The name of [[d:Special:MyLanguage/Wikidata:WikiProject Medicine|WikiProject Medicine]] to use in the Related WikiProjects sidebar section.\nSee also: {{msg-mw|wikibase-wikiprojects-sidebar-section}}",
+	"wikiprojects-sidebar-wikiproject-datasets": "The name of [[d:Special:MyLanguage/Wikidata:WikiProject Datasets|WikiProject Datasets]] to use in the Related WikiProjects sidebar section.\nSee also: {{msg-mw|wikibase-wikiprojects-sidebar-section}}",
+	"wikiprojects-sidebar-wikiproject-sum-of-all-paintings": "The name of [[d:Special:MyLanguage/Wikidata:WikiProject sum of all paintings|WikiProject sum of all paintings]] to use in the Related WikiProjects sidebar section.\nSee also: {{msg-mw|wikibase-wikiprojects-sidebar-section}}",
+	"wikiprojects-sidebar-wikiproject-elections": "The name of [[d:Special:MyLanguage/Wikidata:WikiProject elections|WikiProject elections]] to use in the Related WikiProjects sidebar section.\nSee also: {{msg-mw|wikibase-wikiprojects-sidebar-section}}"
 }
