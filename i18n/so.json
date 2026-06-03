@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"AhmedG612"
+		]
+	},
+	"wikidata-org-desc": "Habaynta iyo wax ka beddellada Wikibase ee u gaarka ah wikidata.org",
+	"wikibase-randomitem": "Shay aan kala sooc lahayn",
+	"wikibase-queryservice": "Adeegga weydiinta",
+	"data-access": "Helitaanka xogta",
+	"gadget-section-wikidata": "Wikidata-ku saleysan",
+	"gadget-section-lexemes": "Lexem-yada",
+	"gadget-section-general": "Guud",
+	"gadget-section-admin-gadgets": "Qalabka loogu talagalay maamulayaasha",
+	"tag-client-automatic-update": "Cusboonaysiin toos ah oo ka timaadda wiki-ga ku xiran",
+	"tag-client-automatic-update-description": "Wax ka beddel si toos ah loo sameeyay sababtoo ah bog ku xiran ayaa la raray ama la tirtiray.",
+	"tag-client-linkitem-change": "Isbeddelka xiriirka bogga ee ka yimid wiki-ga ku xiran",
+	"tag-client-linkitem-change-description": "Wax ka beddel lagu sameeyay iyadoo la adeegsanayo is dhexgalka sitelinks ee wiki-ga ku xiran.",
+	"tag-data-bridge": "Buundada Wikidata",
+	"tag-termbox": "Sanduuqa erayada ee mobilka",
+	"tag-termbox-description": "Wax ka beddel lagu sameeyay iyadoo la adeegsanayo is dhexgalka sanduuqa erayada ee mobilka.",
+	"tag-wikidata-ui": "Is dhexgalka isticmaale ee Wikidata",
+	"tag-wikidata-ui-description": "Wax ka beddel gacanta lagu sameeyay iyadoo la adeegsanayo is dhexgalka caadiga ah ee Wikidata."
+}
