@@ -20,5 +20,10 @@
 	"tag-termbox": "Cassa de terminos mobile",
 	"tag-termbox-description": "Un modification facite usante le interfacie del cassa de terminos mobile.",
 	"tag-wikidata-ui": "Interfacie de usator de Wikidata",
-	"tag-wikidata-ui-description": "Un modification manual facite usante le interfacie de usator normal sur Wikidata."
+	"tag-wikidata-ui-description": "Un modification manual facite usante le interfacie de usator normal sur Wikidata.",
+	"wikiprojects-sidebar-wikiproject-music": "WikiProjecto Musica",
+	"wikiprojects-sidebar-wikiproject-medicine": "WikiProjecto Medicina",
+	"wikiprojects-sidebar-wikiproject-datasets": "WikiProjecto Insimules de datos",
+	"wikiprojects-sidebar-wikiproject-sum-of-all-paintings": "WikiProjecto Summa de tote le picturas",
+	"wikiprojects-sidebar-wikiproject-elections": "WikiProjecto Elections"
 }

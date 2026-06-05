@@ -26,5 +26,10 @@
 	"tag-termbox": "Mobile Termbox",
 	"tag-termbox-description": "Eine Bearbeitung, die über die mobile Termbox-Schnittstelle vorgenommen wurde.",
 	"tag-wikidata-ui": "Wikidata-Benutzeroberfläche",
-	"tag-wikidata-ui-description": "Eine manuelle Bearbeitung, die über die reguläre Benutzeroberfläche von Wikidata vorgenommen wurde."
+	"tag-wikidata-ui-description": "Eine manuelle Bearbeitung, die über die reguläre Benutzeroberfläche von Wikidata vorgenommen wurde.",
+	"wikiprojects-sidebar-wikiproject-music": "WikiProjekt Musik",
+	"wikiprojects-sidebar-wikiproject-medicine": "WikiProjekt Medizin",
+	"wikiprojects-sidebar-wikiproject-datasets": "WikiProjekt Datensätze",
+	"wikiprojects-sidebar-wikiproject-sum-of-all-paintings": "WikiProjekt Summe aller Gemälde",
+	"wikiprojects-sidebar-wikiproject-elections": "WikiProjekt Wahlen"
 }

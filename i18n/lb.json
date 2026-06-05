@@ -20,5 +20,10 @@
 	"tag-termbox": "Mobil Termbox",
 	"tag-termbox-description": "Eng Ännerung, déi iwwer de mobillen Termbox-Interface gemaach gouf.",
 	"tag-wikidata-ui": "Wikidata-Benotzerinterface",
-	"tag-wikidata-ui-description": "Eng manuell Ännerung, déi iwwer deen normale Benotzerinterface vu Wikidata gemaach gouf."
+	"tag-wikidata-ui-description": "Eng manuell Ännerung, déi iwwer deen normale Benotzerinterface vu Wikidata gemaach gouf.",
+	"wikiprojects-sidebar-wikiproject-music": "WikiProjet Musek",
+	"wikiprojects-sidebar-wikiproject-medicine": "WikiProjet Medezin",
+	"wikiprojects-sidebar-wikiproject-datasets": "WikiProjet Datesätz",
+	"wikiprojects-sidebar-wikiproject-sum-of-all-paintings": "WikiProjet Molerei",
+	"wikiprojects-sidebar-wikiproject-elections": "WikiProjet Walen"
 }

@@ -5,6 +5,7 @@
 			"McDutchie",
 			"Robin van der Vliet",
 			"Romaine",
+			"Siebrand",
 			"Sjoerddebruin"
 		]
 	},
@@ -24,5 +25,10 @@
 	"tag-termbox": "Mobiel termenvak",
 	"tag-termbox-description": "Een bewerking gemaakt met behulp van de mobiele termenvak-interface.",
 	"tag-wikidata-ui": "Wikidata-gebruikersinterface",
-	"tag-wikidata-ui-description": "Een handmatige bewerking die gemaakt is met de reguliere gebruikersinterface op Wikidata."
+	"tag-wikidata-ui-description": "Een handmatige bewerking die gemaakt is met de reguliere gebruikersinterface op Wikidata.",
+	"wikiprojects-sidebar-wikiproject-music": "WikiProject Muziek",
+	"wikiprojects-sidebar-wikiproject-medicine": "WikiProject Geneeskunde",
+	"wikiprojects-sidebar-wikiproject-datasets": "WikiProject Datasets",
+	"wikiprojects-sidebar-wikiproject-sum-of-all-paintings": "WikiProject Alle schilderijen",
+	"wikiprojects-sidebar-wikiproject-elections": "WikiProject Verkiezingen"
 }
