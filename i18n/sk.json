@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Oujon"
+			"Oujon",
+			"Wizzard"
 		]
 	},
 	"wikidata-org-desc": "Konfigurácia a prispôsobenia Wikibase, ktoré sú špecifické pre wikidata.org",
