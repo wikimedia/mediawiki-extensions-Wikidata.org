@@ -21,7 +21,10 @@
 	"tag-termbox-description": "Mobil termbox interfeysindən istifadə edilən redaktə.",
 	"tag-wikidata-ui": "Vikidata istifadəçi interfeysi",
 	"tag-wikidata-ui-description": "Vikidatada adi istifadəçi interfeysindən istifadə etməklə edilən manual redaktə.",
+	"wikiprojects-sidebar-wikiproject-astronomy": "VikiLayihə Astronomiya",
 	"wikiprojects-sidebar-wikiproject-music": "VikiLayihə Musiqi",
 	"wikiprojects-sidebar-wikiproject-medicine": "VikiLayihə Tibb",
-	"wikiprojects-sidebar-wikiproject-datasets": "VikiLayihə Datasetlər"
+	"wikiprojects-sidebar-wikiproject-datasets": "VikiLayihə Datasetlər",
+	"wikiprojects-sidebar-wikiproject-sum-of-all-paintings": "VikiLayihə bütün rəsmlərin cəmi",
+	"wikiprojects-sidebar-wikiproject-elections": "VikiLayihə seçkilər"
 }
