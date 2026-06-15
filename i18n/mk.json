@@ -20,5 +20,11 @@
 	"tag-termbox": "Мобилно поимовно поле",
 	"tag-termbox-description": "уредување направено со мобилното поимовно поле.",
 	"tag-wikidata-ui": "Кориснички посредник на Википодатоците",
-	"tag-wikidata-ui-description": "Рачно уредување направено користејќи го редовниот кориснички посредник на Википодатоците."
+	"tag-wikidata-ui-description": "Рачно уредување направено користејќи го редовниот кориснички посредник на Википодатоците.",
+	"wikiprojects-sidebar-wikiproject-astronomy": "Википроект Астрономија",
+	"wikiprojects-sidebar-wikiproject-music": "Википроект Музика",
+	"wikiprojects-sidebar-wikiproject-medicine": "Википроект Медицина",
+	"wikiprojects-sidebar-wikiproject-datasets": "Википроект Податочни збирови",
+	"wikiprojects-sidebar-wikiproject-sum-of-all-paintings": "Википроект Збир од сите уметнички слики",
+	"wikiprojects-sidebar-wikiproject-elections": "Википроект Избори"
 }
