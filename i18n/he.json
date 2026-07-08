@@ -21,5 +21,11 @@
 	"tag-termbox": "תיבת איברים ניידת",
 	"tag-termbox-description": "עריכה שנעשתה באמצעות תיבת איברים ניידת.",
 	"tag-wikidata-ui": "ממשק משתמש של ויקינתונים",
-	"tag-wikidata-ui-description": "עריכה ידנית שנעשתה באמצעות ממשק המשתמש הרגיל בוויקינתונים."
+	"tag-wikidata-ui-description": "עריכה ידנית שנעשתה באמצעות ממשק המשתמש הרגיל בוויקינתונים.",
+	"wikiprojects-sidebar-wikiproject-astronomy": "מיזם אסטרונומיה",
+	"wikiprojects-sidebar-wikiproject-music": "מיזם מוזיקה",
+	"wikiprojects-sidebar-wikiproject-medicine": "מיזם רפואה",
+	"wikiprojects-sidebar-wikiproject-datasets": "מיזם ערכות נתונים",
+	"wikiprojects-sidebar-wikiproject-sum-of-all-paintings": "מיזם סך כל הציורים",
+	"wikiprojects-sidebar-wikiproject-elections": "מיזם בחירות"
 }

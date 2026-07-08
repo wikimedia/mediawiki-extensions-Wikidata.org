@@ -28,5 +28,11 @@
 	"tag-termbox": "مربع المصطلحات للمحمول",
 	"tag-termbox-description": "تعديل تم باستخدام واجهة مربع المعلومات الخاصة بالأجهزة المحمولة.",
 	"tag-wikidata-ui": "واجهة مستخدم ويكي بيانات",
-	"tag-wikidata-ui-description": "تعديل يدوي تم إجراؤه باستخدام واجهة المستخدم العادية في ويكي بيانات."
+	"tag-wikidata-ui-description": "تعديل يدوي تم إجراؤه باستخدام واجهة المستخدم العادية في ويكي بيانات.",
+	"wikiprojects-sidebar-wikiproject-astronomy": "مشروع ويكي الفلكي",
+	"wikiprojects-sidebar-wikiproject-music": "موسيقى مشروع ويكي",
+	"wikiprojects-sidebar-wikiproject-medicine": "مشروع ويكي للطب",
+	"wikiprojects-sidebar-wikiproject-datasets": "مجموعات بيانات مشروع ويكي",
+	"wikiprojects-sidebar-wikiproject-sum-of-all-paintings": "مجموع جميع اللوحات في مشروع ويكي",
+	"wikiprojects-sidebar-wikiproject-elections": "انتخابات مشروع ويكي"
 }

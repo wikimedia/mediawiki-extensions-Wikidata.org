@@ -25,5 +25,11 @@
 	"tag-termbox": "移动术语框",
 	"tag-termbox-description": "使用移动术语框界面进行的编辑。",
 	"tag-wikidata-ui": "维基数据用户界面",
-	"tag-wikidata-ui-description": "使用维基数据上的常规用户界面进行的手动编辑。"
+	"tag-wikidata-ui-description": "使用维基数据上的常规用户界面进行的手动编辑。",
+	"wikiprojects-sidebar-wikiproject-astronomy": "维基天文学专题",
+	"wikiprojects-sidebar-wikiproject-music": "维基音乐专题",
+	"wikiprojects-sidebar-wikiproject-medicine": "维基医学专题",
+	"wikiprojects-sidebar-wikiproject-datasets": "维基数据集专题",
+	"wikiprojects-sidebar-wikiproject-sum-of-all-paintings": "维基绘画总集专题",
+	"wikiprojects-sidebar-wikiproject-elections": "维基选举专题"
 }
