@@ -26,5 +26,11 @@
 	"tag-termbox": "Мобильная панель термов",
 	"tag-termbox-description": "Правка, сделанная с использованием мобильной панели термов.",
 	"tag-wikidata-ui": "Пользовательский интерфейс Викиданных",
-	"tag-wikidata-ui-description": "Ручная правка, выполненная через обычный пользовательский интерфейс Викиданных."
+	"tag-wikidata-ui-description": "Ручная правка, выполненная через обычный пользовательский интерфейс Викиданных.",
+	"wikiprojects-sidebar-wikiproject-astronomy": "Вики-проект «Астрономия»",
+	"wikiprojects-sidebar-wikiproject-music": "Вики-проект «Музыка»",
+	"wikiprojects-sidebar-wikiproject-medicine": "Вики-проект «Медицина»",
+	"wikiprojects-sidebar-wikiproject-datasets": "Вики-проект «Наборы данных»",
+	"wikiprojects-sidebar-wikiproject-sum-of-all-paintings": "Вики-проект «Cумма всех картин»",
+	"wikiprojects-sidebar-wikiproject-elections": "Вики-проект «Выборы»"
 }
