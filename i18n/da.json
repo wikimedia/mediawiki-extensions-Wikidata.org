@@ -2,9 +2,24 @@
 	"@metadata": {
 		"authors": [
 			"Joedalton",
-			"Lucie-Aimée Kaffee"
+			"Lucie-Aimée Kaffee",
+			"Steenth"
 		]
 	},
 	"wikidata-org-desc": "Konfiguration for og tilpasninger til Wikibase som er specifikke for wikidata.org",
-	"data-access": "Dataadgang"
+	"wikibase-randomitem": "Tilfældigt emne",
+	"wikibase-queryservice": "Forespørgselstjeneste",
+	"data-access": "Dataadgang",
+	"gadget-section-wikidata": "Wikidata-specifikt",
+	"gadget-section-lexemes": "Leksemer",
+	"gadget-section-general": "Generelt",
+	"gadget-section-admin-gadgets": "Gadgets til administratorer",
+	"tag-client-automatic-update": "Automatisk opdatering fra tilknyttet wiki",
+	"tag-client-automatic-update-description": "En redigering, der blev foretaget automatisk, fordi en tilknyttet side blev flyttet eller slettet.",
+	"tag-client-linkitem-change": "Ændring af sitelink fra tilknyttet wiki",
+	"tag-client-linkitem-change-description": "En redigering, der blev foretaget ved hjælp af brugergrænsefladen til sitelinks på en tilknyttet wiki.",
+	"tag-termbox": "Mobiltermboks",
+	"tag-termbox-description": "En redigering foretaget ved hjælp af den mobile termbox-grænseflade.",
+	"tag-wikidata-ui": "Wikidata-brugergrænseflade",
+	"tag-wikidata-ui-description": "En manuel redigering foretaget ved hjælp af den almindelige brugergrænseflade på Wikidata."
 }
