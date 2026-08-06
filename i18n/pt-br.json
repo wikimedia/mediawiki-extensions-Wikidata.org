@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"!Silent",
+			"Eduardoaddad",
 			"Fúlvio",
 			"Stanglavine"
 		]
@@ -9,5 +10,16 @@
 	"wikidata-org-desc": "Configurações e customizações para a Wikibase que são específicas ao wikidata.org",
 	"wikibase-randomitem": "Item aleatório",
 	"wikibase-queryservice": "Serviço de consulta",
-	"data-access": "Acesso ao dados"
+	"data-access": "Acesso ao dados",
+	"gadget-section-lexemes": "Lexemas",
+	"gadget-section-general": "Geral",
+	"gadget-section-admin-gadgets": "Ferramentas para administradores",
+	"tag-client-automatic-update": "Atualização automática desde a wiki ligada",
+	"tag-client-automatic-update-description": "Uma edição que foi feita de forma automática porque uma página conectada foi movida ou excluída.",
+	"tag-client-linkitem-change": "Alteração por link intersites desde a wiki ligada",
+	"tag-client-linkitem-change-description": "Uma edição que foi feita usando a interface de usuário dos links intersites em uma wiki conectada.",
+	"tag-data-bridge": "Ponte da Wikidata",
+	"tag-termbox": "Caixa de termos móvel",
+	"tag-wikidata-ui": "Interface de usuário de Wikidata",
+	"tag-wikidata-ui-description": "Uma edição manual feita usando a normal interface do usuário de Wikidata."
 }
