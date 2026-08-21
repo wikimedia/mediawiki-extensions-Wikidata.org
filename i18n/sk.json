@@ -21,5 +21,11 @@
 	"tag-termbox": "Mobilný termbox",
 	"tag-termbox-description": "Úprava vykonaná pomocou mobilného rozhrania termboxu.",
 	"tag-wikidata-ui": "Používateľské rozhranie Wikidata",
-	"tag-wikidata-ui-description": "Manuálna úprava vykonaná pomocou bežného používateľského rozhrania na Wikidata."
+	"tag-wikidata-ui-description": "Manuálna úprava vykonaná pomocou bežného používateľského rozhrania na Wikidata.",
+	"wikiprojects-sidebar-wikiproject-astronomy": "WikiProjekt Astronómia",
+	"wikiprojects-sidebar-wikiproject-music": "WikiProjekt Hudba",
+	"wikiprojects-sidebar-wikiproject-medicine": "WikiProjekt Medicína",
+	"wikiprojects-sidebar-wikiproject-datasets": "WikiProjekt Množiny údajov",
+	"wikiprojects-sidebar-wikiproject-sum-of-all-paintings": "WikiProjekt Súhrn všetkých malieb",
+	"wikiprojects-sidebar-wikiproject-elections": "WikiProjekt Voľby"
 }
