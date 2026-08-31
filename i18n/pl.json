@@ -3,6 +3,7 @@
 		"authors": [
 			"Chrumps",
 			"Msz2001",
+			"PanWor",
 			"Rzuwig",
 			"Woytecr"
 		]
@@ -23,5 +24,11 @@
 	"tag-termbox": "Metryczka w wersji mobilnej",
 	"tag-termbox-description": "Zmiana wykonana przy użyciu metryczki elementu w wersji mobilnej strony.",
 	"tag-wikidata-ui": "Interfejs użytkownika Wikidanych",
-	"tag-wikidata-ui-description": "Ręczna edycja, wykonana w standardowym interfejsie użytkownika na Wikidanych."
+	"tag-wikidata-ui-description": "Ręczna edycja, wykonana w standardowym interfejsie użytkownika na Wikidanych.",
+	"wikiprojects-sidebar-wikiproject-astronomy": "Wikiprojekt Astronomia",
+	"wikiprojects-sidebar-wikiproject-music": "Wikiprojekt Muzyka",
+	"wikiprojects-sidebar-wikiproject-medicine": "Wikiprojekt Medycyna",
+	"wikiprojects-sidebar-wikiproject-datasets": "Wikiprojekt Zestawy danych",
+	"wikiprojects-sidebar-wikiproject-sum-of-all-paintings": "Wikiprojekt Suma wszystkich obrazów",
+	"wikiprojects-sidebar-wikiproject-elections": "Wikiprojekt Wybory"
 }
