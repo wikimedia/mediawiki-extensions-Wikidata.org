@@ -31,7 +31,8 @@
 	"Hooks": {
 		"BeforePageDisplay": "main",
 		"ApiMaxLagInfo": "main",
-		"SkinAddFooterLinks": "main"
+		"SkinAddFooterLinks": "main",
+		"MessageCacheFetchOverrides": "main"
 	},
 	"HookHandlers": {
 		"main": {

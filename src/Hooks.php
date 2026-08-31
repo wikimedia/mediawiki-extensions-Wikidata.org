@@ -4,6 +4,7 @@ namespace WikidataOrg;
 
 use MediaWiki\Api\Hook\ApiMaxLagInfoHook;
 use MediaWiki\Html\Html;
+use MediaWiki\Language\Hook\MessageCacheFetchOverridesHook;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Output\Hook\BeforePageDisplayHook;
 use MediaWiki\Output\OutputPage;
@@ -26,7 +27,8 @@ use WikidataOrg\QueryServiceLag\CacheQueryServiceLagStore;
 final class Hooks implements
 	BeforePageDisplayHook,
 	ApiMaxLagInfoHook,
-	SkinAddFooterLinksHook
+	SkinAddFooterLinksHook,
+	MessageCacheFetchOverridesHook
 {
 
 	/**
@@ -111,6 +113,11 @@ final class Hooks implements
 				'queryserviceLag' => $lag,
 			];
 		}
+	}
+
+	public function onMessageCacheFetchOverrides( array &$keys ): void {
+		$keys['growthexperiments-homepage-impact-edited-articles-trend-chart-count-label'] =
+			'growthexperiments-homepage-impact-edited-items-trend-chart-count-label';
 	}
 
 }
