@@ -3,6 +3,7 @@
 		"authors": [
 			"GuoPC",
 			"Liuxinyu970226",
+			"Shizhao",
 			"Stevenliuyi",
 			"VulpesVulpes825",
 			"Xzonn",
@@ -31,5 +32,6 @@
 	"wikiprojects-sidebar-wikiproject-medicine": "维基医学专题",
 	"wikiprojects-sidebar-wikiproject-datasets": "维基数据集专题",
 	"wikiprojects-sidebar-wikiproject-sum-of-all-paintings": "维基绘画总集专题",
-	"wikiprojects-sidebar-wikiproject-elections": "维基选举专题"
+	"wikiprojects-sidebar-wikiproject-elections": "维基选举专题",
+	"growthexperiments-homepage-impact-edited-items-trend-chart-count-label": "对{{GENDER:|您已}}编辑项目的查看"
 }
