@@ -22,5 +22,12 @@
 	"tag-termbox": "Mobilní termbox",
 	"tag-termbox-description": "Editace provedená pomocí mobilního rozhraní termboxu.",
 	"tag-wikidata-ui": "Uživatelské rozhraní Wikidat",
-	"tag-wikidata-ui-description": "Ruční editace provedená pomocí běžného uživatelského rozhraní na Wikidatech."
+	"tag-wikidata-ui-description": "Ruční editace provedená pomocí běžného uživatelského rozhraní na Wikidatech.",
+	"wikiprojects-sidebar-wikiproject-astronomy": "WikiProjekt Astronomie",
+	"wikiprojects-sidebar-wikiproject-music": "WikiProjekt Hudba",
+	"wikiprojects-sidebar-wikiproject-medicine": "WikiProjekt Lékařství",
+	"wikiprojects-sidebar-wikiproject-datasets": "WikiProjekt Datasety",
+	"wikiprojects-sidebar-wikiproject-sum-of-all-paintings": "WikiProjekt souhrn všech obrazů",
+	"wikiprojects-sidebar-wikiproject-elections": "WikiProjekt volby",
+	"growthexperiments-homepage-impact-edited-items-trend-chart-count-label": "Počty zobrazení položek, které jste {{GENDER:|editoval|editovala|editovali}}"
 }

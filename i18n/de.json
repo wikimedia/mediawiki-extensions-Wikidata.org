@@ -32,5 +32,6 @@
 	"wikiprojects-sidebar-wikiproject-medicine": "WikiProjekt Medizin",
 	"wikiprojects-sidebar-wikiproject-datasets": "WikiProjekt Datensätze",
 	"wikiprojects-sidebar-wikiproject-sum-of-all-paintings": "WikiProjekt Summe aller Gemälde",
-	"wikiprojects-sidebar-wikiproject-elections": "WikiProjekt Wahlen"
+	"wikiprojects-sidebar-wikiproject-elections": "WikiProjekt Wahlen",
+	"growthexperiments-homepage-impact-edited-items-trend-chart-count-label": "Ansichten zu Artikeln, die {{GENDER:|du}} bearbeitet hast"
 }
