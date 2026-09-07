@@ -31,5 +31,6 @@
 	"wikiprojects-sidebar-wikiproject-medicine": "위키프로젝트 의학",
 	"wikiprojects-sidebar-wikiproject-datasets": "위키프로젝트 데이터셋",
 	"wikiprojects-sidebar-wikiproject-sum-of-all-paintings": "위키프로젝트 모든 그림의 합계",
-	"wikiprojects-sidebar-wikiproject-elections": "위키프로젝트 선거"
+	"wikiprojects-sidebar-wikiproject-elections": "위키프로젝트 선거",
+	"growthexperiments-homepage-impact-edited-items-trend-chart-count-label": "{{GENDER:|당신}}이 편집한 항목의 조회수"
 }
