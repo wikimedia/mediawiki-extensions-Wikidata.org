@@ -1,0 +1,27 @@
+{
+	"@metadata": {
+		"authors": [
+			"ऐक्टिवेटेड्"
+		]
+	},
+	"wikidata-org-desc": "विकिबेस लागि कन्फिगरेशन आउ अनुकूलन जे विशिष्ट रूपसे wikidata.org लागि हे",
+	"wikibase-randomitem": "यादृच्छिक वस्तु",
+	"wikibase-queryservice": "पूछताछ सेवा",
+	"data-access": "डेटा प्रवेशाधिकार",
+	"gadget-section-wikidata": "विकिडेटा-केन्द्रित",
+	"gadget-section-lexemes": "लेक्सिमे",
+	"gadget-section-general": "सामान्य",
+	"gadget-section-admin-gadgets": "प्रशासकला गैजेट्स",
+	"tag-client-automatic-update": "जुड़ल विकिसे स्वचालित अद्यतन",
+	"tag-client-linkitem-change": "जुड़ल विकिसे जालकड़ी परिवर्तन",
+	"tag-data-bridge": "विकिडेटा सेतु",
+	"tag-termbox": "दूरभाष शब्दकोश",
+	"tag-wikidata-ui": "विकिडेटा प्रयोगकर्ता अन्तराफलक",
+	"wikiprojects-sidebar-wikiproject-astronomy": "विकिपरियोजना खगोलविज्ञान",
+	"wikiprojects-sidebar-wikiproject-music": "विकिपरियोजना सङ्गीत",
+	"wikiprojects-sidebar-wikiproject-medicine": "विकिपरियोजना औषधि",
+	"wikiprojects-sidebar-wikiproject-datasets": "विकिपरियोजना डेटासेट",
+	"wikiprojects-sidebar-wikiproject-sum-of-all-paintings": "विकिपरियोजना सभ चित्रके योग",
+	"wikiprojects-sidebar-wikiproject-elections": "विकिपरियोजना मतदान",
+	"growthexperiments-homepage-impact-edited-items-trend-chart-count-label": "{{GENDER:|अपने}}द्वारा सम्पादित वस्तु पर दृश्य"
+}
