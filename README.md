@@ -44,3 +44,11 @@ Similarly, you can lint the JavaScript code with
 ```bash
 npm test
 ```
+
+## Chore: Dependency Updates
+
+### JS (npm) dependencies
+
+You can see which dependencies have new releases by first making sure your local dependencies are up-to-date by executing `npm ci` and then running `npm outdated`.
+The following dependencies are special cases that should potentially be ignored:
+- [grunt-eslint](https://github.com/sindresorhus/grunt-eslint) no longer supports "flat" eslint config files (i.e. `.eslintrc.json`) since version 25.0.0 because of changes since eslint 9 (see issue [#176](https://github.com/sindresorhus/grunt-eslint/issues/176)). See [T364065](https://phabricator.wikimedia.org/T364065) for progress with our eslint 9 migration.
