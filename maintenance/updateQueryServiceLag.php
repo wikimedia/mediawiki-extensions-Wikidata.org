@@ -4,7 +4,6 @@ namespace WikidataOrg;
 
 use MediaWiki\Logger\LoggerFactory;
 use MediaWiki\Maintenance\Maintenance;
-use MediaWiki\MediaWikiServices;
 use WikidataOrg\QueryServiceLag\CacheQueryServiceLagStore;
 use WikidataOrg\QueryServiceLag\WikimediaPrometheusQueryServiceLagProvider;
 
@@ -100,7 +99,7 @@ class UpdateQueryServiceLag extends Maintenance {
 		$minQueryRate = floatval( $this->getOption( "pooled-server-min-query-rate",
 			self::POOLED_SERVER_MIN_QUERY_RATE ) );
 
-		$mw = MediaWikiServices::getInstance();
+		$mw = $this->getServiceContainer();
 		// For now just use the Wikibase log channel
 		$logger = LoggerFactory::getInstance( 'Wikibase' );
 
