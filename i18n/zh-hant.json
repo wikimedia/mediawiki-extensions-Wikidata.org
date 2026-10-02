@@ -27,5 +27,12 @@
 	"tag-termbox": "行動版術語框",
 	"tag-termbox-description": "使用行動版術語框介面進行的編輯。",
 	"tag-wikidata-ui": "維基數據使用者介面",
-	"tag-wikidata-ui-description": "使用維基數據上一般使用者介面進行手動編輯。"
+	"tag-wikidata-ui-description": "使用維基數據上一般使用者介面進行手動編輯。",
+	"wikiprojects-sidebar-wikiproject-astronomy": "維基專題:天文",
+	"wikiprojects-sidebar-wikiproject-music": "維基專題:音樂",
+	"wikiprojects-sidebar-wikiproject-medicine": "維基專題:醫學",
+	"wikiprojects-sidebar-wikiproject-datasets": "維基專題資料集",
+	"wikiprojects-sidebar-wikiproject-sum-of-all-paintings": "維基專題繪畫總集",
+	"wikiprojects-sidebar-wikiproject-elections": "維基專題選舉",
+	"growthexperiments-homepage-impact-edited-items-trend-chart-count-label": "{{GENDER:|您}}編輯過項目的瀏覽次數"
 }
