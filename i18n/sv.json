@@ -24,5 +24,12 @@
 	"tag-termbox": "Mobil termbox",
 	"tag-termbox-description": "En redigering gjord med hjälp av det mobila termbox-gränssnittet.",
 	"tag-wikidata-ui": "Wikidatas användargränssnitt",
-	"tag-wikidata-ui-description": "En manuell redigering gjord med det vanliga användargränssnittet på Wikidata."
+	"tag-wikidata-ui-description": "En manuell redigering gjord med det vanliga användargränssnittet på Wikidata.",
+	"wikiprojects-sidebar-wikiproject-astronomy": "WikiProjekt Astronomi",
+	"wikiprojects-sidebar-wikiproject-music": "WikiProjekt Musik",
+	"wikiprojects-sidebar-wikiproject-medicine": "WikiProjekt Medicin",
+	"wikiprojects-sidebar-wikiproject-datasets": "WikiProjekt-datauppsättningar",
+	"wikiprojects-sidebar-wikiproject-sum-of-all-paintings": "WikiProjekt summan av alla målningar",
+	"wikiprojects-sidebar-wikiproject-elections": "WikiProjekt-politiska val",
+	"growthexperiments-homepage-impact-edited-items-trend-chart-count-label": "Visningar av objekt du redigerat"
 }
