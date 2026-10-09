@@ -1,8 +1,16 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ahmed-Najib-Biabani-Ibrahimkhel"
+			"Ahmed-Najib-Biabani-Ibrahimkhel",
+			"شاه زمان پټان"
 		]
 	},
-	"data-access": "اومتوک لاسرسی"
+	"wikibase-randomitem": "ناڅاپي توکی",
+	"wikibase-queryservice": "تپوس چوپړ",
+	"data-access": "اومتوک لاسرسی",
+	"gadget-section-lexemes": "پيل‌ويوکي",
+	"gadget-section-general": "ټولواله",
+	"gadget-section-admin-gadgets": "پازوالانو لپاره ويښيارتوکي",
+	"tag-data-bridge": "ويکي‌اومتوک پول",
+	"tag-wikidata-ui": "د ويکي‌اومتوک کارن مخبڼه"
 }
