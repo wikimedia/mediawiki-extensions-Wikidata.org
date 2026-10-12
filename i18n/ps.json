@@ -5,17 +5,28 @@
 			"شاه زمان پټان"
 		]
 	},
+	"wikidata-org-desc": "د ويکي‌اډانې ترتيب او دوديزول چې wikidata.org لپاره ځانگړی دی",
 	"wikibase-randomitem": "ناڅاپي توکی",
 	"wikibase-queryservice": "تپوس چوپړ",
 	"data-access": "اومتوک لاسرسی",
+	"gadget-section-wikidata": "ويکي‌اومتوک ته ځانگړي‌شوي",
 	"gadget-section-lexemes": "پيل‌ويوکي",
 	"gadget-section-general": "ټولواله",
 	"gadget-section-admin-gadgets": "پازوالانو لپاره ويښيارتوکي",
+	"tag-client-automatic-update": "له نښلېدلې ويکي څخه خپلکارې هم‌مهالېدنه",
+	"tag-client-automatic-update-description": "يو سمون چې په خپلکاري ډول ترسره شو؛ ځکه چې نښلېدلې مخ يې لېږدول شوی يا ړنگ شوی و.",
+	"tag-client-linkitem-change": "له نښلېدلې ويکي څخه د وېبځي‌تړوني بدلون",
+	"tag-client-linkitem-change-description": "يو سمون چې د وېبځي‌تړوني مخبڼې کارولو سره په يوه نښلېدلې ويکي کې شوی و.",
 	"tag-data-bridge": "ويکي‌اومتوک پول",
+	"tag-termbox": "د نوبل گړن‌بکس",
+	"tag-termbox-description": "د موبايل گړن‌بکس مخبڼې کارولو سره ترسره شوی سمون.",
 	"tag-wikidata-ui": "د ويکي‌اومتوک کارن مخبڼه",
+	"tag-wikidata-ui-description": "په ويکي‌اومتوک کې د سمدودې مخبڼې کارولو سره لاسي سمون.",
 	"wikiprojects-sidebar-wikiproject-astronomy": "ويکي‌پروژه ستورپوهنه",
 	"wikiprojects-sidebar-wikiproject-music": "ويکي‌پروژه موسيقي",
 	"wikiprojects-sidebar-wikiproject-medicine": "ويکي‌پروژه درملگري",
 	"wikiprojects-sidebar-wikiproject-datasets": "ويکي‌پروژه اومتوک‌ټولگې",
-	"wikiprojects-sidebar-wikiproject-elections": "ويکي‌پروژه ټول‌ټاکنې"
+	"wikiprojects-sidebar-wikiproject-sum-of-all-paintings": "ويکي‌پروژه د ټولو انځورگريو ټولگه",
+	"wikiprojects-sidebar-wikiproject-elections": "ويکي‌پروژه ټول‌ټاکنې",
+	"growthexperiments-homepage-impact-edited-items-trend-chart-count-label": "د هغه توکو کتنې چې {{GENDER:|تاسو}} سم کړې دي"
 }
