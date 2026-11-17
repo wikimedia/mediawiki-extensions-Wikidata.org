@@ -19,6 +19,7 @@
 	"tag-client-linkitem-change": "Alteração por link intersites desde a wiki ligada",
 	"tag-client-linkitem-change-description": "Uma edição que foi feita usando a interface de usuário dos links intersites em uma wiki conectada.",
 	"tag-termbox": "Caixa de termos móvel",
+	"tag-termbox-description": "Uma edição feita usando a interface da caixa de termos móvel.",
 	"tag-wikidata-ui": "Interface de usuário de Wikidata",
 	"tag-wikidata-ui-description": "Uma edição manual feita usando a normal interface do usuário de Wikidata."
 }
